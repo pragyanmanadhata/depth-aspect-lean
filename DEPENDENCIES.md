@@ -60,7 +60,7 @@ The unsplit theorem is intended to be unconditional: it must not take `C1`.
 
 | Item | Status | Where |
 |---|---|---|
-| Finite-sum inversion behind Lemma 2.3 / eq. (11) | proved on branch `claude/gracious-cannon-pwonlw`, open for review in PR #1; not yet on `main` | `DepthAspect/OldformSecondDifference.lean` (PR #1) |
+| Finite-sum inversion behind Lemma 2.3 / eq. (11) | **proved** (PR #1); axiom audit passes with exactly `propext`, `Classical.choice`, `Quot.sound` | `DepthAspect/OldformSecondDifference.lean` |
 | B1 oldform decomposition | assumed | — |
 | B3–B8 analytic inputs | assumed | — |
 | B9 symmetry densities | dischargeable, not started | — |
