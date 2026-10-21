@@ -1,0 +1,24 @@
+import Mathlib.Data.Complex.Basic
+
+/-!
+# DepthAspect — conventions
+
+The paper's family is the set of holomorphic newforms of weight `k` and level
+`2^n`, with the *depth* `n → ∞`. This file fixes the little shared vocabulary
+used across the project. Everything substantive lives in its own file (one
+file per paper component); see `STATUS.md` for the map.
+-/
+
+namespace DepthAspect
+
+/-- The level of depth `n` at the prime `2`, i.e. `2 ^ n`. -/
+def level (n : ℕ) : ℕ := 2 ^ n
+
+@[simp] theorem level_zero : level 0 = 1 := rfl
+
+theorem level_succ (n : ℕ) : level (n + 1) = 2 * level n := by
+  rw [level, level, Nat.pow_succ, Nat.mul_comm]
+
+theorem level_pos (n : ℕ) : 0 < level n := Nat.two_pow_pos n
+
+end DepthAspect

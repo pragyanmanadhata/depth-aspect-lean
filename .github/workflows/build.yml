@@ -1,0 +1,40 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: lake build (Lean + Mathlib, pinned)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Build with the pinned toolchain and Mathlib cache
+        uses: leanprover/lean-action@v1
+        with:
+          use-mathlib-cache: true
+          auto-config: false
+          build: true
+
+      - name: Forbid sorry / admit / axiom / kernel bypasses in project sources
+        run: |
+          set -euo pipefail
+          # Project sources only (not dependencies). The Lean-level axiom audit
+          # lives in DepthAspect/Audit.lean and already fails the build on
+          # sorryAx; this is a cheap textual second line of defence.
+          if grep -rnE '(^|[^A-Za-z_.])(sorry|admit|native_decide|decide!)([^A-Za-z_]|$)' DepthAspect DepthAspect.lean; then
+            echo "::error::forbidden token found in project sources"; exit 1
+          fi
+          if grep -rnE '^\s*(axiom|unsafe|@\[implemented_by|@\[extern)' DepthAspect DepthAspect.lean; then
+            echo "::error::axiom / unsafe / implemented_by / extern found in project sources"; exit 1
+          fi
+          echo "source audit passed"
