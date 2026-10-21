@@ -46,7 +46,7 @@ literature without new proof.
 | Component | Where | State |
 |---|---|---|
 | Project scaffold (toolchain, Mathlib pin, CI, docs) | `main` | done |
-| Finite-sum identity behind Lemma 2.3 / eq. (11) (oldform second difference) | `DepthAspect/OldformSecondDifference.lean` | proved, under review (draft PR) |
+| Finite-sum identity behind Lemma 2.3 / eq. (11) (oldform second difference) | `DepthAspect/OldformSecondDifference.lean` (PR #1) | proved on the PR branch, open for review; not yet on `main` |
 | Oldform decomposition for level `2^n` (input B1) | — | separate prerequisite, not started |
 | Everything else in the paper | — | awaiting specification |
 

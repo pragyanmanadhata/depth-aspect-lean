@@ -12,8 +12,13 @@ anything beyond the three standard axioms of Lean/Mathlib
 proof (which would add the axiom `sorryAx`) or any project-declared axiom
 breaks the build.
 
-Add one block per completed theorem, in the order of `STATUS.md`.
+Add one block per completed theorem, following the order of `STATUS.md`,
+with helper lemmas listed after the results they serve.
 -/
+
+/-- info: 'DepthAspect.level_zero' does not depend on any axioms -/
+#guard_msgs in
+#print axioms DepthAspect.level_zero
 
 /-- info: 'DepthAspect.level_succ' does not depend on any axioms -/
 #guard_msgs in
