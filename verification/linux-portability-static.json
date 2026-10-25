@@ -1,0 +1,40 @@
+{
+  "recorded_at_utc": "2026-10-25T18:11:49.385190+00:00",
+  "scope": "Static filename and path checks performed on macOS; not a Linux build or mathematical review.",
+  "method": "Matched import tokens to enumerated source path spellings using exact case-sensitive string comparison.",
+  "imports": {
+    "project_lean_files_checked": 326,
+    "proof_modules": 322,
+    "direct_import_occurrences_checked": 1501,
+    "unique_direct_imports_checked": 519,
+    "unparsed_import_forms": [],
+    "unresolved_imports": [],
+    "case_mismatches": [],
+    "ambiguous_exact_matches": [],
+    "project_casefold_path_collisions": []
+  },
+  "configuration_paths": {
+    "dependency_directories_checked": 9,
+    "dependency_config_files_checked": 9,
+    "dependency_manifest_files_checked": 9,
+    "project_script_and_input_paths_checked": 13,
+    "library_root_paths_checked": 2,
+    "spelling_mismatches": []
+  },
+  "documentation_links": {
+    "files_checked": ["README.md", "REVIEW.md", "PUBLICATION.md"],
+    "local_link_occurrences_checked": 36,
+    "spelling_mismatches": [],
+    "scope": "Links present at the recorded check time, before adding the link to this report."
+  },
+  "lean_compiler_executed_for_this_check": false,
+  "actual_linux_execution": false,
+  "github_actions_run_started": false,
+  "mathematical_review_renewed": false,
+  "limitations": [
+    "Only direct imports in project Lean files were checked; dependency-internal import closures were not re-audited.",
+    "Exact source-path matching does not establish compilation or runtime compatibility.",
+    "Linux execution, native artifacts, runner resources, and the workflow time limit remain untested.",
+    "This static check does not determine the outcome of the separate full verifier."
+  ]
+}

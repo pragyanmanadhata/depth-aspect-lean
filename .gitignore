@@ -1,15 +1,7 @@
-# Lake build outputs and dependency checkouts
-/.lake/
-/build/
-**/.lake/
-
-# Editor and OS noise
-.vscode/
-.idea/
-*.swp
-*.swo
+.lake/
 .DS_Store
-
-# Local scratch
-/scratch/
-*.log
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/

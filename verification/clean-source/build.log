@@ -1,0 +1,1418 @@
+⚠ [2335/2438] Replayed DepthAspect.ImprimitiveEuler
+warning: DepthAspect/ImprimitiveEuler.lean:47:10: This simp argument is unused:
+  Finsupp.single_apply
+
+Hint: Omit it from the simp argument list.
+  simp [F̵i̵n̵s̵u̵p̵p̵.̵s̵i̵n̵g̵l̵e̵_̵a̵p̵p̵l̵y̵,̵ ̵hr, Ne.symm hr]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/ImprimitiveEuler.lean:47:36: This simp argument is unused:
+  Ne.symm hr
+
+Hint: Omit it from the simp argument list.
+  simp [Finsupp.single_apply, hr,̵ ̵N̵e̵.̵s̵y̵m̵m̵ ̵h̵r̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/ImprimitiveEuler.lean:99:15: This simp argument is unused:
+  Nat.succ_eq_add_one
+
+Hint: Omit it from the simp argument list.
+  simp only [N̵a̵t̵.̵s̵u̵c̵c̵_̵e̵q̵_̵a̵d̵d̵_̵o̵n̵e̵,̵ ̵Finset.sum_range_succ, pow_add, pow_one] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2347/2438] Replayed DepthAspect.LocalResidueAverages
+warning: DepthAspect/LocalResidueAverages.lean:217:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/LocalResidueAverages.lean:262:28: This simp argument is unused:
+  digits_card
+
+Hint: Omit it from the simp argument list.
+  simp [value, unitPower,̵ ̵d̵i̵g̵i̵t̵s̵_̵c̵a̵r̵d̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/LocalResidueAverages.lean:263:45: This simp argument is unused:
+  mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  simp [value, hc, digits_card, mul_assoc, m̵u̵l̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵ ̵mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/LocalResidueAverages.lean:285:19: This simp argument is unused:
+  sq_eq_zero_iff
+
+Hint: Omit it from the simp argument list.
+  simp [unitPower, s̵q̵_̵e̵q̵_̵z̵e̵r̵o̵_̵i̵f̵f̵,̵ ̵ht, h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/LocalResidueAverages.lean:300:16: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [zero_pow (by norm_num : (2 : ℕ) ≠ 0), unitPower, ↓reduceIte,
+  ̵  ̵ ̵ ̵ ̵ ̵mul_zero, a̵d̵d̵_̵z̵e̵r̵o̵,̵ ̵sub_self,
+  ̲  ̲ ̲ ̲ ̲ ̲sub_add_cancel, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/LocalResidueAverages.lean:300:26: This simp argument is unused:
+  sub_self
+
+Hint: Omit it from the simp argument list.
+  simp only [zero_pow (by norm_num : (2 : ℕ) ≠ 0), unitPower, ↓reduceIte,
+  ̵  ̵ ̵ ̵ ̵ ̵mul_zero, add_zero,
+  ̲ s̵u̵b̵_̵s̵e̵l̵f̵,̵  ̲ ̲ ̲ ̲sub_add_cancel, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/LocalResidueAverages.lean:300:36: This simp argument is unused:
+  sub_add_cancel
+
+Hint: Omit it from the simp argument list.
+  simp only [zero_pow (by norm_num : (2 : ℕ) ≠ 0), unitPower, ↓reduceIte, mul_zero, add_zero,
+  ̲  ̲ ̲ ̲ ̲ ̲sub_self, s̵u̵b̵_̵a̵d̵d̵_̵c̵a̵n̵c̵e̵l̵,̵ ̵zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2833/2930] Replayed DepthAspect.FiniteCharacterFourier
+warning: DepthAspect/FiniteCharacterFourier.lean:48:8: automatically included section variable(s) unused in theorem `_private.DepthAspect.FiniteCharacterFourier.0.DepthAspect.FiniteCharacterFourier.asAddChar_injective`:
+  [NeZero q]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero q] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DepthAspect/FiniteCharacterFourier.lean:72:8: automatically included section variable(s) unused in theorem `_private.DepthAspect.FiniteCharacterFourier.0.DepthAspect.FiniteCharacterFourier.conj_character_unit_inv`:
+  [NeZero q]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero q] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DepthAspect/FiniteCharacterFourier.lean:96:8: This simp argument is unused:
+  hcard
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵h̵c̵a̵r̵d̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/FiniteCharacterFourier.lean:182:22: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵e̵q̵_̵c̵o̵m̵m̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/FiniteCharacterFourier.lean:197:27: This simp argument is unused:
+  norm_div
+
+Hint: Omit it from the simp argument list.
+  simp [beta, coefficient, n̵o̵r̵m̵_̵d̵i̵v̵,̵ ̵hcard, hn.ne']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/FiniteCharacterFourier.lean:197:44: This simp argument is unused:
+  hn.ne'
+
+Hint: Omit it from the simp argument list.
+  simp [beta, coefficient, norm_div, hcard,̵ ̵h̵n̵.̵n̵e̵'̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3466/3553] Replayed DepthAspect.HarmonicRemainder
+warning: DepthAspect/HarmonicRemainder.lean:1:0: 'Mathlib.Data.Real.Archimedean' has been deprecated: please replace this import by
+
+import Mathlib.Algebra.Order.Archimedean.Real.Basic
+warning: DepthAspect/HarmonicRemainder.lean:41:14: This simp argument is unused:
+  Nat.cast_add
+
+Hint: Omit it from the simp argument list.
+  simp only [Real.eulerMascheroniSeq, Real.eulerMascheroniSeq', ne_of_gt (show 0 < n from hn1),
+      if_false, Nat.cast_a̵d̵d̵,̵ ̵N̵a̵t̵.̵c̵a̵s̵t̵_̵one] at hγlo hγhi
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/HarmonicRemainder.lean:41:28: This simp argument is unused:
+  Nat.cast_one
+
+Hint: Omit it from the simp argument list.
+  simp only [Real.eulerMascheroniSeq, Real.eulerMascheroniSeq', ne_of_gt (show 0 < n from hn1),
+      if_false, Nat.cast_add,̵ ̵N̵a̵t̵.̵c̵a̵s̵t̵_̵o̵n̵e̵] at hγlo hγhi
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3517/3553] Replayed DepthAspect.ArithmeticDyadicMass
+warning: DepthAspect/ArithmeticDyadicMass.lean:70:41: This simp argument is unused:
+  c_one
+
+Hint: Omit it from the simp argument list.
+  simp [dyadicMass, hfloor, ht1, hset,̵ ̵c̵_̵o̵n̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3519/3553] Replayed DepthAspect.ArithmeticPrimeWeight
+warning: DepthAspect/ArithmeticPrimeWeight.lean:123:28: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/ArithmeticPrimeWeight.lean:123:28: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3584/3692] Replayed DepthAspect.ArithmeticResidue
+warning: DepthAspect/ArithmeticResidue.lean:97:15: This simp argument is unused:
+  Subtype.coe_mk
+
+Hint: Omit it from the simp argument list.
+  simp only ̵[̵S̵u̵b̵t̵y̵p̵e̵.̵c̵o̵e̵_̵m̵k̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/ArithmeticResidue.lean:99:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/ArithmeticResidue.lean:110:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/ArithmeticResidue.lean:110:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/ArithmeticResidue.lean:121:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/ArithmeticResidue.lean:121:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3588/3692] Replayed DepthAspect.ArithmeticWeightedTails
+warning: DepthAspect/ArithmeticWeightedTails.lean:125:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/ArithmeticWeightedTails.lean:157:26: This simp argument is unused:
+  c_one
+
+Hint: Omit it from the simp argument list.
+  simp [tailWeight,̵ ̵c̵_̵o̵n̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3589/3692] Replayed DepthAspect.BesselFirstKind
+warning: DepthAspect/BesselFirstKind.lean:48:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/BesselFirstKind.lean:94:26: This simp argument is unused:
+  zero_pow he
+
+Hint: Omit it from the simp argument list.
+  simp [seriesTerm, hn,̵ ̵z̵e̵r̵o̵_̵p̵o̵w̵ ̵h̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3592/3692] Replayed DepthAspect.BesselSqrtIntegral
+warning: DepthAspect/BesselSqrtIntegral.lean:22:8: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/BesselSqrtIntegral.lean:22:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/BesselSqrtIntegral.lean:26:30: Variable name `hDLMF` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3598/3692] Replayed DepthAspect.FourierDecay
+warning: DepthAspect/FourierDecay.lean:201:18: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3601/3692] Replayed DepthAspect.RandomMatrixMainTerms
+warning: DepthAspect/RandomMatrixMainTerms.lean:36:4: This simp argument is unused:
+  Complex.ofReal_cos
+
+Hint: Omit it from the simp argument list.
+  simp only [Complex.ofReal_one, Complex.ofReal_neg, mul_one, mul_neg,
+  ̵  ̵ ̵ ̵← neg_mul, Complex.exp_mul_I,
+  ̲  ̲ ̲ ̲Complex.cos_neg, Complex.sin_neg,
+  ̵  ̵ ̵ ̵Complex.ofReal_c̵o̵s,̵ ̵C̵o̵m̵p̵l̵e̵x̵.̵o̵f̵R̵e̵a̵l̵_̵s̵in, Complex.ofReal_div]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/RandomMatrixMainTerms.lean:38:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/RandomMatrixMainTerms.lean:58:8: This simp argument is unused:
+  show -2 * Real.pi * ξ = -(2 * Real.pi * ξ) by ring
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵s̵h̵o̵w̵ ̵-̵2̵ ̵*̵ ̵R̵e̵a̵l̵.̵p̵i̵ ̵*̵ ̵ξ̵ ̵=̵ ̵-̵(̵2̵ ̵*̵ ̵R̵e̵a̵l̵.̵p̵i̵ ̵*̵ ̵ξ̵)̵ ̵b̵y̵ ̵r̵i̵n̵g̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/RandomMatrixMainTerms.lean:64:8: `ext` did not consume the patterns `x` and `y`
+
+Note: This linter can be disabled with `set_option linter.unusedRCasesPattern false`
+warning: DepthAspect/RandomMatrixMainTerms.lean:65:10: This simp argument is unused:
+  real_inner_comm
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵r̵e̵a̵l̵_̵i̵n̵n̵e̵r̵_̵c̵o̵m̵m̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3610/3692] Replayed DepthAspect.MurmurationKernel
+warning: DepthAspect/MurmurationKernel.lean:54:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/MurmurationKernel.lean:54:34: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3611/3692] Replayed DepthAspect.MurmurationLattice
+warning: DepthAspect/MurmurationLattice.lean:39:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/MurmurationLattice.lean:39:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/MurmurationLattice.lean:74:14: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationLattice.lean:74:14: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3613/3692] Replayed DepthAspect.MurmurationFourier
+warning: DepthAspect/MurmurationFourier.lean:135:30: This simp argument is unused:
+  h2a2
+
+Hint: Omit it from the simp argument list.
+  simp [ha, J_at_zero, h2a,̵ ̵h̵2̵a̵2̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/MurmurationFourier.lean:156:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationFourier.lean:156:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3614/3692] Replayed DepthAspect.FourierScaling
+warning: DepthAspect/FourierScaling.lean:51:8: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/FourierScaling.lean:51:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3615/3692] Replayed DepthAspect.MurmurationDecay
+warning: DepthAspect/MurmurationDecay.lean:48:28: This simp argument is unused:
+  abs_div
+
+Hint: Omit it from the simp argument list.
+  simp [Real.norm_eq_abs, abs_d̵i̵v̵,̵ ̵a̵b̵s̵_̵mul, abs_pow, abs_of_pos hξ0, ̲m̲,̲
+        m̵,̵ ̵abs_of_nonneg (by positivity : (0 : ℝ) ≤ 2 * (a : ℝ) + 1)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/MurmurationDecay.lean:48:37: This simp argument is unused:
+  abs_mul
+
+Hint: Omit it from the simp argument list.
+  simp [Real.norm_eq_abs, abs_div, abs_m̵u̵l̵,̵ ̵a̵b̵s̵_̵pow, abs_of_pos hξ0, ̲m̲,̲
+        m̵,̵ ̵abs_of_nonneg (by positivity : (0 : ℝ) ≤ 2 * (a : ℝ) + 1)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/MurmurationDecay.lean:48:46: This simp argument is unused:
+  abs_pow
+
+Hint: Omit it from the simp argument list.
+  simp [Real.norm_eq_abs, abs_div, abs_mul, abs_p̵ow̵,̵ ̵a̵b̵s̵_̵o̵f_pos hξ0, ̲m̲,̲
+        m̵,̵ ̵abs_of_nonneg (by positivity : (0 : ℝ) ≤ 2 * (a : ℝ) + 1)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3616/3692] Replayed DepthAspect.MurmurationPoisson
+warning: DepthAspect/MurmurationPoisson.lean:28:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationPoisson.lean:28:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/MurmurationPoisson.lean:84:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationPoisson.lean:84:8: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/MurmurationPoisson.lean:101:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationPoisson.lean:115:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationPoisson.lean:101:8: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/MurmurationPoisson.lean:115:8: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3617/3692] Replayed DepthAspect.MurmurationBesselSeries
+warning: DepthAspect/MurmurationBesselSeries.lean:43:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationBesselSeries.lean:43:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/MurmurationBesselSeries.lean:59:79: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationBesselSeries.lean:64:61: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationBesselSeries.lean:59:79: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/MurmurationBesselSeries.lean:64:61: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/MurmurationBesselSeries.lean:150:14: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationBesselSeries.lean:150:14: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3618/3692] Replayed DepthAspect.MurmurationDivisorExpansion
+warning: DepthAspect/MurmurationDivisorExpansion.lean:104:12: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationDivisorExpansion.lean:113:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationDivisorExpansion.lean:104:12: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/MurmurationDivisorExpansion.lean:113:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3620/3692] Replayed DepthAspect.MurmurationIntegralSeries
+warning: DepthAspect/MurmurationIntegralSeries.lean:62:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/MurmurationIntegralSeries.lean:80:85: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationIntegralSeries.lean:80:85: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3621/3692] Replayed DepthAspect.MurmurationIntegralSmall
+warning: DepthAspect/MurmurationIntegralSmall.lean:51:23: Variable name `hDLMF` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3622/3692] Replayed DepthAspect.MurmurationArithmeticIntegral
+warning: DepthAspect/MurmurationArithmeticIntegral.lean:50:51: Variable name `hC` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DepthAspect/MurmurationArithmeticIntegral.lean:84:10: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationArithmeticIntegral.lean:84:10: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3623/3692] Replayed DepthAspect.MurmurationIntegralLimit
+warning: DepthAspect/MurmurationIntegralLimit.lean:35:13: Variable name `hK` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DepthAspect/MurmurationIntegralLimit.lean:36:13: Variable name `hZ` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DepthAspect/MurmurationIntegralLimit.lean:75:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationIntegralLimit.lean:75:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3624/3692] Replayed DepthAspect.MurmurationIntegralError
+warning: DepthAspect/MurmurationIntegralError.lean:86:4: 'change _ = _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3625/3692] Replayed DepthAspect.MurmurationScaledPrimitive
+warning: DepthAspect/MurmurationScaledPrimitive.lean:38:50: Variable name `hC` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DepthAspect/MurmurationScaledPrimitive.lean:53:10: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationScaledPrimitive.lean:53:10: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3626/3692] Replayed DepthAspect.MurmurationMean
+warning: DepthAspect/MurmurationMean.lean:113:15: This simp argument is unused:
+  head
+
+Hint: Omit it from the simp argument list.
+  simp only [h̵e̵a̵d̵,̵ ̵Finset.sum_ite_mem, Finset.inter_self, ← Finset.mul_sum]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/MurmurationMean.lean:94:12: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationMean.lean:94:12: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/MurmurationMean.lean:152:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationMean.lean:152:6: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3627/3692] Replayed DepthAspect.MurmurationPrimitive
+warning: DepthAspect/MurmurationPrimitive.lean:37:12: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationPrimitive.lean:37:12: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/MurmurationPrimitive.lean:95:30: Variable name `hDLMF` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3634/3692] Replayed DepthAspect.CharacterPrimeAverages
+warning: DepthAspect/CharacterPrimeAverages.lean:51:1: automatically included section variable(s) unused in theorem `DepthAspect.CharacterPrimeAverages.theta_of_lt_two`:
+  [NeZero q]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero q] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DepthAspect/CharacterPrimeAverages.lean:61:1: automatically included section variable(s) unused in theorem `DepthAspect.CharacterPrimeAverages.principal_norm_le`:
+  [NeZero q]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero q] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DepthAspect/CharacterPrimeAverages.lean:91:0: automatically included section variable(s) unused in theorem `DepthAspect.CharacterPrimeAverages.weighted_abel`:
+  [NeZero q]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero q] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3639/3692] Replayed DepthAspect.ChebyshevWeights
+warning: DepthAspect/ChebyshevWeights.lean:189:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3640/3692] Replayed DepthAspect.OrderedDirichlet
+warning: DepthAspect/OrderedDirichlet.lean:112:6: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3657/3692] Replayed DepthAspect.TraceBounds
+warning: DepthAspect/TraceBounds.lean:342:44: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/TraceBounds.lean:342:44: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/TraceBounds.lean:342:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3663/3692] Replayed DepthAspect.OddCoefficientFourier
+warning: DepthAspect/OddCoefficientFourier.lean:40:8: automatically included section variable(s) unused in theorem `_private.DepthAspect.OddCoefficientFourier.0.DepthAspect.OddCoefficientFourier.lower_dvd`:
+  [Fact (Nat.Prime p)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fact (Nat.Prime p)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3664/3692] Replayed DepthAspect.DyadicResidueFourier
+warning: DepthAspect/DyadicResidueFourier.lean:75:8: 'change _ % 4 = 1 ↔ _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3667/3692] Replayed DepthAspect.DivisorGrowth
+warning: DepthAspect/DivisorGrowth.lean:71:63: Variable name `hp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3670/3692] Replayed DepthAspect.FiniteResidueCRT
+warning: DepthAspect/FiniteResidueCRT.lean:26:1: automatically included section variable(s) unused in theorem `DepthAspect.FiniteResidueCRT.unitsCRT_apply`:
+  [∀ (i : ι), NeZero (a i)]
+  [NeZero (∏ i, a i)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [∀ (i : ι), NeZero (a i)] [NeZero (∏ i, a i)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DepthAspect/FiniteResidueCRT.lean:99:0: automatically included section variable(s) unused in theorem `DepthAspect.FiniteResidueCRT.tensorCharacter_apply`:
+  [∀ (i : ι), NeZero (a i)]
+  [NeZero (∏ i, a i)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [∀ (i : ι), NeZero (a i)] [NeZero (∏ i, a i)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DepthAspect/FiniteResidueCRT.lean:132:35: This simp argument is unused:
+  Ne.symm hji
+
+Hint: Omit it from the simp argument list.
+  simp [Pi.mulSingle, hji,̵ ̵N̵e̵.̵s̵y̵m̵m̵ ̵h̵j̵i̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3671/3692] Replayed DepthAspect.GlobalResidueModulus
+warning: DepthAspect/GlobalResidueModulus.lean:28:36: Variable name `i` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3675/3692] Replayed DepthAspect.SquarefreeCoefficientProduct
+warning: DepthAspect/SquarefreeCoefficientProduct.lean:49:51: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/SquarefreeCoefficientProduct.lean:49:51: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3676/3692] Replayed DepthAspect.OddMeanMajorant
+warning: DepthAspect/OddMeanMajorant.lean:31:46: Variable name `hp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DepthAspect/OddMeanMajorant.lean:37:27: This simp argument is unused:
+  Finsupp.single_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Finsupp.add_apply, F̵i̵n̵s̵u̵p̵p̵.̵s̵i̵n̵g̵l̵e̵_̵a̵p̵p̵l̵y̵,̵ ̵hp2, Ne.symm hp2, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/OddMeanMajorant.lean:37:54: This simp argument is unused:
+  Ne.symm hp2
+
+Hint: Omit it from the simp argument list.
+  simp [Finsupp.add_apply, Finsupp.single_apply, hp2, N̵e̵.̵s̵y̵m̵m̵ ̵h̵p̵2̵,̵ ̵mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/OddMeanMajorant.lean:37:67: This simp argument is unused:
+  mul_comm
+
+Hint: Omit it from the simp argument list.
+  simp [Finsupp.add_apply, Finsupp.single_apply, hp2, Ne.symm hp2,̵ ̵m̵u̵l̵_̵c̵o̵m̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3682/3692] Replayed DepthAspect.QuadraticCharacterIntegrals
+warning: DepthAspect/QuadraticCharacterIntegrals.lean:52:35: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/QuadraticCharacterIntegrals.lean:52:35: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3683/3692] Replayed DepthAspect.QuadraticCharacterEight
+warning: DepthAspect/QuadraticCharacterEight.lean:72:26: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/QuadraticCharacterEight.lean:72:26: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3688/3801] Replayed DepthAspect.MurmurationPrimitiveDerivative
+warning: DepthAspect/MurmurationPrimitiveDerivative.lean:16:13: Variable name `hU` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3689/3801] Replayed DepthAspect.BoundedPrimitiveWeight
+warning: DepthAspect/BoundedPrimitiveWeight.lean:63:5: Variable name `hC` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DepthAspect/BoundedPrimitiveWeight.lean:345:42: This simp argument is unused:
+  smul_smul
+
+Hint: Omit it from the simp argument list.
+  simp [div_eq_mul_inv, s̵m̵u̵l̵_̵s̵m̵u̵l̵,̵ ̵mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/BoundedPrimitiveWeight.lean:426:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3869/4017] Replayed DepthAspect.NegativeResidueBridge
+warning: DepthAspect/NegativeResidueBridge.lean:60:37: This simp argument is unused:
+  Int.cast_neg
+
+Hint: Omit it from the simp argument list.
+  simp only [ZMod.coe_unitOfCoprime, I̵n̵t̵.̵c̵a̵s̵t̵_̵n̵e̵g̵,̵ ̵Int.cast_natCast]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3870/4017] Replayed DepthAspect.PrimePowerRemoval
+warning: DepthAspect/PrimePowerRemoval.lean:75:28: Variable name `n` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3871/4017] Replayed DepthAspect.PrimitiveGRHTransport
+warning: DepthAspect/PrimitiveGRHTransport.lean:43:0: automatically included section variable(s) unused in theorem `DepthAspect.PrimitiveGRHTransport.primitive_eq_on_good_prime`:
+  [NeZero q]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero q] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DepthAspect/PrimitiveGRHTransport.lean:50:0: automatically included section variable(s) unused in theorem `DepthAspect.PrimitiveGRHTransport.character_zero_on_bad_prime`:
+  [NeZero q]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero q] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3872/4017] Replayed DepthAspect.OmittedPrimeCost
+info: DepthAspect/OmittedPrimeCost.lean:55:38: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: DepthAspect/OmittedPrimeCost.lean:55:34: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/OmittedPrimeCost.lean:113:34: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/OmittedPrimeCost.lean:113:34: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3873/4017] Replayed DepthAspect.CoefficientPrimeAverages
+warning: DepthAspect/CoefficientPrimeAverages.lean:112:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3874/4017] Replayed DepthAspect.SmoothedPowerSum
+warning: DepthAspect/SmoothedPowerSum.lean:115:55: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/SmoothedPowerSum.lean:117:17: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/SmoothedPowerSum.lean:115:55: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3877/4017] Replayed DepthAspect.SquarefreeSigmaProduct
+warning: DepthAspect/SquarefreeSigmaProduct.lean:41:56: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/SquarefreeSigmaProduct.lean:41:56: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3881/4017] Replayed DepthAspect.LocalGeneratingFunctions
+warning: DepthAspect/LocalGeneratingFunctions.lean:72:72: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3882/4017] Replayed DepthAspect.OddAverageEuler
+warning: DepthAspect/OddAverageEuler.lean:120:5: Variable name `hp2` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3883/4017] Replayed DepthAspect.DyadicOddSeries
+warning: DepthAspect/DyadicOddSeries.lean:103:17: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DepthAspect/DyadicOddSeries.lean:120:2: 'change b = n / 2 ^ n.factorization 2' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3885/4017] Replayed DepthAspect.SmoothingKernel
+warning: DepthAspect/SmoothingKernel.lean:1:0: 'Mathlib.Data.Real.Archimedean' has been deprecated: please replace this import by
+
+import Mathlib.Algebra.Order.Archimedean.Real.Basic
+warning: DepthAspect/SmoothingKernel.lean:28:40: Variable name `hT` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3887/4017] Replayed DepthAspect.CoefficientTail
+warning: DepthAspect/CoefficientTail.lean:81:25: This simp argument is unused:
+  Prod.fst
+
+Hint: Omit it from the simp argument list.
+  simp only [tripleTerm, P̵r̵o̵d̵.̵f̵s̵t̵,̵ ̵Prod.snd]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/CoefficientTail.lean:81:35: This simp argument is unused:
+  Prod.snd
+
+Hint: Omit it from the simp argument list.
+  simp only [tripleTerm, Prod.fst,̵ ̵P̵r̵o̵d̵.̵s̵n̵d̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/CoefficientTail.lean:98:50: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/CoefficientTail.lean:98:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/CoefficientTail.lean:211:14: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/CoefficientTail.lean:214:12: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/CoefficientTail.lean:211:14: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/CoefficientTail.lean:214:12: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3902/4017] Replayed DepthAspect.PoleIntegral
+warning: DepthAspect/PoleIntegral.lean:31:44: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [Complex.inv_re, Complex.inv_im, Complex.normSq_apply, Complex.add_re, Complex.add_im,
+  ̲  ̲ ̲ ̲ ̲ ̲Complex.sub_re, Complex.sub_im, Complex.mul_re, Complex.mul_im, Complex.ofReal_re,
+  ̲  ̲ ̲ ̲ ̲ ̲Complex.ofReal_im, Complex.I_re, Complex.I_im, mul_zero, z̵e̵r̵o̵_̵m̵u̵l̵,̵ ̵mul_one, one_mul, add_zero, zero_add,
+  ̲  ̲ ̲ ̲ ̲ ̲sub_zero, zero_sub, pow_two, div_eq_mul_inv]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/PoleIntegral.lean:31:63: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [Complex.inv_re, Complex.inv_im, Complex.normSq_apply,
+  ̵  ̵ ̵ ̵ ̵ ̵Complex.add_re, Complex.add_im,
+  ̲  ̲ ̲ ̲ ̲ ̲Complex.sub_re, Complex.sub_im,
+  ̵  ̵ ̵ ̵ ̵ ̵Complex.mul_re, Complex.mul_im, Complex.ofReal_re,
+  ̲  ̲ ̲ ̲ ̲ ̲Complex.ofReal_im,
+  ̵  ̵ ̵ ̵ ̵ ̵Complex.I_re, Complex.I_im, mul_zero, zero_mul, mul_one, o̵n̵e̵_̵m̵u̵l̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵add_zero,
+  ̲  ̲ ̲ ̲ ̲ ̲zero_add, sub_zero, zero_sub, pow_two, div_eq_mul_inv]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/PoleIntegral.lean:32:71: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/PoleIntegral.lean:47:35: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/PoleIntegral.lean:47:35: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3908/4017] Replayed DepthAspect.DyadicRamanujan
+warning: DepthAspect/DyadicRamanujan.lean:87:6: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/DyadicRamanujan.lean:112:4: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3910/4017] Replayed DepthAspect.OddEulerAtOne
+warning: DepthAspect/OddEulerAtOne.lean:105:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3914/4017] Replayed DepthAspect.EulerFactor
+warning: DepthAspect/EulerFactor.lean:35:18: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  simp [rootTerm, n̵o̵r̵m̵_̵m̵u̵l̵,̵ ̵hα, Complex.norm_exp, Complex.mul_re]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/EulerFactor.lean:72:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: DepthAspect/EulerFactor.lean:152:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [3928/4089] Replayed DepthAspect.GammaVertical
+warning: DepthAspect/GammaVertical.lean:80:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3929/4089] Replayed DepthAspect.MellinSmoothing
+warning: DepthAspect/MellinSmoothing.lean:149:32: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3931/4089] Replayed DepthAspect.GammaStrip
+warning: DepthAspect/GammaStrip.lean:141:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/GammaStrip.lean:205:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3932/4089] Replayed DepthAspect.MellinContour
+warning: DepthAspect/MellinContour.lean:48:22: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/MellinContour.lean:48:22: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MellinContour.lean:89:5: Variable name `hC` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DepthAspect/MellinContour.lean:139:37: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3936/4089] Replayed DepthAspect.PrimeAverageSmoothing
+warning: DepthAspect/PrimeAverageSmoothing.lean:77:40: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/PrimeAverageSmoothing.lean:142:43: Variable name `G` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3943/4089] Replayed DepthAspect.SignedPrimeClassWeights
+warning: DepthAspect/SignedPrimeClassWeights.lean:73:22: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/SignedPrimeClassWeights.lean:73:22: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/SignedPrimeClassWeights.lean:97:70: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3945/4089] Replayed DepthAspect.EvenPrimeAverage
+warning: DepthAspect/EvenPrimeAverage.lean:30:13: This simp argument is unused:
+  Int.cast_neg
+
+Hint: Omit it from the simp argument list.
+  simp only [̵I̵n̵t̵.̵c̵a̵s̵t̵_̵n̵e̵g̵,̵ ̵I̵n̵t̵.̵c̵a̵s̵t̵_̵n̵a̵t̵C̵a̵s̵t̵]̵[̲I̲n̲t̲.̲c̲a̲s̲t̲_̲n̲a̲t̲C̲a̲s̲t̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3946/4089] Replayed DepthAspect.TraceTrigonometry
+warning: DepthAspect/TraceTrigonometry.lean:129:13: This simp argument is unused:
+  div_div
+
+Hint: Omit it from the simp argument list.
+  simp only [div_d̵i̵v̵,̵ ̵d̵i̵v̵_̵eq_mul_inv, mul_inv, inv_inv]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3947/4089] Replayed DepthAspect.SignedBlockAssembly
+warning: DepthAspect/SignedBlockAssembly.lean:51:5: Variable name `hH` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DepthAspect/SignedBlockAssembly.lean:51:18: Variable name `hB` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3951/4089] Replayed DepthAspect.TraceWeightVariation
+warning: DepthAspect/TraceWeightVariation.lean:148:34: Variable name `hH₁` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3957/4089] Replayed DepthAspect.SignedIndexOne
+warning: DepthAspect/SignedIndexOne.lean:113:13: This simp argument is unused:
+  hbound
+
+Hint: Omit it from the simp argument list.
+  simp only [h̵b̵o̵u̵n̵d̵,̵ ̵true_and, dvd_zero, zero_div, Int.natAbs_zero,
+  ̵  ̵ ̵ ̵zero_pow (by decide : 2 ≠ 0),
+  ̲  ̲ ̲ ̲Nat.gcd_zero_left, hquot]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/SignedIndexOne.lean:113:41: This simp argument is unused:
+  zero_div
+
+Hint: Omit it from the simp argument list.
+  simp only [hbound, true_and, dvd_zero, z̵e̵r̵o̵_̵d̵i̵v̵,̵ ̵Int.natAbs_zero,
+  ̵  ̵ ̵ ̵zero_pow (by decide : 2 ≠ 0),
+  ̲  ̲ ̲ ̲Nat.gcd_zero_left, hquot]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/SignedIndexOne.lean:113:51: This simp argument is unused:
+  Int.natAbs_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [hbound, true_and, dvd_zero, zero_div, I̵n̵t̵.̵n̵a̵t̵A̵b̵s̵_̵z̵e̵r̵o̵,̵zero_pow (by decide : 2 ≠ 0), Nat.gcd_zero_left,
+  ̲  ̲ ̲ ̲hquot]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/SignedIndexOne.lean:114:34: This simp argument is unused:
+  Nat.gcd_zero_left
+
+Hint: Omit it from the simp argument list.
+  simp only [hbound, true_and, dvd_zero, zero_div, Int.natAbs_zero, zero_pow (by decide : 2 ≠ 0),
+  ̲  ̲ ̲ ̲N̵a̵t̵.̵g̵c̵d̵_̵z̵e̵r̵o̵_̵l̵e̵f̵t̵,̵ ̵hquot]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3964/4089] Replayed DepthAspect.SignedPrimeAuxiliary
+warning: DepthAspect/SignedPrimeAuxiliary.lean:90:53: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/SignedPrimeAuxiliary.lean:90:67: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3967/4089] Replayed DepthAspect.SignedPrimeNormalization
+warning: DepthAspect/SignedPrimeNormalization.lean:47:49: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/SignedPrimeNormalization.lean:47:49: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3968/4089] Replayed DepthAspect.PrimePowerSupport
+warning: DepthAspect/PrimePowerSupport.lean:1:0: 'Mathlib.Data.Real.Archimedean' has been deprecated: please replace this import by
+
+import Mathlib.Algebra.Order.Archimedean.Real.Basic
+⚠ [3969/4089] Replayed DepthAspect.ExplicitFormulaModel
+warning: DepthAspect/ExplicitFormulaModel.lean:28:13: Variable name `hs` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3979/4089] Replayed DepthAspect.PopaTrace
+warning: DepthAspect/PopaTrace.lean:274:47: This simp argument is unused:
+  neg_add_rev
+
+Hint: Omit it from the simp argument list.
+  simp only [div_eq_mul_inv, mul_inv, neg_mul,̵ ̵n̵e̵g̵_̵a̵d̵d̵_̵r̵e̵v̵] at hsC ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3981/4089] Replayed DepthAspect.MartinDimension
+warning: DepthAspect/MartinDimension.lean:91:29: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/MartinDimension.lean:98:23: This simp argument is unused:
+  show 2 * a + 1 ≠ 0 by omega
+
+Hint: Omit it from the simp argument list.
+  simp [infinityLocal, s̵h̵o̵w̵ ̵2̵ ̵*̵ ̵a̵ ̵+̵ ̵1̵ ̵≠̵ ̵0̵ ̵b̵y̵ ̵o̵m̵e̵g̵a̵,̵ ̵hodd]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/MartinDimension.lean:187:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/MartinDimension.lean:187:34: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/MartinDimension.lean:248:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/MartinDimension.lean:248:63: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3990/4089] Replayed DepthAspect.SignedIndexOneTrace
+warning: DepthAspect/SignedIndexOneTrace.lean:40:18: This simp argument is unused:
+  Complex.ofReal_ofNat
+
+Hint: Omit it from the simp argument list.
+  simp only [Nat.divisors_one, Finset.sum_singleton, Nat.cast_one, mul_one, Nat.cast_add, C̵o̵m̵p̵l̵e̵x̵.̵o̵f̵R̵e̵a̵l̵_̵o̵f̵N̵a̵t̵,̵ ̵neg_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3991/4089] Replayed DepthAspect.SignedClassNumbers
+warning: DepthAspect/SignedClassNumbers.lean:28:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/SignedClassNumbers.lean:40:93: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/SignedClassNumbers.lean:40:93: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3994/4089] Replayed DepthAspect.SignedPrimeFormula
+warning: DepthAspect/SignedPrimeFormula.lean:94:50: This simp argument is unused:
+  pow_one
+
+Hint: Omit it from the simp argument list.
+  simp only [pow_add, pow_o̵n̵e̵,̵ ̵p̵o̵w̵_̵succ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/SignedPrimeFormula.lean:87:46: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/SignedPrimeFormula.lean:122:99: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/SignedPrimeFormula.lean:123:15: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/SignedPrimeFormula.lean:151:83: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/SignedPrimeFormula.lean:211:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/SignedPrimeFormula.lean:211:37: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/SignedPrimeFormula.lean:211:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3995/4089] Replayed DepthAspect.SignedTraceIndices
+warning: DepthAspect/SignedTraceIndices.lean:75:27: This simp argument is unused:
+  Nat.cast_ofNat
+
+Hint: Omit it from the simp argument list.
+  simp only [Nat.cast_one,̵ ̵N̵a̵t̵.̵c̵a̵s̵t̵_̵o̵f̵N̵a̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/SignedTraceIndices.lean:94:13: This simp argument is unused:
+  Nat.cast_one
+
+Hint: Omit it from the simp argument list.
+  simp only [Nat.cast_on̵e̵,̵ ̵N̵a̵t̵.̵c̵a̵s̵t̵_̵o̵fNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3996/4089] Replayed DepthAspect.EvenTraceError
+warning: DepthAspect/EvenTraceError.lean:145:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/EvenTraceError.lean:172:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3999/4089] Replayed DepthAspect.ExplicitFormula
+warning: DepthAspect/ExplicitFormula.lean:96:8: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/ExplicitFormula.lean:96:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/ExplicitFormula.lean:175:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [4004/4089] Replayed DepthAspect.FourierCosets
+warning: DepthAspect/FourierCosets.lean:16:0: automatically included section variable(s) unused in theorem `DepthAspect.FourierCosets.subgroupIndicator_translate`:
+  [NeZero q]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero q] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DepthAspect/FourierCosets.lean:61:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DepthAspect/FourierCosets.lean:58:16: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [4005/4089] Replayed DepthAspect.OddDepthResidueCoefficient
+warning: DepthAspect/OddDepthResidueCoefficient.lean:42:49: Variable name `hm` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DepthAspect/OddDepthResidueCoefficient.lean:60:73: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/OddDepthResidueCoefficient.lean:184:30: This simp argument is unused:
+  ZMod.unitsMap_val
+
+Hint: Omit it from the simp argument list.
+  simp only [map_intCast, ZMod.u̵n̵i̵t̵s̵M̵a̵p̵_̵v̵a̵l̵,̵ ̵Z̵M̵o̵d̵.̵castHom_apply] at hred
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/OddDepthResidueCoefficient.lean:186:46: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/OddDepthResidueCoefficient.lean:186:60: 'rfl' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/OddDepthResidueCoefficient.lean:186:46: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/OddDepthResidueCoefficient.lean:186:60: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [4007/4089] Replayed DepthAspect.OddDepthCoefficientAverages
+warning: DepthAspect/OddDepthCoefficientAverages.lean:23:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [4009/4089] Replayed DepthAspect.OddPrimeAverageSmoothing
+warning: DepthAspect/OddPrimeAverageSmoothing.lean:55:40: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/OddPrimeAverageSmoothing.lean:84:43: Variable name `G` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [4014/4089] Replayed DepthAspect.SignedPrimeLattice
+warning: DepthAspect/SignedPrimeLattice.lean:91:25: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/SignedPrimeLattice.lean:91:25: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [4015/4089] Replayed DepthAspect.SignedBalance
+info: DepthAspect/SignedBalance.lean:83:38: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: DepthAspect/SignedBalance.lean:83:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/SignedBalance.lean:83:34: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [4016/4089] Replayed DepthAspect.SignedPrimeTraceModel
+warning: DepthAspect/SignedPrimeTraceModel.lean:48:67: This simp argument is unused:
+  smul_smul
+
+Hint: Omit it from the simp argument list.
+  simp only [traceWeight, cosineTrace, traceAngle, traceAmplitude, s̵m̵u̵l̵_̵s̵m̵u̵l̵,̵
+  ̵ ̵ ̵ ̵ ̵traceAngle_main_argument hN hP0,
+  ̲  ̲ ̲ ̲inverse_sqrt_eq_sqrt_div hP0,
+  ̵  ̵ ̵ ̵Real.sqrt_mul hN.le, traceMainScale, Complex.real_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/SignedPrimeTraceModel.lean:52:33: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/SignedPrimeTraceModel.lean:52:33: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/SignedPrimeTraceModel.lean:101:21: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/SignedPrimeTraceModel.lean:101:21: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [4017/4089] Replayed DepthAspect.OddTraceError
+warning: DepthAspect/OddTraceError.lean:99:37: 'rfl' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/OddTraceError.lean:99:37: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/OddTraceError.lean:94:67: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/OddTraceError.lean:114:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/OddTraceError.lean:141:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [4025/4089] Replayed DepthAspect.SignedSmallBlock
+warning: DepthAspect/SignedSmallBlock.lean:15:50: Variable name `hA` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [4028/4089] Replayed DepthAspect.SignedHyperbolicDensity
+warning: DepthAspect/SignedHyperbolicDensity.lean:14:38: Variable name `S` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DepthAspect/SignedHyperbolicDensity.lean:32:42: Variable name `S` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DepthAspect/SignedHyperbolicDensity.lean:47:23: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/SignedHyperbolicDensity.lean:47:23: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [4032/4089] Replayed DepthAspect.UnsignedAnalyticReduction
+warning: DepthAspect/UnsignedAnalyticReduction.lean:73:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/UnsignedAnalyticReduction.lean:73:53: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [4033/4089] Replayed DepthAspect.UnsignedConstantBounds
+warning: DepthAspect/UnsignedConstantBounds.lean:56:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [4035/4089] Replayed DepthAspect.UnsignedDensityTheorem
+warning: DepthAspect/UnsignedDensityTheorem.lean:155:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/UnsignedDensityTheorem.lean:155:87: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [4036/4089] Replayed DepthAspect.ZeroSumConvergence
+warning: DepthAspect/ZeroSumConvergence.lean:1:0: 'Mathlib.Data.Real.Archimedean' has been deprecated: please replace this import by
+
+import Mathlib.Algebra.Order.Archimedean.Real.Basic
+warning: DepthAspect/ZeroSumConvergence.lean:56:14: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/ZeroSumConvergence.lean:56:14: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [4040/4089] Replayed DepthAspect.SignedUniformPrefix
+warning: DepthAspect/SignedUniformPrefix.lean:40:62: Variable name `hH` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [4042/4089] Replayed DepthAspect.SignedPrimeDensity
+warning: DepthAspect/SignedPrimeDensity.lean:23:39: Variable name `S` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: DepthAspect/SignedPrimeDensity.lean:107:58: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: DepthAspect/SignedPrimeDensity.lean:107:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/SignedPrimeDensity.lean:107:40: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/SignedPrimeDensity.lean:107:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [4044/4089] Replayed DepthAspect.SignedDensityRates
+warning: DepthAspect/SignedDensityRates.lean:181:77: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/SignedDensityRates.lean:184:48: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/SignedDensityRates.lean:181:77: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/SignedDensityRates.lean:184:48: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [4046/4089] Replayed DepthAspect.SignedDensityTheorem
+warning: DepthAspect/SignedDensityTheorem.lean:44:18: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [4048/4089] Replayed DepthAspect.HypotheticalTraceBounds
+warning: DepthAspect/HypotheticalTraceBounds.lean:69:37: 'rfl' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/HypotheticalTraceBounds.lean:69:37: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/HypotheticalTraceBounds.lean:84:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/HypotheticalTraceBounds.lean:114:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/HypotheticalTraceBounds.lean:175:37: 'rfl' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/HypotheticalTraceBounds.lean:175:37: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/HypotheticalTraceBounds.lean:170:67: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/HypotheticalTraceBounds.lean:190:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/HypotheticalTraceBounds.lean:220:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [4049/4089] Replayed DepthAspect.HypotheticalPrimeDensity
+info: DepthAspect/HypotheticalPrimeDensity.lean:188:58: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: DepthAspect/HypotheticalPrimeDensity.lean:188:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/HypotheticalPrimeDensity.lean:188:40: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/HypotheticalPrimeDensity.lean:188:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [4050/4089] Replayed DepthAspect.HypotheticalDensity
+warning: DepthAspect/HypotheticalDensity.lean:45:48: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/HypotheticalDensity.lean:45:48: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ℹ [4054/4089] Replayed DepthAspect.MurmurationBohrCoefficient
+info: DepthAspect/MurmurationBohrCoefficient.lean:56:26: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: DepthAspect/MurmurationBohrCoefficient.lean:118:6: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [4055/4089] Replayed DepthAspect.MurmurationLeading
+warning: DepthAspect/MurmurationLeading.lean:44:10: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationLeading.lean:44:10: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [4057/4089] Replayed DepthAspect.MurmurationExpansion
+warning: DepthAspect/MurmurationExpansion.lean:64:17: This simp argument is unused:
+  Real.norm_eq_abs
+
+Hint: Omit it from the simp argument list.
+  simp only [̵R̵e̵a̵l̵.̵n̵o̵r̵m̵_̵e̵q̵_̵a̵b̵s̵,̵ ̵a̵b̵s̵_̵m̵u̵l̵,̵[̲a̲b̲s̲_̲m̲u̲l̲,̲ abs_of_nonneg (c_nonneg ℓ d)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/MurmurationExpansion.lean:94:17: This simp argument is unused:
+  Real.norm_eq_abs
+
+Hint: Omit it from the simp argument list.
+  simp only [̵R̵e̵a̵l̵.̵n̵o̵r̵m̵_̵e̵q̵_̵a̵b̵s̵,̵ ̵a̵b̵s̵_̵m̵u̵l̵,̵[̲a̲b̲s̲_̲m̲u̲l̲,̲ abs_of_nonneg (c_nonneg ℓ d)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/MurmurationExpansion.lean:100:15: This simp argument is unused:
+  head
+
+Hint: Omit it from the simp argument list.
+  simp only [h̵e̵a̵d̵,̵ ̵Finset.sum_ite_mem, Finset.inter_self, ← Finset.mul_sum]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DepthAspect/MurmurationExpansion.lean:124:33: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationExpansion.lean:43:67: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/MurmurationExpansion.lean:68:59: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/MurmurationExpansion.lean:124:33: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [4058/4089] Replayed DepthAspect.MurmurationRecurrence
+warning: DepthAspect/MurmurationRecurrence.lean:20:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: DepthAspect/MurmurationRecurrence.lean:26:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [4059/4089] Replayed DepthAspect.MurmurationMeanExistence
+warning: DepthAspect/MurmurationMeanExistence.lean:20:10: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+⚠ [4063/4089] Replayed DepthAspect.MurmurationTheorem
+warning: DepthAspect/MurmurationTheorem.lean:40:94: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: DepthAspect/MurmurationTheorem.lean:40:94: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [4070/4089] Replayed DepthAspect.PrimeAverageEquation103
+warning: DepthAspect/PrimeAverageEquation103.lean:33:8: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DepthAspect/PrimeAverageEquation103.lean:33:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [4077/4089] Replayed DepthAspect.SectionSevenSymmetry
+warning: DepthAspect/SectionSevenSymmetry.lean:80:37: This simp argument is unused:
+  hneg
+
+Hint: Omit it from the simp argument list.
+  simp [selectedRepresentative, h,̵ ̵h̵n̵e̵g̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [4086/4089] Replayed DepthAspect.TraceZeta
+warning: DepthAspect/TraceZeta.lean:22:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [4087/4089] Replayed DepthAspect.UniformPointwiseTrace
+warning: DepthAspect/UniformPointwiseTrace.lean:95:28: Variable name `D` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DepthAspect/UniformPointwiseTrace.lean:98:32: Variable name `D` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [4088/4089] Built DepthAspect (66s)
+Build completed successfully (4089 jobs).

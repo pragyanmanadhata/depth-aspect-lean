@@ -1,0 +1,8 @@
+'DepthAspect.UnsignedDensity.unsigned_five_term' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DepthAspect.UnsignedDensity.unsigned_density_quantitative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DepthAspect.UnsignedDensity.unsigned_density_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DepthAspect.UnsignedDensity.unsigned_density_theorem_1_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DepthAspect.UnsignedDensity.zero_sum_absolutely_convergent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DepthAspect.UnsignedDensity.unsigned_density_convergent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DepthAspect.UnsignedDensity.unsigned_orthogonal_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DepthAspect.UnsignedDensity.unsigned_orthogonal_limit' depends on axioms: [propext, Classical.choice, Quot.sound]

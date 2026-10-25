@@ -1,0 +1,78 @@
+{
+  "recorded_at_utc": "2026-10-25T17:00:59.347087+00:00",
+  "scope": "Static validation of the newly added GitHub Actions workflow only; no Lean build or verifier execution.",
+  "workflow": {
+    "path": ".github/workflows/verify.yml",
+    "sha256": "7d27fb2a0083997f0a8e32fc38269a72d547e7f3d7187cecd8250720c88bec4b",
+    "comments_present": false,
+    "run_commands": [
+      "python3 scripts/verify.py --serial"
+    ],
+    "events": [
+      "push",
+      "pull_request",
+      "workflow_dispatch"
+    ],
+    "runner": "ubuntu-24.04",
+    "timeout_minutes": 360,
+    "permissions": {
+      "contents": "read"
+    },
+    "checkout_persist_credentials": false
+  },
+  "actionlint": {
+    "version_exit_code": 0,
+    "version_output": "1.7.12\ninstalled by downloading from release page\nbuilt with go1.26.1 compiler for darwin/arm64",
+    "version_stderr": "",
+    "binary_sha256": "8db11704dc296f096216db4db65d86cd7f0ebfdf4c38453a1da276b137b88388",
+    "archive_url": "https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_darwin_arm64.tar.gz",
+    "archive_sha256": "aba9ced2dee8d27fecca3dc7feb1a7f9a52caefa1eb46f3271ea66b6e0e6953f",
+    "checksum_file_url": "https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_checksums.txt",
+    "checksum_file_sha256": "433028cf0ba3c42163ea1a668dedce30fcdbe84fe912b1a5e288c006eab8a4f5",
+    "checksums_match_published_release_metadata": true,
+    "archive_matches_published_checksum_file": true,
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "scope": "GitHub Actions workflow/YAML syntax, expression typing, event/job/step validation, and supported built-in action checks.",
+    "shellcheck_enabled": false,
+    "pyflakes_enabled": false
+  },
+  "shell_static_check": {
+    "command": [
+      "/bin/bash",
+      "-n"
+    ],
+    "stdin": "python3 scripts/verify.py --serial\n",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "shellcheck_available": false
+  },
+  "project_pins": {
+    "lean_toolchain": "leanprover/lean4:v4.32.0",
+    "mathlib_revision": "81a5d257c8e410db227a6665ed08f64fea08e997",
+    "locked_git_dependencies": 9
+  },
+  "action_pins": {
+    "checkout": {
+      "commit": "11bd71901bbe5b1630ceea73d27597364c9af683",
+      "verified_tag": "v4.2.2"
+    },
+    "lean_action": "24581d74d674803a25a81b10b059c5c0cdd344c6"
+  },
+  "elan_bootstrap": {
+    "pinned": false,
+    "installer_url": "https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh",
+    "finding": "Pinned lean-action fetches the Elan installer from mutable master; the Elan bootstrap is not fully pinned. The project Lean toolchain and dependency commits remain pinned by existing files.",
+    "no_hermetic_build_claim": true
+  },
+  "limitations": [
+    "No Lean compiler, Lake build, or supplied verifier was executed.",
+    "No GitHub Actions workflow run was started; runner resources, network downloads, and end-to-end runtime remain untested.",
+    "ShellCheck is unavailable; actionlint external ShellCheck/Pyflakes integrations were disabled, while bash -n checked the sole run command.",
+    "No separate generic YAML library was installed; actionlint supplied the GitHub-aware YAML validation.",
+    "The Elan bootstrap is mutable despite pinned action commits.",
+    "No remote repository was created, nothing was pushed or published, and no external messages were sent."
+  ]
+}

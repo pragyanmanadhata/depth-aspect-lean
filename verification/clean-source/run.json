@@ -1,0 +1,43 @@
+{
+  "started_at_utc": "2026-10-25T16:59:22.358243+00:00",
+  "finished_at_utc": "2026-10-25T21:16:43.483860+00:00",
+  "command": "python3 scripts/verify.py --serial",
+  "environment": {
+    "LEAN_NUM_THREADS": "2",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "exit_code": 0,
+  "fresh_summary_exists": true,
+  "scope": "Clean-source execution of the supplied verifier; not a new mathematical correspondence review.",
+  "duration_seconds": 15441.125617,
+  "proof_modules_built": 322,
+  "module_build_logs_ended_successfully": 322,
+  "public_theorems_audited": 2376,
+  "full_build_passed": true,
+  "axiom_audit_passed": true,
+  "axioms_used": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_inventory_and_hashes_unchanged_during_run": true,
+  "source_hashes_matching_publication_repository_and_original_certificate": 335,
+  "pinned_pristine_git_dependencies_checked_before_and_after": 9,
+  "module_and_umbrella_inventory_checks_passed": true,
+  "supplied_disallowed_source_construct_scan_passed": true,
+  "fresh_official_dependency_cache_files_downloaded_and_extracted": 8639,
+  "optional_require_current_modules_mode_run": false,
+  "standalone_endpoint_audits_rerun": false,
+  "mathematical_correspondence_review": {
+    "new_review_performed": false,
+    "existing_review_unchanged": true,
+    "existing_recorded_at_utc": "2026-10-25T07:27:20.384564+00:00",
+    "existing_review_sha256": "09614b014f34794b3921ddc65ec11e12e76260dedac8ec24c521b6645c511f2c",
+    "interpretation": "The verifier matched the existing proof and correspondence hash bindings; its paper_correspondence_review_passed field does not signify a new or independent mathematical review."
+  },
+  "limitations": [
+    "Executed on macOS ARM using the already installed pinned Lean toolchain, not a fresh operating-system or toolchain installation.",
+    "No project build artifacts or local dependency symlink checkouts were present initially; public Git dependencies and official compiled caches were fetched normally.",
+    "No hosted GitHub Actions or Linux runtime execution was performed."
+  ]
+}

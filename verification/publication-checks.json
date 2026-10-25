@@ -1,0 +1,57 @@
+{
+  "recorded_at_utc": "2026-10-25T21:19:12.276199+00:00",
+  "scope": "Repository cleanup integrity and publication-file scan; not a mathematical review or Lean build.",
+  "protected_files_unchanged": true,
+  "original_verification_records_unchanged": true,
+  "integrated_certificate_source_hashes_matched": 335,
+  "completed_review_proof_hashes_matched": 322,
+  "completed_review_correspondence_hashes_matched": 4,
+  "local_markdown_links_checked": 53,
+  "broken_local_markdown_links": [],
+  "credential_pattern_findings": [],
+  "absolute_workstation_path_pattern_findings": [],
+  "gitignore_fixture_checks_passed": 31,
+  "preserved_personal_information": "Manuscript author affiliation and contact address retained as attribution.",
+  "historical_provenance": "The completed review retains a historical workspace path outside this package; it is documented as provenance, not a build input.",
+  "manuscript_pdf_sha256": "20b71677582cf2bf04965d91c82cfb05074e3d66bc49fe9be004229743f0cc71",
+  "mathematical_review_renewed": false,
+  "limitations": [
+    "Pattern scans are not a proof of absence of all secrets.",
+    "This record concerns cleanup, not a proof or paper-correspondence review.",
+    "The final clean-verifier outcome is recorded separately."
+  ],
+  "endpoint_record_bindings": {
+    "murmuration-endpoint-summary.json": {
+      "module_hashes_checked": 62,
+      "mismatches": [],
+      "audit_source_hash_matches": true
+    },
+    "unsigned-endpoint-summary.json": {
+      "module_hashes_checked": 3,
+      "mismatches": []
+    }
+  },
+  "external_documentation_link_check": {
+    "url": "https://arxiv.org/pdf/1706.02691",
+    "result": "Retrieved the cited PDF successfully."
+  },
+  "publication_files_scanned": 365,
+  "text_files_scanned": 364,
+  "lean_files_unchanged": 326,
+  "protected_files_checked": 337,
+  "original_verification_records_retained_unchanged": 9,
+  "json_files_parsed": 14,
+  "fresh_certificate_source_hashes_matched": 335,
+  "copied_clean_run_evidence_files_matched": 7,
+  "clean_verifier_result_record": "verification/clean-source/run.json",
+  "removed_historical_debugging_logs": 79,
+  "removed_python_bytecode_files": 3,
+  "github_actions_executed": false,
+  "project_license_selected": false,
+  "python_syntax_check": {
+    "grammar_version": "3.9",
+    "scripts_checked": 3,
+    "passed": true,
+    "scope": "Syntax parsing only; actual verifier execution used Python 3.14.6."
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "recorded_at_utc": "2026-10-25T16:55:50.866272+00:00",
+  "clean_copy_initially_had_lake_directory": false,
+  "clean_copy_initially_had_symlinks": false,
+  "project_build_artifacts_before_verifier": false,
+  "dependency_fetch": "lake exe cache get; then fresh MATHLIB_CACHE_DIR lake exe cache get!",
+  "packages": [
+    {
+      "name": "mathlib",
+      "revision": "81a5d257c8e410db227a6665ed08f64fea08e997",
+      "origin": "https://github.com/leanprover-community/mathlib4.git",
+      "symlink": false,
+      "git_object_alternates": false,
+      "tracked_modifications": false
+    },
+    {
+      "name": "plausible",
+      "revision": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+      "origin": "https://github.com/leanprover-community/plausible",
+      "symlink": false,
+      "git_object_alternates": false,
+      "tracked_modifications": false
+    },
+    {
+      "name": "LeanSearchClient",
+      "revision": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "origin": "https://github.com/leanprover-community/LeanSearchClient",
+      "symlink": false,
+      "git_object_alternates": false,
+      "tracked_modifications": false
+    },
+    {
+      "name": "importGraph",
+      "revision": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+      "origin": "https://github.com/leanprover-community/import-graph",
+      "symlink": false,
+      "git_object_alternates": false,
+      "tracked_modifications": false
+    },
+    {
+      "name": "proofwidgets",
+      "revision": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+      "origin": "https://github.com/leanprover-community/ProofWidgets4",
+      "symlink": false,
+      "git_object_alternates": false,
+      "tracked_modifications": false
+    },
+    {
+      "name": "aesop",
+      "revision": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+      "origin": "https://github.com/leanprover-community/aesop",
+      "symlink": false,
+      "git_object_alternates": false,
+      "tracked_modifications": false
+    },
+    {
+      "name": "Qq",
+      "revision": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+      "origin": "https://github.com/leanprover-community/quote4",
+      "symlink": false,
+      "git_object_alternates": false,
+      "tracked_modifications": false
+    },
+    {
+      "name": "batteries",
+      "revision": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+      "origin": "https://github.com/leanprover-community/batteries",
+      "symlink": false,
+      "git_object_alternates": false,
+      "tracked_modifications": false
+    },
+    {
+      "name": "Cli",
+      "revision": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+      "origin": "https://github.com/leanprover/lean4-cli",
+      "symlink": false,
+      "git_object_alternates": false,
+      "tracked_modifications": false
+    }
+  ],
+  "platform": "macOS-15.7.7-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "python_version": "3.14.6",
+  "installed_pinned_lean_toolchain_reused": true,
+  "lean_or_lake_environment_overrides": [],
+  "lean_search_path": [
+    ".lake/packages/Cli/.lake/build/lib/lean",
+    ".lake/packages/batteries/.lake/build/lib/lean",
+    ".lake/packages/Qq/.lake/build/lib/lean",
+    ".lake/packages/aesop/.lake/build/lib/lean",
+    ".lake/packages/proofwidgets/.lake/build/lib/lean",
+    ".lake/packages/importGraph/.lake/build/lib/lean",
+    ".lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    ".lake/packages/plausible/.lake/build/lib/lean",
+    ".lake/packages/mathlib/.lake/build/lib/lean",
+    ".lake/build/lib/lean",
+    "PINNED_LEAN_TOOLCHAIN/lib/lean"
+  ],
+  "upstream_file_symlinks": [
+    {
+      "package": "mathlib",
+      "path": "scripts/bench/size/run.py",
+      "target": "run",
+      "tracked_upstream": true,
+      "target_within_package": true
+    },
+    {
+      "package": "mathlib",
+      "path": "scripts/bench/build/fake-root/bin/lean.py",
+      "target": "lean",
+      "tracked_upstream": true,
+      "target_within_package": true
+    },
+    {
+      "package": "batteries",
+      "path": "docs/README.md",
+      "target": "../README.md",
+      "tracked_upstream": true,
+      "target_within_package": true
+    }
+  ],
+  "toolchain_directory_is_symlink": false,
+  "lean_binary_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554"
+}

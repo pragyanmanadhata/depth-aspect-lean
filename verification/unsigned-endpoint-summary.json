@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-10-24T03:50:47.006122+00:00",
+  "scope": "targeted unsigned endpoints only; not a new integrated project certificate",
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "theorem_count": 8,
+  "audit_source": "CheckUnsignedAxioms.lean",
+  "audit_log": "verification/unsigned-endpoint-axioms.txt",
+  "direct_module_sha256": {
+    "UnsignedDensityTheorem": "accfbd218917a3bc07a9a0ab40ac97e5c88dfb8d1204e14cba47a4c99e9e0604",
+    "UnsignedZeroConvergence": "080a2eebf2384e3ab0caf63f6a65f3b294ebf75bf618895038f3e4440eb35e8b",
+    "UnsignedOrthogonalTheorem": "c6c1d6870dab02ffc7f7d29a82035e2cf967140c042c241ed9208a6fa83910c4"
+  }
+}

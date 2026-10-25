@@ -1,0 +1,1757 @@
+ LOW-LYING ZEROS OF NEWFORMS IN THE DEPTH ASPECT AT THE
+              PRIME 2, SPLIT BY ROOT NUMBER
+
+                                          PRAGYAN MANADHATA
+
+
+       Abstract. We set an even weight k ≥ 2 and study newforms at increasingly large levels N = 2n
+       for both even and odd exponents n. Without assumption of any Riemann Hypothesis, we show
+       that the natural one-level density of the full newspace agrees with orthogonal symmetry for
+       even Schwartz tests with compact Fourier support in (−3/2, 3/2), with error Ok,ϕ (log(k2 N )−1 ).
+       The proof of this result requires the use of the fact that all elliptic terms within the newspace
+       trace cancel completely, except for when (N/4) | t2 − 4m. Under the Generalized Riemann
+       Hypothesis for primitive Dirichlet L-functions, the root number families +1 and −1 have
+       SO(even) and SO(odd) densities, respectively, for support in (−4/3, 4/3), along with the same
+       error Ok,ϕ (log(k2 N )−1 ). Additionally, we determine the logarithmic mean, 1/2, of the associated
+       murmuration density as well as its oscillations of order y 1/4 .
+
+
+
+
+                                            1. Introduction
+  The predicted densities SO(even) and SO(odd) agree on Fourier support in the interval [−1, 1].
+To distinguish the two root-number subfamilies, we therefore need support beyond 1 and estimates
+uniform in growing Hecke indices.
+
+1.1. Results. We fix an even integer k ≥ 2, set N = 2n and L = log(k 2 N ), and let Hknew (N ) be
+a Hecke eigenbasis of Sknew (N ) with trivial nebentypus. We write dN = |Hknew (N )| and εf = ik wf ,
+where wf is the Fricke eigenvalue. For an even Schwartz function ϕ with compactly supported
+Fourier transform, we define
+                                        ∑︂ (︃ γf L )︃
+                             D(f ; ϕ) =     ϕ         ,    ρf = 21 + iγf ,
+                                         ρ
+                                                2π
+                                             f
+
+
+where each nontrivial zero of L(s, f ) is counted with its multiplicity, and we let
+                              1 ∑︂                           1 ∑︂
+                  UN (ϕ) =            D(f ; ϕ),    SN (ϕ) =          εf D(f ; ϕ).
+                             dN                             dN
+                                      f                                    f
+                                          ±
+Here f runs over Hknew (N ), and we let DN  (ϕ) denote the average over the forms with εf = ±1.
+Each newform receives equal weight. Because we do not assume modular GRH, γf may be
+complex, so we evaluate ϕ using its entire extension (Lemma 4.5). Nonnegativity of ϕ on R
+therefore need not make the terms in D(f ; ϕ) nonnegative. These density identities alone do not
+justify using nonnegative zero sums to bound orders of vanishing at the central point or to show
+that a positive proportion of the central values are nonzero.
+Theorem 1.1. Let k ≥ 2 be an even integer and let ϕ be an even Schwartz function with supp ϕˆ︁
+compactly contained in (−3/2, 3/2). Then, unconditionally, for N = 2n with n ≥ 8, through even
+and odd n,
+                                                ∫︂
+                            ϕ(0)
+                                 + Ok,ϕ L−1 =       ϕ(x)W (O)(x) dx + Ok,ϕ L−1 .
+                                        (︁  )︁                             (︁   )︁
+            UN (ϕ) = ˆ︁
+                     ϕ(0) +
+                              2                   R
+                                                       1
+2                                    PRAGYAN MANADHATA
+
+Theorem 1.2. Assume the Riemann hypothesis for every primitive Dirichlet L-function, including
+ζ. Let k ≥ 2 be an even integer and let ϕ be an even Schwartz function with supp ϕˆ︁ compactly
+contained in (−4/3, 4/3). Then, for N = 2n with n ≥ 7,
+                                        ∫︂
+                                      1
+                                              ϕ(ξ) dξ + Ok,ϕ L−1 .
+                                                            (︁  )︁
+                           SN (ϕ) = −         ˆ︁
+                                      2 |ξ|>1
+No hypothesis is made on the zeros of any modular L-function.
+Corollary 1.3. Under the Riemann hypothesis for primitive Dirichlet L-functions alone, for
+even Schwartz ϕ with supp ϕˆ︁ compactly contained in (−4/3, 4/3) and n ≥ 8,
+                         ∫︂                                  ∫︂
+                 +                                   −
+               DN (ϕ) →       ϕ W (SO(even)),      DN (ϕ) →     ϕ W (SO(odd)),
+                                R                             R
+each with rate Ok,ϕ   (L−1 ).
+1.2. Prior work and proof strategy. For restricted Fourier support and without assumption
+of any Riemann Hypothesis, Shin–Templier [ST16, Examples 9.10 and 9.14, Theorem 11.5] found
+natural one-level densities in the weight aspect at level one. Under the Generalized Riemann
+Hypothesis for modular, symmetric-square, and Dirichlet L-functions, Barrett et al. [BBD+ 17,
+Theorem 1.3] obtain natural newform averages with support (−2, 2) at arbitrary levels. However,
+their result concerns the combined family, and does not split the family by root number at
+general level [BBD+ 17, Remark 1.4].
+   For a fixed odd prime, Burrin et al. [BKL+ 26, Theorem 1.1] prove an unconditional mur-
+muration theorem at odd conductor exponents. Tomczak [Tom26, Theorem 1.1(i)] treats even
+exponents under the Generalized Riemann Hypothesis for all Dirichlet L-functions. Both papers
+average over a fixed range of prime-to-conductor ratios. Under the Generalized Riemann Hypoth-
+esis, Kroesche [Kro23, Theorem 1.2.7] obtains support beyond 1 for selected families with a fixed
+root number. Here, every newform at level 2n receives equal weight, instead of using Petersson
+weights like Kroesche.
+   In order to remove the oldform contributions for the unsigned average, we apply a second
+difference to Popa’s trace formula [Pop18, Theorem 3]. Stabilization of the local projective-root
+counts forces (N/4) | t2 − 4m. Counting the pairs of primes and trace indices that satisfy
+this restriction then gives support below 3/2. For the signed trace, Dirichlet GRH gives a
+uniform B 3/4+ϵ error in prime averaging. This estimate works over the growing trace-index range
+and gives support below 4/3. The main term of the signed one-level density comes from the
+logarithmic mean of the murmuration density (Section 6). Support beyond 3/2 is known for
+harmonic prime-level averages, as per Devin et al. [DFS25, Theorem 1.1].
+1.3. Notation. Throughout, P denotes an odd prime. The Hecke eigenvalues are Deligne-
+normalized. This is done so that |λf (p)| ≤ 2 for p ∤ N , and λf (2) = 0 since 4 | N . Tm , the
+classical Hecke operator, acts with eigenvalue m(k−1)/2 λf (m).                      (︂       )︂
+                                                                                       d
+   For a negative discriminant D = dℓ2 with fundamental part d we write: ψD (m) = m/(m,ℓ)
+for the Kronecker symbol, L(s, ψD ) = m≥1 ψD (m)m−s , and H(D) for the Hurwitz class number
+                                      ∑︁
+
+of |D|, so that H(D) = π −1 L(1, ψD ) |D| for D < 0. We set H(0) = −1/12 and H = 0 at
+                                      √︁
+
+inadmissible arguments,  and h0 signifies the weighted primitive class number.
+           ˆ︁ = ϕ(x)e−2πixξ dx. The Katz–Sarnak densities are
+                  ∫︁
+   We use ϕ(ξ)      R
+                                              sin 2πx                            sin 2πx
+W (O)(x) = 1+ 12 δ0 (x), W (SO(even))(x) = 1+          ,   W (SO(odd))(x) = 1−           +δ0 (x),
+                                                2πx                                2πx
+       ∫︁                 ∫︁                 ∫︁
+so that ϕ W (SO(odd)) − ϕ W (SO(even)) = |ξ|>1 ˆ︁   ϕ.
+                     LOW-LYING ZEROS IN THE DEPTH ASPECT AT THE PRIME 2                               3
+
+   Constants only depend on their subscripts, with Cabs absolute. Dependence on a test function
+includes its support and finitely many Schwartz seminorms. Unless otherwise indicated, the
+implied constants remain independent of the depth, Hecke index, and endpoints. However, they
+do not necessarily remain uniform as the support approaches a theorem’s limiting value.
+
+                                          2. The trace identities
+  Once again, let k ≥ 2 be even, N = 2n , and m ≥ 1 odd. We write
+                Fr (m) = tr Tm , Sk (Γ0 (2r )) , Frnew (m) = tr Tm , Sknew (2r ) ,
+                           (︁                 )︁               (︁               )︁
+
+and dN = dim Sknew (N ).
+
+2.1. The full-space formula. We use Popa’s trace formula for trivial character and even weight
+[Pop18, Theorem∏︁ 3 and (2.18)].
+   Let ψ(Q) = Q p|Q (1 + p−1 ), with ψ(1) = 1, and let pk−2 (t, m) be the coefficient of z k−2 in
+the generating function
+                                       1         ∑︂
+                                               =    pj (t, m)z j .                            (1)
+                                 1 − tz + mz 2
+                                                         j≥0
+
+For a ≥ 0, write H+ (a) = H(−a). For v | Q with v 2 | t2 − 4m, define
+                             ψ(Q)
+             BQ (v, t, m) =        #{α ∈ (Z/QZ)× : α2 − tα + m ≡ 0           (mod Qv)},
+                            ψ(Q/v)
+                            ∑︂
+             CQ (v, t, m) =    µ(a)BQ (v/a, t, m),
+                              a|v
+                                ∑︂
+                ΦQ (a, d) =               φ((r, s)),                                                (2)
+                                rs=Q
+                              (r,s)|a−d
+                               ∑︂ m
+                σ1,Q (m) =          .
+                                  d
+                                d|m
+                              (d,Q)=1
+
+Our initial divisibility conditions cause the first set to be well defined modulo Q [Pop18, footnote 4].
+Theorem 2.1 ([Pop18], Theorem 3, specialized). For every integer Q ≥ 1, every even k ≥ 2
+and every positive Hecke index m, with classically normalized Hecke operators,
+                                                                 4m − t2
+                                                              (︃         )︃
+                                  1 ∑︂                ∑︂
+         tr(Tm , Sk (Γ0 (Q))) = −       pk−2 (t, m)        H+               CQ (v, t, m)
+                                  2 2                              v2
+                                           t ≤4m                v|Q
+                                                           v 2 |t2 −4m                              (3)
+                                      1 ∑︂
+                                    −      min(a, d)k−1 ΦQ (a, d) + 1k=2 σ1,Q (m).
+                                      2
+                                           ad=m
+
+  For (m, Q) = 1, the terms with t2 = 4m give the scalar contribution
+                                                   k−1
+                                    IQ (m) =           ψ(Q)mk/2−1 1m=□                              (4)
+                                                    12
+by [Pop18, Remark 3.8].
+   Let h(D) count primitive positive definite classes of discriminant D < 0, w(D) be their count
+for automorphisms, and set h0 (D) = 2h(D)/w(D). Then [Pop18, (2.11)] and the following lemma
+4                                                 PRAGYAN MANADHATA
+
+give
+                        ∑︂
+         H(D) =                h0 (D/u2 ),        0 ≤ h0 (D) ≤ H(D) ≤ Cδcl |D|1/2+δ       (D < 0, δ > 0).     (5)
+                       u2 |D
+
+Lemma 2.2 (A uniform class-number bound). For every δ > 0 there exists a constant Cδcl > 0
+depending only on δ such that every negative discriminant D satisfies
+                                  |L(1, ψD )| ≤ Cδcl |D|δ ,      H(D) ≤ Cδcl |D|1/2+δ .                       (6)
+Proof. Write D = df 2 with fundamental discriminant d < 0. For pe ∥f , the definition gives
+ψD (pb ) = χd (p)max(b−e,0) . First for Re s > 1 and then by continuation, summing the geometric
+series at each prime yields
+                                                  ⎛                         ⎞
+                                              ∏︂                     e
+                                                                    ∑︂
+                       L(s, ψD ) = L(s, χd )      ⎝1 + (1 − χd (p))    p−js ⎠ .              (7)
+                                                       pe ∥f                   j=1
+
+The nonprincipal character χd has partial sums which are bounded by |d|. As a result, we can
+split at |d| and apply partial summation to get
+
+                                                  |L(1, χd )| ≤ 2 + log |d|.                                  (8)
+                                             ∏︁
+Let Tδ = max(3, 4/δ) and Aδ = p<Tδ (1 + 2/(p − 1)). If p ≥ Tδ , then log(1 + 2/(p − 1)) ≤
+4/p ≤ δ log p. Consequently, the finite factor in (7) at s = 1 must be at most Aδ f δ . Because
+f ≤ |D|1/2 and 2 + log√︁  |d| ≤ (2 + 2/(eδ))|D|δ/2 , the first bound holds, with Cδcl = Aδ (2 + 2/(eδ)).
+The identity H(D) = |D|L(1, ψD )/π [BKL+ 26, (2.4)] gives the second bound with the same
+constant, and it is valid also for imprimitive D < 0.                                                □
+                                                       ∑︁
+   We can substitute (5) into (3) and then use v|a CQ (v, t, m) = BQ (a, t, m) to express the
+strict elliptic part in terms of primitive class numbers [Pop18, (2.16)]:
+                                                            (︃ 2     )︃
+                             1 ∑︂                ∑︂           t − 4m
+                EQ (m) = −          pk−2 (t, m)          h0             BQ ((Q, u), t, m).          (9)
+                             2 2                2 2
+                                                                 u2
+                                     t <4m                u |t −4m
+
+
+2.2. The oldform decomposition and the newspace trace. The oldspace decomposition
+[BBD+ 17, §2.1, (2.3)–(2.4)] for positive level, even weight, and trivial nebentypus is
+                            ⨁︂        ⨁︂
+            Sk (Γ0 (Q)) =                    span{f|ℓ : ℓ | L},    f|ℓ (z) = ℓk/2 f (ℓz). (10)
+                                    LM =Q f ∈Hknew (M )
+
+The forms f|ℓ in every block are linearly independent and satisfy Tm (f|ℓ ) = (Tm f )|ℓ by [BBD+ 17,
+(2.5)] for (m, Q) = 1.
+Lemma 2.3 (The second-difference formula). Let k ≥ 2 and m be even and odd, respectively.
+Then
+                n
+               ∑︂
+    Fn (m) =         (n − a + 1)Fanew (m),          Fnnew (m) = Fn (m) − 2Fn−1 (m) + Fn−2 (m)       (n ≥ 2). (11)
+               a=0
+
+Proof. By taking traces in (10), each level-2a block contributes its eigenvalue exactly n − a + 1
+times. The second identity is achieved by two differences.                                     □
+                    LOW-LYING ZEROS IN THE DEPTH ASPECT AT THE PRIME 2                            5
+
+2.3. The newspace formula. Write D = t2 − 4m and for r ≥ 2, set
+                      r
+                              4m − t2
+                     ∑︂    (︃         )︃
+         Ξr (t, m) =    H+               C2r (2j , t, m), Kn = Ξn − 2Ξn−1 + Ξn−2 ,             (12)
+                                4j
+                        j=0
+
+                     Gn (a, d) = Φ2n (a, d) − 2Φ2n−1 (a, d) + Φ2n−2 (a, d).                    (13)
+  By the class-number convention, contributions only come from j with 4j | D.
+Proposition 2.4 (Untwisted newspace trace formula). For even k ≥ 2, odd m ≥ 1, and n ≥ 8,
+with N = 2n ,
+                 (k − 1)N k/2−1 1 ∑︂                            1 ∑︂
+Fnnew (m) = 1m=□         m     −         pk−2 (t, m)Kn (t, m) −      min(a, d)k−1 Gn (a, d).
+                    32           2 2                            2
+                                              t <4m                                 ad=m
+                                                                                               (14)
+Proof. Apply (11) to (3). The elliptic and cusp terms give Kn and Gn . The weight-two term
+cancels because σ1,2r (m) = σ1 (m) at all three levels. From (4) and ψ(2r ) = 3 · 2r−1 , we get the
+scalar coefficient.                                                                              □
+  To normalize the trace, set
+                                          1       ∑︂                      Fnnew (m)
+                              VN (m) =                        λf (m) =               .
+                                         dN                              dN m(k−1)/2
+                                              f ∈Hknew (N )
+
+Let EN (m) and CN (m) be the elliptic and cusp terms normalized by dN m(k−1)/2 . For n ≥ 8,
+lemma 2.5 gives
+                                                   {︄
+  (k − 1)N        (k − 1)N              (k − 1)N     1,                       n odd,
+           ≤ dN ≤          ,     cN :=           = (︁               √ )︁−1             (15)
+     64              32                   32dN        1 − 4/((k − 1) N ) , n even,
+                                      8
+                        |cN − 1| ≤       N −1/2 ,               1 ≤ cN ≤ 2     (n ≥ 8).
+                                     k−1
+Hence, for all odd m,
+                              VN (m) = cN m−1/2 1m=□ + EN (m) + CN (m).                        (16)
+Lemma 2.5 (Dimension at a power of two). For even k ≥ 2,
+                   dim Sknew (2a ) = (k − 1)2a−5                           (a odd, a ≥ 5),
+                  dim Sknew (2n ) = (k − 1)2n−5 − 2n/2−3  (n even, n ≥ 4).
+In particular dN ≥ (k − 1)N/64 for n ≥ 8, and ⃓(k − 1)N/(32dN ) − 1⃓ ≤ 8(k − 1)−1 N −1/2 .
+                                                ⃓                  ⃓
+
+Proof. For n ≥ 4, Martin’s formula [Mar05, Theorem 1 and Definition 1′ ] has vanishing elliptic
+and µ(N ) terms and local factors
+                                                    {︄
+                                    3                 0,         n odd,
+                         s#   n
+                          0 (2 ) = ,
+                                           # n
+                                          ν∞ (2 ) =     n/2−2
+                                                                                             (17)
+                                    8                 2       , n even.
+                                                                                           √
+Substituting into dN = (k −1)N s#            #
+                                 0 (N )/12− ν∞ (N )/2 gives the identities, while 4/((k −1) N ) ≤
+1/4 for n ≥ 8 gives the bounds.                                                                 □
+
+             3. Local cancellation and a uniform unsigned trace bound
+  Throughout, m ≥ 1 is odd and N = 2n with n ≥ 8. The level in (9) only occurs in BQ , and
+we determine when its second difference vanishes.
+6                                       PRAGYAN MANADHATA
+
+The local fixed-line count. Let
+      (︃     )︃
+        a b
+ M=             ,   det M = m odd,          tr M = t,      QM (x, y) = cx2 + (d − a)xy − by 2 , (18)
+         c d
+let u > 0 be the content of QM , and let D = t2 − 4m <       (︁ 0hbe its discriminant.
+                                                                           )︁          Popa’s (2.17),
+Lemma 4.1, and the proof of that lemma interpret B2h (2 , u), t, m as the number ϱh (M ) of
+projective roots of QM modulo 2h .
+   Cosets of Γ0 (2h ) actually correspond to primitive bottom rows up to a unit and (XM X −1 )21 =
+QM (dX , −cX ). If (XM X −1 )21 vanishes modulo 2h , both diagonal entries of XM X −1 are units
+because det M is odd.
+   All of the primitive forms [A, B, C] of discriminant D/u2 in (9) have the representative
+                                        (︃                         )︃
+                                          (t − uB)/2      −uC
+                                  M=                                  .                          (19)
+                                              uA       (t + uB)/2
+Its entries must be integers because of the congruence t2 ≡ u2 B 2 (mod 4). Also, its determinant
+is m, trace is t, and associated form is u[A, B, C].
+   Set e = v2 (u). Let the number of projective roots of the form QM /u modulo 2j be denoted by
+Rj . With y being even, the charts (x, 1) and (1, y) give us
+                                           {︄
+                                             3 · 2h−1 , 1 ≤ h ≤ e,
+                                 ϱh (M ) =                                                   (20)
+                                             2e Rh−e , h > e.
+When e < h, reducing by 2e has 2e lifts for every point, and odd content does not impact the
+roots.
+   We write Ax2 + Bxy + Cy 2 for the primitive form. We have two cases. If B is odd, then the
+derivative in either chart must be odd, which means that every root has precisely one lift per
+step and hence Rj = R1 ≤ 3 for j ≥ 1.
+   However, if B is even then at least one of A and C must be odd. We can assume A is odd
+after interchanging coordinates. Then, we have no roots with y even, so completing the square
+gives us
+                                                                      B 2 − 4AC
+                A(Ax2 + Bx + C) = (Ax + B/2)2 − ∆,               ∆=             ̸= 0.           (21)
+                                                                           4
+In this case, Rj counts square roots of ∆ modulo 2j , because the substitution x ↦→ Ax + B/2 is
+bijective modulo 2j .
+   Set v = v2 (∆). There are exactly 2⌊j/2⌋ roots if j ≤ v. There are none if j > v and v is odd.
+If j > v = 2a, their number is 2a multiplied by the number of odd roots of ∆/22a modulo 2j−2a .
+Any two roots satisfy 2b | (z − z0 )(z + z0 ) for an odd square congruence modulo 2b . The valuation
+of one factor is 1, so for b ≥ 3 all roots are congruent to ±z0 (mod 2b−1 ). Consequently, there
+is a maximum of four roots. There are four roots of an odd unit for all b ≥ 3 ⇐⇒ the odd
+unit is 1 (mod 8). Starting at b = 3, we pair z with z + 2b−1 . Their squares actually differ by 2b
+(mod 2b+1 ), which means exactly one member has two lifts. Combined with the immediate cases
+where b = 1, 2, this proves that
+      Rj ≤ 4 · 2j/2   (j ≥ 1),     Rj is constant for j ≥ v2 (∆) + 3    in the even-B case.     (22)
+    It follows, also when h ≤ e, from (20)–(22) that
+            0 ≤ ϱh (M ) ≤ 4 · 2(h+e)/2 , ⃓ϱn (M ) − 2ϱn−1 (M ) + ϱn−2 (M )⃓ ≤ 16 · 2(n+e)/2 .
+                                         ⃓                                ⃓
+                                                                                                (23)
+Lemma 3.1 (Local cancellation). Let m be odd, t2 < 4m, D = t2 − 4m, and M be a matrix as
+in (18) with content u, and set e = v2 (u). Then
+                 ϱn (M ) − 2ϱn−1 (M ) + ϱn−2 (M ) = 0    unless   v2 (D) ≥ n + e − 2.           (24)
+                       LOW-LYING ZEROS IN THE DEPTH ASPECT AT THE PRIME 2                          7
+
+Proof. The trivial case is if e ≥ n − 2, then v2 (D) ≥ 2e ≥ n + e − 2 and there is nothing to prove.
+Otherwise e is less than all three levels, so (20) reduces the claim to stabilization of Rj . We have
+two cases. If B is odd then these counts are simply constant. If B is even, then the failure of the
+condition in (24) implies
+                               n − 2 − e ≥ v2 (D) − 2e + 1 = v2 (∆) + 3.                        (25)
+Hence all three counts lie within the stable range of (22).                                       □
+Corollary 3.2. With Kn (t, m) the second difference of the local elliptic weights,
+                                Kn (t, m) = 0    unless    N/4 | t2 − 4m.                       (26)
+Size bounds for the three contributions. For u = 2e v with v odd, (5), (23) and Lemma 3.1
+give
+        h0 (D/u2 ) ⃓ϱn − 2ϱn−1 + ϱn−2 ⃓ ≤ 16C cl N 1/2 |D|1/2+δ 2−e(1/2+2δ) v −1−2δ 1N/4|D .
+                   ⃓                  ⃓
+                                                    δ                                        (27)
+For every fixed δ > 0 both extended sums converge, therefore
+            ∑︂                                   ⃓ 16Cδcl ζ(1 + 2δ) 1/2 1/2+δ
+                    h0 (D/u2 )⃓ϱn − 2ϱn−1 + ϱn−2 ⃓ ≤
+                              ⃓
+                                                                   N |D|      1N/4|D .          (28)
+                                                     1 − 2−1/2−2δ
+            u2 |D
+                                                  √
+  The roots of X 2 − tX + m have modulus           m for t2 < 4m, so we can expand the generating
+function to get
+                                     |pk−2 (t, m)| ≤ (k − 1)m(k−2)/2 .                          (29)
+  For the cusp contribution, direct summation of Euler totients gives us
+           h
+                                  {︄
+          ∑︂   (︁ min(j,h−j) )︁     3 · 2h/2−1 , h ≥ 2 even,
+              φ 2               =     (h+1)/2 ,
+                                                             0 ≤ Φ2h (a, d) ≤ 2 · 2h/2 ,        (30)
+          j=0
+                                    2            h odd,
+
+whose second difference has an absolute value of at most 6N 1/2 . Normalizing by (15) yields
+
+                                    192 −1/2 ∑︂ min(a, d) k−1
+                                                     (︃          )︃
+                        |CN (m)| ≤       N               √            ,                     (31)
+                                   k−1                     m
+                                                        ad=m
+
+and specifically with Kk = 576/(k − 1),
+
+                      |CN (P )| ≤ Kk N −1/2 P −(k−1)/2 ,       |CN (P 2 )| ≤ Kk N −1/2 .        (32)
+
+The surviving indices and the uniform bound. In order to count the indices allowed by
+Corollary 3.2, let
+                                  N            Q   N
+                              Q= ,         q=    = ,
+                                   4           4   16                            (33)
+                      TN (m) = #{t ∈ Z : t2 < 4m, Q | 4m − t2 },
+and set
+                                     512 · 41/2+δ Cδcl ζ(1 + 2δ)
+                                     Kδ =                        .                              (34)
+                                           1 − 2−1/2−2δ
+Combining (28), (29), and the dimension bound (15) with |D| ≤ 4m gives
+
+                        |EN (m)| ≤ Kδ N −1/2 mδ TN (m)         (m ≥ 1 odd, δ > 0).              (35)
+8                                      PRAGYAN MANADHATA
+
+Theorem 3.3 (Uniform unsigned trace bound). Let k ≥ 2 be even, N = 2n with n ≥ 8, and
+δ > 0. Set Ck,δ = Kδ + 576/(k − 1). Then for every odd m ≥ 1,
+                                        [︄                                       ]︄
+                                                       ∑︂ (︃ min(a, d) )︃(k−1)/2
+           ⃓               ⃓
+                     1 m=□
+           ⃓VN (m) − √ ⃓ ≤ Ck,δ N −1/2 mδ TN (m) +
+           ⃓               ⃓
+                                                                                    . (36)
+           ⃓            m ⃓                                  max(a, d)
+                                                             ad=m
+
+In particular, for every odd prime P ,
+                                                [︂                       ]︂
+                         |VN (P )| ≤ Ck,δ N −1/2 P δ TN (P ) + P −(k−1)/2 .                        (37)
+                                                             √
+Proof. Insert (35), (31) and (15) into (16), using min(a, d)/ m = (min(a, d)/ max(a, d))1/2 .
+There is no scalar term for m = P , and (32) gives (37).                                 □
+
+Prime squares.
+Proposition 3.4 (Prime-square simplification). Let n ≥ 8 and let P be an odd prime with
+P < N/64. Then
+                                                  1
+                     TN (P 2 ) = 0,    VN (P 2 ) = + Ok N −1/2 .
+                                                        (︁     )︁
+                                                                                   (38)
+                                                  P
+Proof. We write t = 2s. Then the conditions become |s| < P and s2 ≡ P 2 (mod q), with
+q = N/16. We know that both s and P are odd, so one of s − P, s + P must have valuation
+exactly 1 and the other one must be divisible by q/2 = N/32. As a result, s ≡ ±P (mod N/32),
+and when P < N/64, this has no representative in (−P, P ). The endpoints are scalar terms.
+Hence EN (P 2 ) = 0 by (35), and the result follows from (16), (15), and (32).           □
+
+  Take an arbitrary odd P . Division by P reduces s2 ≡ P 2 (mod q) to the four square roots of
+1 modulo q ≥ 8. We can count these classes within (−P, P ) to get
+                                         (︃       )︃
+                                   2        2P            P
+                            TN (P ) ≤ 4        + 1 = 128 + 4,                             (39)
+                                             q            N
+so that (16) and (35) read
+                                                                                     (︃       )︃
+                 cN                                                  −1/2                 P
+             2
+       VN (P ) =    + EN (P 2 ) + CN (P 2 ),             2
+                                                  |EN (P )| ≤ Kδ N          P   2δ
+                                                                                       128 + 4 .   (40)
+                 P                                                                        N
+
+                             4. The unsplit one-level density
+  Write h = ϕ.
+            ˆ︁ By (35), natural averaging requires counting pairs (P, t) as both indices grow
+with N .
+Theorem 4.1. Let ϕ be even Schwartz with Fourier support compactly contained in (−3/2, 3/2)
+and k ≥ 2 be an even integer. For all n ≥ 8,
+                                   ϕ(0)
+                                        + Ok,ϕ L−1 ,      N = 2n ,   L = log(k 2 N ).
+                                              (︁  )︁
+                 UN (ϕ) = h(0) +                                                                   (41)
+                                    2
+   More explicitly, select s, η such that 0 < s < 3/2, supp h ⊂ [−s, s], and 0 < η < min(1/2, 3/2 −
+s). Then for n ≥ 8,
+                ⃓                        ⃓
+                ⃓UN (ϕ) − h(0) − ϕ(0) ⃓ ≤ Ck,ϕ,s,η L−1 + N s−3/2+η + N −1/2+η .
+                ⃓                        ⃓          (︂                            )︂
+                                                                                               (42)
+                ⃓                     2 ⃓
+                    LOW-LYING ZEROS IN THE DEPTH ASPECT AT THE PRIME 2                           9
+
+Counting primes and trace indices. Set X = (k 2 N )s and q = N/16.
+Lemma 4.2. Let n ≥ 8 and P be an odd prime. Then
+                               TN (P ) = #{r ∈ Z : r2 < P, q | P − r2 },                      (43)
+and TN (P ) = 0 for P < q. For all B ≥ q,
+                                    ∑︂                           B 3/2
+                                                  TN (P ) ≤ 48         .                      (44)
+                                                                  N
+                                       B/2<P ≤B
+
+Proof. The congruence N/4 | 4P − t2 forces t = 2r and gives (43). When P <√q, the positive   √
+difference P − r2 cannot be a multiple of q. For B ≥ q, there is a maximum of 2 B + 1 ≤ 3 B
+possible r, and for each r at most B/q positive multiples P − r2 of q. Counting all such integers
+P gives (44).                                                                                  □
+The prime sums.
+Lemma 4.3. Let n ≥ 8 and 0 < δ < 1/2. Then
+                                ⃓ (︃     )︃⃓         √
+            2 ∑︂ log P          ⃓ log P ⃓      96sKδ 2          −3/2 1+δ
+                    √ |EN (P )| ⃓h
+                                ⃓
+                                           ⃓ ≤ 1 − 2−1−δ ∥h∥∞ N
+                                           ⃓                        X ,                       (45)
+            L         P               L
+                   P ≤X
+and                                           ⃓ (︃   )︃⃓
+                           2 ∑︂ log P         ⃓ log P ⃓
+                                                       ⃓ ≤ Ck,ϕ,s N −1/2 .
+                                 √ |CN (P )| ⃓⃓h                                              (46)
+                           L       P               L   ⃓
+                             P ≤X
+                                                             √
+Proof. On B/2 < P ≤ B, equations (35) and (44), with P −1/2 ≤ 2B −1/2 , give
+                                                      √
+                                  ⃓ (︃     )︃⃓
+               ∑︂ log P
+           2                                 ⃓ ≤ 96Kδ 2∥h∥∞ N −3/2 B 1+δ log B .
+                                  ⃓ log P ⃓
+                     √ |EN (P )| ⃓h
+                                  ⃓
+                                                                                              (47)
+          L            P                L    ⃓                              L
+              B/2<P ≤B
+
+Using log B/L ≤ s, sum over B = X, X/2, X/4, . . . to get (45). For (46), equation (32) leaves the
+weight (log    −k/2 . Its sum is bounded by C (1+log X) for every k ≥ 2 because of Chebyshev’s
+       ∑︁ P )P                               Ch
+bound P ≤y log P ≤ CCh y for y ≥ 2 [MV06, Theorem 2.4] and partial summation.                   □
+The square indices.
+Lemma 4.4. Let n ≥ 8, Z = X 1/2 , and 0 < δ < 1/2. Then
+                            ⃓ (︃       )︃⃓
+      2 ∑︂ log P        2 ⃓
+                            ⃓ 2 log P ⃓ Cδ ∥h∥∞ (︂ −3/2 1/2+δ     −1/2 δ
+                                                                         )︂
+                  |EN (P )| ⃓h           ⃓≤           N X     + N     X     ,                 (48)
+      L        P                   L     ⃓      L
+            P ≤Z
+and                                             ⃓ (︃     )︃⃓
+                          2 ∑︂ log P        2 ⃓
+                                                ⃓ 2 log P ⃓
+                                                           ⃓ ≤ Ck,ϕ,s N −1/2 ,
+                                     |CN (P )| ⃓h
+                          L        P                 L     ⃓
+                            P ≤Z
+                                                ⃓ (︃     )︃⃓                                  (49)
+                                 2 ∑︂ log P cN ⃓⃓ 2 log P ⃓⃓       −1
+                                L       P P ⃓
+                                                 h
+                                                     L     ⃓ ≤ Cϕ L .
+                                    P ≤Z
+
+Proof. Once again, we use Chebyshev’s bound and partial summation to get
+                                                                  (︃      )︃
+          ∑︂
+                       2δ       1+2δ
+                                         ∑︂
+                                                       −1+2δ           1
+              (log P )P ≤ CCh Z      ,       (log P )P       ≤ CCh 1 +       Z 2δ ,           (50)
+                                                                       2δ
+           P ≤Z                                   P ≤Z
+
+and putting (50) into (40) yields (48) with
+                               Cδ = 256Kδ CCh + 8Kδ CCh 1 + (2δ)−1 .
+                                                       (︁         )︁
+10                                        PRAGYAN MANADHATA
+
+                                                             −2 < ∞, and for the cusp term use (32) and
+                                         ∑︁
+For the scalar term use cN ≤ 2 and          P ≥3 (log P )P
+the logarithmic bound from (46).                                                                             □
+   Use Mertens’ estimate [MV06, Theorem 2.7(b)] to evaluate the −1 in αf (P )2 + βf (P )2 =
+λf (P 2 ) − 1.
+                           ⃓                  ⃓
+                           ⃓                  ⃓
+                           ⃓ ∑︂ log P         ⃓
+                                      − log y ⃓ ≤ CM   (y ≥ 2),                         (51)
+                           ⃓                  ⃓
+                                  P
+                           ⃓
+                           ⃓                  ⃓
+                           ⃓ P ≤y             ⃓
+                                 P odd
+where CM is absolute. Partial summation gets
+               ⃓                                      ⃓
+               ⃓ 2 ∑︂ log P (︃ 2 log P )︃ ∫︂ ∞        ⃓ C ′ (∥h∥ + ∥h′ ∥ )
+                                                                ∞       1
+                            h            −     h(u) du⃓ ≤ M                ,                               (52)
+               ⃓                                      ⃓
+               ⃓L       P         L                             L
+               ⃓
+                      P                     0         ⃓
+                                                                                             ∫︁ ∞
+including the initial interval 0 ≤ u ≤ 2 log 2/L in the error. Because h is even,                 0   h(u) du =
+ϕ(0)/2.
+A shared explicit formula.
+Lemma 4.5. Let ϕ be a Schwartz function on R, and suppose that h = ϕˆ︁ has support in [−s, s]
+for some s > 0. Then ϕ extends uniquely to an entire function given by
+                                         ∫︂ s
+                                 ϕ(z) =       h(ξ)e2πizξ dξ.                            (53)
+                                                    −s
+For every integer J ≥ 0 and every z ∈ C,
+                                                                      {︂                     }︂
+          |ϕ(z)| ≤ CJ,h (1 + |z|)−J e2πs| Im z| ,        CJ,h = 2J max ∥h∥1 , (2π)−J ∥h(J) ∥1 .            (54)
+
+Proof. Because h ∈ Cc∞ (R), we can simply use Fourier inversion and differentiation under the
+integral to get the unique entire extension. We bound the integral directly for |z| ≤ 1 and
+integrate by parts J times for |z| ≥ 1, and then all boundary terms are eliminated by compact
+support.                                                                                   □
+   Apply Shin–Templier [ST16, Proposition 4.4 and Equation 4.9] to f and r ↦→ ϕ(rL/(2π)). The
+associated representation is cuspidal with trivial central character, conductor N , and archimedean
+parameters −(k − 1)/2, −(k + 1)/2 in their convention. Deligne gives their bound (4.4) with θ = 0
+and the completion Λ(z, f ) = N z/2 (2π)−z Γ(z +(k−1)/2)L(z, f ) has no poles. Lemma 4.5 supplies
+the Paley–Wiener test, and their zero-counting bound with (54) ensures absolute convergence
+over complex ordinates.
+   At an odd prime P the reciprocal Euler roots satisfy
+             αf (P ) + βf (P ) = λf (P ),     αf (P )βf (P ) = 1,    |αf (P )| = |βf (P )| = 1.            (55)
+At 2 the Euler factor is 1. Set af (P j ) = αf (P )j + βf (P )j . Then, af (P ) = λf (P ), af (P 2 ) =
+λf (P 2 ) − 1, and |af (P j )| ≤ 2. In [ST16, (4.9)], expand on Re z = 2 and shift the local integrals
+to Re z = 1/2. The local factors are pole-free for Re z > 0, and so is the gamma factor on this
+strip. Fourier inversion gets us
+                                                                        (︃         )︃
+                                           2 ∑︂ ∑︂ log P             j     j log P
+                  D(f ; ϕ) = AN,k (ϕ) −                         a (P )h
+                                                             j/2 f
+                                                                                      ,
+                                           L               P                  L
+                                               P odd j≥1
+                                              P prime                                             (56)
+                                log(N/(4π 2 ))                       Γ′ k 2πix
+                                                        ∫︂             (︃            )︃
+                                                      2
+                 AN,k (ϕ) =                    h(0) +        ϕ(x) Re        +           dx.
+                                      L               L R            Γ 2         L
+                    LOW-LYING ZEROS IN THE DEPTH ASPECT AT THE PRIME 2                               11
+
+Evenness produces the real part in the gamma term and complex-valued tests follow by linearity
+while compact support makes the prime-power sum finite.
+
+The archimedean terms.
+Lemma 4.6. Let a ≥ 1 be real and let t ∈ R. Then
+                               ⃓ ′            ′
+                                                 ⃓
+                               ⃓Γ            Γ   ⃓
+                               ⃓ (a + it) − (a)⃓ ≤ 2|t|.                                          (57)
+                               ⃓Γ            Γ   ⃓
+                                       ′                                        ∑︁j
+If a is an integer in addition, then ΓΓ (a) = Ha−1 − γ, where H0 = 0, Hj =                −1 , and γ is
+                                                                                  r=1 r
+Euler’s constant.
+Proof. By [DLM, (5.7.6)], everywhere except the nonpositive integers,
+                             Γ′            ∑︂ (︃ 1            )︃
+                                                          1
+                                (z) = −γ +           −           .                                (58)
+                             Γ                  r+1 r+z
+                                              r≥0
+
+Subtracting the series at a termwise and bounding each difference by |t|(r + a)−2 gives (57) from
+             ∑︂                     ∫︂ ∞
+                         −2    −2
+                 (r + a) ≤ a +           (x + a)−2 dx = a−2 + a−1 ≤ 2      (a ≥ 1).
+              r≥0                      0
+
+For a positive integer a the series (58) telescopes to Ha−1 − γ.                                     □
+  At a = k/2 ≥ 1, Lemma 4.6 gives
+                            log(4π 2 k 2 )|h(0)| + 2|Hk/2−1 − γ| ∥ϕ∥1 8π
+           |AN,k (ϕ) − h(0)| ≤                                        + 2 ∥xϕ(x)∥1 .              (59)
+                                                  L                     L
+  Geometric summation and integral comparison yield
+                   ∑︂ ∑︂ log P               1     ∑︂ log m         6
+                                   ≤          −1/2
+                                                             ≤            .                       (60)
+                  P odd j≥3
+                             P j/2      1−3        m≥3
+                                                       m 3/2    1 − 3−1/2
+
+Thus, natural averaging of (56) gives
+                                                     (︃       )︃
+                                2 ∑︂ log P              log P
+               UN (ϕ) = h(0) −          √ VN (P )h
+                                L         P               L
+                                  P odd
+                                                         (︃      )︃                               (61)
+                            2 ∑︂ log P (︁             )︁ 2 log P
+                        −                      2
+                                          VN (P ) − 1 h             + Ok,ϕ (L−1 ).
+                           L          P                       L
+                               P odd
+
+The support of h restricts the sums to P ≤ X and P ≤ Z = X 1/2 , respectively.
+Proof of Theorem 4.1. The −1 in the square sum in (61) contributes ϕ(0)/2 + Oϕ (L−1 ) by (52).
+Lemmas 4.3 and 4.4 bound the remaining terms, so for 0 < δ < 1/2,
+    ⃓                     ⃓           [︃
+    ⃓UN (ϕ) − h(0) − ϕ(0) ⃓ ≤ Ck,ϕ,s,δ L−1 + N −1/2 + N −3/2 (k 2 N )s(1+δ)
+    ⃓                     ⃓
+    ⃓                 2 ⃓
+                                                                                              ]︃ (62)
+                                         + L−1 N −3/2 (k 2 N )s(1/2+δ) + L−1 N −1/2 (k 2 N )sδ .
+
+Given s and η as in the statement, choose
+                                                   η
+                                           δ=            .                                        (63)
+                                                2(1 + s)
+12                                          PRAGYAN MANADHATA
+
+It satisfies 0 < δ < 1/2 and sδ < η/2, and the exponents in (62) also satisfy
+                                      3                 3
+                                    − + s(1 + δ) ≤ s − + η,
+                                      2 (︃       )︃     2
+                                   3       1          1
+                                 − +s         + δ ≤ − + η,                                     (64)
+                                   2       2          2
+                                            1         1
+                                         − + sδ ≤ − + η.
+                                            2         2
+Hence (42) holds, and the negative exponents of N imply (41).                                     □
+
+                               5. The signed one-level density
+                                                                              √
+   Write H = Hknew (N ), H ± = {f ∈ H : εf = ±1}, and AP = f ∈H εf λf (P ) P for odd primes
+                                                               ∑︁
+
+P . In discriminants D = df 2 , d is the fundamental part and f is the square factor.
+                                                                    √
+The trace and sign normalisation. Set φt,vm = arcsin(t/(2 vm)). The roots of x2 −
+   √                             √
+(t/ v)x + m are e±i(π/2−φt,vm ) m. Hence (1) gives
+                                          √                        √
+                    2(−1)k/2+1 m(k−1)/2 v cos (k − 1) arcsin(t/(2 vm))
+                                                (︁                        )︁
+           √
+   pk−2 (t/ v, m) =                         √                                   (t2 < 4vm), (65)
+                                              4vm − t2
+as in [BKL+ 26, (2.5)]. The signed trace formula of Skoruppa–Zagier [SZ88, p. 117 and §1,
+Theorem 1], in the form [BKL+ 26, (2.2)–(2.4)], states that, for N ≥ 1, even k ≥ 2 and
+(m, N ) = 1,
+                           ∑︂
+  tr(Tm WN , Sknew (N )) =    α(N/M )sk,M (m),
+                           M |N
+                               1 ∑︂              ∑︂                        √
+               sk,M (m) = −                                        pk−2 (t/ v, m)H(t2 − 4vm)
+                               2
+                                  v|M       t∈Z, v|t, t2 ≤4vm
+                                        ((t/v)2 ,M/v) squarefree
+                               1 ∑︂
+                           −        min(d, m/d)k−1 gcd(Q(M ), d + m/d) + 1k=2 τ (M )σ1 (m), (66)
+                               2
+                                  d|m
+                         ⎧
+                         ⎨1,
+                         ⎪              j = 0, 3,                     ∏︂
+                     j
+                  α(p ) = −1,           j = 1, 2,        Q(M ) =            p⌊vp (M )/2⌋ ,
+                         ⎪
+                          0,            j ≥ 4,                        p|M
+                         ⎩
+                                             √︁
+                             1                 |D|
+                 H(0) = − ,         H(D) =          L(1, ψD ) (D < 0).
+                            12                 π
+At a polynomial root with multiplicity > 1, pk−2 (x, m) = (k − 1)(x/2)k−2 . The weight parameter
+in [BKL+ 26] is k/2 + 1 and its exceptional value 2 corresponds to k = 2 here.
+   The eigenvalues of Tm and W2a give, for every odd m and H = Hknew (2a ),
+                    ∑︂
+                        εf λf (m) = (−1)k/2 m(1−k)/2 tr Tm ◦ W2a , Sknew (2a ) .
+                                                       (︁                     )︁
+                                                                                            (67)
+                    f ∈H
+
+Write RN (m) = f ∈H εf λf (m) and RN = RN (1). In (66), set M = N/2j , 0 ≤ j ≤ 3, and
+                  ∑︁
+
+αj = (1, −1, −1, 1)j . Hence, M ≥ 4 for n ≥ 5. At index 1, the nonzero admissible pairs (v, t) are
+(1, ±1), (2, ±2), (4, ±4). The conditions v | t and t2 ≤ 4v force v ≤ 4. (1, ±2) is excluded because
+the gcd is divisible by 4 and is consequently not squarefree. Each listed contribution has the
+same value at all four levels, so the sieve cancels it. This includes the zero discriminant pair
+                    LOW-LYING ZEROS IN THE DEPTH ASPECT AT THE PRIME 2                          13
+
+(4, ±4), where the polynomial equals k − 1. At t = 0 only v = M, M/2 survive. The hyperbolic
+term is −1 and the weight-two correction is linear in j, so
+                        3
+                       ∑︂            3
+                                    ∑︂
+                             αj =          jαj = 0,       pk−2 (0, 1) = (−1)k/2−1 ,
+                       j=0          j=0                                                       (68)
+                                    1
+                                      {︁                    }︁
+                          RN = 2 H(−4N ) − 2H(−N ) + H(−N/4) .
+  Over one period of each character, a geometric series and integration of the sums give
+                               L(1, ψd22e ) = (2 − 2−e )L(1, χd ),
+                                              ∫︂ 1
+                                                    dx       π
+                                L(1, χ−4 ) =              = ,
+                                                0 1+x
+                                                        2    4                                (69)
+                                              ∫︂ 1      2
+                                                   1+x             π
+                                L(1, χ−8 ) =            4
+                                                          dx = √ .
+                                                0 1+x           2 2
+The first identity holds for d = −4, −8. The √integrals are justified by dominated convergence,
+and the last has antiderivative 2−1/2 arctan(x 2/(1 − x2 )). The class-number formula yields
+                   H(−22e+2 ) = 2e − 12 ,             H(−22e+3 ) = 2e+1 − 1,
+                                                                                              (70)
+                          R22a = 2a−3         (a ≥ 3),       R22a+1 = 2a−2     (a ≥ 2).
+  Combining the dimension formula in Lemma 2.5 with (70) gives
+                                 k−1                RN      8
+                          |H| ≥         N,     0≤        ≤     N −1/2 ,
+                                   64               |H|    k−1
+                            ⃓
+                            ⃓ |H|
+                                         ⃓                                                    (71)
+                                         ⃓    16     −1/2
+                            ⃓ 2|H ± | − 1⃓ ≤ k − 1 N        (n ≥ 7).
+                            ⃓            ⃓
+
+Both sign classes are nonempty, because here RN /|H| ≤ 1/2 for n ≥ 7. At (n, k) = (5, 2), (6, 2),
+                      −
+|H| = RN = 1 and DN     is undefined.
+  For odd m, write t = vu. The gcd restriction allows both even and odd when M/v = 1, 2, but
+only odd u when M/v ≥ 4. Summing αj leaves
+                                      v   u allowed coefficient
+                                      N       all        1
+                                     N/4    u odd      −1                                     (72)
+                                     N/4   u even      −2
+                                     N/16  u even       1.
+With b = log2 (N/v), a stratum occurs exactly for j ≤ b, and when u is even, it is subject also to
+b − j ≤ 1.
+   For odd p, at m = p2 , the hyperbolic and weight-two terms cancel because the second arguments
+ 2
+p + 1, 2p of the gcds in the hyperbolic term have 2-adic valuation 1. A zero discriminant requires
+v = 1 or 4. The former is inadmissible, and the latter cancels as above, with H(0) = −1/12
+retained.
+Lemma 5.1. Let p be an odd prime and δ > 0. Then
+                                                                     √
+                        |pk−2 (x, m)| ≤ (k − 1)m(k−2)/2     (|x| ≤ 2 m),
+                           |RN (p2 )| ≤ Kk,δ N 1/2+δ p2δ + N δ p1+2δ ,
+                                            {︁                      }︁
+                                                                                              (73)
+                                Kk,δ = 48(k − 1)Cδcl 41/2+δ .
+14                                     PRAGYAN MANADHATA
+
+                                                                     √
+Proof. The polynomial is√︁a sum of k − 1 products of roots of modulus m. Each stratum in (72)
+contains at most 1 + 16 m/N indices and has |D| ≤ 4N m. Applying Lemma 2.2 with constant
+Cδcl gives the second bound.                                                               □
+The dyadic trace specializations. For q = 2b , summing over the odd residue classes gives
+                                       q                        q
+                       cq (t) = q1q|t − 1q/2|t ,  cq ((q/2)r) = (−1)r .                      (74)
+                                       2                        2
+Scaling class numbers at 2 combines the four strata in (72) into the following prime traces.
+Proposition 5.2. Let P be odd and prime. At even depth n ≥ 8, set q = 2n/2 . Then
+                                     √
+                                    2 P        ∑︂
+                              AP =       w(P )     cq (t) cos((k − 1)φt,P )L(1, ψt2 −4P )
+                                      π        2     t <4P
+                                              (−1)k/2+1
+                                                                                              (75)
+                                          +             cq (P + 1)P 1−k/2 ,
+                                                  2
+     P   (mod 8)   1   3   5   7
+                                 .
+         w(P )   1/2 3/8 1/2 1/4
+At odd depth n ≥ 7, let Q = 2(n+1)/2 . Then
+                            √
+                              P ∑︂
+                     AP = √            cQ (t) cos((k − 1)φt,2P )L(1, ψt2 −8P ).               (76)
+                           π 2 t2 <8P
+
+Proof. For a negative discriminant D = d(2e f0 )2 with f0 odd, set α = (d/2) and Te = 1 + (2 −
+α)(2e − 1). The prime-power definition of ψD and a finite geometric sum give
+                                     H(D) = Te H(df02 ),
+                     H(4j D) − H(4j−1 D) = 2j−1 {H(4D) − H(D)}           (j ≥ 1),             (77)
+                                               (2 − α)2e
+                          H(4D) − H(D) =                   H(D).
+                                                  Te
+                                                 ∑︁e
+The local class-number ratio is 2e [1 + (1 − α) b=1 2−b ] = Te . D < 0 ensures a finite primitive
+L-value. Since v is a power of 2 and vu2 = 4P has no   √ integer solution, at a prime index the
+discriminant is nonzero. For even n, substituting t = u v in each stratum makes the polynomial
+pk−2 (t, P ) and the discriminant v(t2 − 4P ). With Dt = t2 − 4P , the resulting elliptic trace is
+                          1 ∑︂
+          tr(TP WN )ell =       pk−2 (t, P )Hn,t ,
+                          2 2
+                           t <4P
+                 Hn,t = 1q/2|t {H(2n−2 Dt ) − H(2n−4 Dt )} − 1q|t {H(2n Dt ) − H(2n−2 Dt )} (78)
+                          1
+                      = − cq (t){H(4Dt ) − H(Dt )}.
+                          2
+Group the strata as all u at N , minus all u at N/4, minus even u at N/4, plus even u at N/16.
+Then apply (77) at j = n/2 − 1, n/2. The hyperbolic trace is
+                                                                          1
+             − gcd(q, P + 1) + 2 gcd(q/2, P + 1) − gcd(q/4, P + 1) = − cq (P + 1).          (79)
+                                                                          2
+This follows in the three cases v2 (P + 1) < n/2 − 1, = n/2 − 1, and ≥ n/2, and the weight-two
+term cancels by (68).
+   Equations (65) and (67) along with the class-number formula give (75) with w(t, P ) =
+(2 − α)2e /(4Te ). On the support q/2 | t, hence 8 | t. Write Dt = 4K. Then, we have
+K = (t/2)2 − P ≡ −P (mod 8). If P ≡ 1 (mod 4), the fundamental discriminant has valuation
+                    LOW-LYING ZEROS IN THE DEPTH ASPECT AT THE PRIME 2                                       15
+
+2, so (e, α) = (0, 0) and w = 1/2. Otherwise, if P ≡ 3 (mod 4), the fundamental discriminant
+is odd, e = 1 and α =  √(K/2). The two cases K ≡ 5, 1 (mod 8) give
+                                                                 √ w = 3/8, 1/4, respectively.
+For odd n, use t = u 2v instead to make the polynomial pk−2 (t/ 2, P ) and the discriminant
+(v/2)(t2 − 8P ). Setting Dt = t2 − 8P gives
+                      1 ∑︂          √
+     tr(TP WN )ell =        pk−2 (t/ 2, P )Jn,t ,
+                      2 2
+                       t <8P
+              Jn,t = 1Q/2|t {H(2n−3 Dt ) − H(2n−5 Dt )} − 1Q|t {H(2n−1 Dt ) − H(2n−3 Dt )}  (80)
+                       1                               1
+                   = − cQ (t){H(4Dt ) − H(Dt )} = − cQ (t)H(Dt ).
+                       4                               2
+Use the same grouping and (77) at j = (n − 3)/2, (n − 1)/2. Since 8 | t, v2 (Dt ) = 3 and
+(e, α) = (0, 0), which gives us the last equality. The hyperbolic gcds cancel in pairs and the
+weight-two terms cancel as before. Equations (65) (with level divisor 2) and (67) give (76). □
+
+Finite coefficient averages and their tails. To average the trace weight, define for χ ∈
+{1, χ−4 , χ8 , χ−8 },
+                                        1         ∑︂                                             ∑︂ ψ˜︁t,χ (m)
+qm = lcm(8, m2 ),      ψ˜︁t,χ (m) =                       χ(−x)ψt2 −4x (m),    L(s, ψ˜︁t,χ ) =                   .
+                                      φ(qm )                                                            ms
+                                               x mod qm                                          m≥1
+                                               (x,2m)=1
+                                                                                             (81)
+For positive nonsquare D, use the same factorization D = df 2 with d fundamental and the same
+Kronecker definition of ψD . For nonzero squares take d = 1, and set ψ0 (m) = 1. At an odd
+prime p, the value of ψD (pb ) is 1 if p2b | D, 0 if vp (D) < 2b is odd, and (D/p2e | p)b−e when
+vp (D) = 2e < 2b. Thus it depends only on D mod p2b . At 2, for D = 4K with K = 2j u and u
+odd, the conditions determining that value are
+                               condition      v2 (f ) in D = df 2 (d/2)
+                        j = 2e, u ≡ 1 (mod 4)         e+1         (u/2)
+                                                                                                           (82)
+                        j = 2e, u ≡ 3 (mod 4)           e           0
+                              j = 2e + 1                e           0.
+Thus ψD (2b ) = (d/2)max(b−v2 (f ),0) is determined by K mod 22b . If these residues do not determine
+the symbol, its exponent is zero. For odd D = t2 − 4x, the symbol is determined modulo 8. This
+proves independence of the choice of residue-class representatives in (81), including both zero
+and square discriminants.
+Lemma 5.3. For every t ∈ Z the odd local factors are
+                          ⎨(1 − z 2 )−1 ,
+                          ⎧
+                                                                     p | t,
+               Ep (z; t) = p2 − (p + 1)z − (p + 1)z 2                         (p > 2).                     (83)
+                          ⎩                           ,              p ∤ t,
+                                (1 − z 2 )(p2 − z)
+For Re s > 1/2 the following series and products converge absolutely:
+                       L(s, ψ˜︁t,χ ) = E2,χ (2−s ; t)Gt (s),
+                                       ∑︂                             ∏︂
+                       E2,χ (z; t) =       ψ˜︁t,χ (2b )z b , Gt (s) =    Ep (p−s ; t),
+                                       b≥0                             p>2                                 (84)
+                                       π 2 ∏︂ p2 − p − 1
+                     Gt := Gt (1) =                          .
+                                       8          p(p − 1)
+                                           p∤2t
+16                                           PRAGYAN MANADHATA
+
+In addition, uniformly in t, χ and x ≥ 1,
+                ∑︂ |ψ˜︁t,χ (m)|
+                                  (1 − e−m/x ) ≤ C tail x−1/2 ,
+                        m
+                m≥1
+                                                           4     ∏︂ (︃        1
+                                                                                     )︃
+                                            C tail =                  1 + √             < ∞,       (85)
+                                                       1 − 2−1/2 p>2        p(p − 1)
+                             ∑︂ |ψ˜︁t,χ (m)|             C tail
+                                                 ≤              .
+                                        m              1 − e−1
+                             m≥1
+
+Proof. By the Chinese remainder theorem, we factor the average into local averages. The local
+average at 2 has absolute value at most 1, but isn’t necessarily equal to 1 at b = 0. Thus, the
+twisted sequence need not be multiplicative.
+  If p | t, the Legendre symbol of t2 − 4x has mean zero over units, giving local average 1 in even
+degrees and 0 in odd degrees. If p ∤ t, let Ub average ψD (pb ) over all D mod p2b , with U0 = 1.
+Splitting according to vp (D) = 0, 1 or ≥ 2 gives
+                             Ub = (1 − p−1 )12|b + p−2 Ub−1 ,    0 ≤ Ub ≤ 1,
+                                    ⎧p − 2      Ub−1
+                                    ⎪       +         ,    b ≥ 1 even,                             (86)
+                                      p − 1 p(p − 1)
+                                    ⎨
+                        ap (b; t) =       1      Ub−1
+                                    ⎩−
+                                    ⎪        +          , b odd.
+                                        p − 1 p(p − 1)
+To obtain the second     line, exclude D ≡ t2 (mod p), whose symbol is 1, and divide by 1 − p−1 .
+Summing gives b≥0 Ub z b = (1−z 2 /p)/((1−z 2 )(1−z/p2 )), hence (83) and the bounds |ap (2j; t)| ≤
+                  ∑︁
+
+1, |ap (2j + 1; t)| ≤ 1/(p − 1) for j ≥ 0.
+   Write m = 2b uv 2 uniquely with u and v odd and u squarefree. The preceding bounds give
+                                                                 1
+                                         |ψ˜︁t,χ (2b uv 2 )| ≤      ,     σ > 1/2,
+                                                               φ(u)
+                            ∑︂ |ψ˜︁t,χ (m)|                     (︃               )︃            (87)
+                                                  ζ(2σ) ∏︂                 1
+                                             ≤                    1 +               .
+                                    mσ           1 − 2−σ              pσ (p − 1)
+                          m≥1                                 p>2
+
+At s = 1, each odd factor is (1 − p−2 )−1 if p | t or (1 − p−2 )−1 (p2 − p − 1)/(p(p − 1)) if p ∤ t. The
+identity p>2 (1 − p−2 )−1 = π 2 /8 gives (84), including at t = 0.
+         ∏︁
+                              √
+   For T > 0, splitting at v = T and comparing the tail with an integral gives
+                                 ∑︂
+                                     v −2 min(1, v 2 /T ) ≤ 4T −1/2 .                              (88)
+                                      v≥1
+
+For T < 1 use ζ(2) < 2, otherwise the two parts are bounded by T −1/2 and 2T −1/2 . With
+T = x/(2b u) and 1 − e−y ≤ min(1, y), summation over b and u gives the stated tail constant.
+Its product converges by comparison with j≥3 j −3/2 . The final bound follows at x = 1 from
+                                         ∑︁
+
+1 − e−m ≥ 1 − e−1 .                                                                       □
+Lemma 5.4. If 8 | t, then
+                                       2 + z − 2z 2                                  z
+                       E2,1 (z; t) =                ,          E2,χ−4 (z; t) =               ,
+                                        2(1 − z 2 )                              2(1 − z 2 )
+                                                                                                   (89)
+                                                         z2
+                      E2,χ8 (z; t) = E2,χ−8 (z; t) =             .
+                                                     2(1 − z 2 )
+                    LOW-LYING ZEROS IN THE DEPTH ASPECT AT THE PRIME 2                            17
+
+The weight in (75) satisfies
+                                  13 − 3χ−4 (−P ) − χ8 (−P ) − χ−8 (−P )
+                        w(P ) =                                          ,
+                                                     32
+                               13                 3
+                                  L(1, ψ˜︁t,1 ) − L(1, ψ˜︁t,χ−4 )                              (90)
+                               32                32
+                                         1                 1            1
+                                    − L(1, ψ˜︁t,χ8 ) − L(1, ψ˜︁t,χ−8 ) = Gt .
+                                        32                32            2
+Proof. Write t2 − 4x = 4K, with K ≡ −x (mod 8), and K odd. By (82), for b ≥ 1 the four
+classes K ≡ 1, 5, 3, 7 contribute 1, (−1)b−1 , 0, and 0, respectively, each with frequency 1/4. Thus
+                                                                   b−1
+                                                        1 + χ(5)(−1)
+                   ψ˜︁t,χ (1) = 1χ=1 ,   ψ˜︁t,χ (2b ) =                (b ≥ 1).              (91)
+                                                               4
+The values χ(5) are 1, 1, −1, −1, so geometric summation gives (89). The four odd residue classes
+give the weight expansion. At z = 1/2, the factors are 4/3, 1/3, 1/6, 1/6, whose weighted sum is
+13/24 − 1/32 − 1/192 − 1/192 = 1/2. Equation (84) completes the proof.                         □
+
+Uniform prime averaging. Assume the Riemann hypothesis for every primitive Dirichlet
+L-function, including ζ. Fix t ∈ Z, χ ∈ {1, χ−4 , χ8 , χ−8 }, and t2 /4 ≤ A < B for B ≥ 3. Let Φ
+                                                                           ∫︁ B
+be continuous on [A, B] and C 1 on (A, B], with M = max |Φ| and V = A |Φ′ | < ∞.
+  Applying [IK04, Theorem 5.15] to the primitive inducing character gives
+                    ⃓∑︂                   ⃓
+                         ν(p) log p − δν u⃓ ≤ Cabs u1/2 log2 (2qu)     (u ≥ 2)               (92)
+                    ⃓                     ⃓
+                    ⃓
+                        p≤u
+
+for every character ν modulo q, with δν the indicator of the principal character. The in-
+ducing primitive L-function has the required degree-one analytic properties, local parameters
+of modulus at most √   1, and the assumed RH. Removing prime powers contributes an error
+of at most Cabs u log2 (2u) and removing primes dividing q contributes an error of at most
+Cabs log(2q) log(2u), both within the displayed bound.
+   We bound the character expansion by the ℓ1 norm of its coefficients. For a function g on the
+finite abelian group GQ = (Z/QZ)× , character orthogonality [Apo76, Theorems 6.11–6.12] and
+Cauchy–Schwarz give
+               1 ∑︂                         ∑︂                   √︁
+     g(ν) =            g(x)ν(x),     β(g) =     |ˆ︁
+                                                 g(ν)|, β(g) ≤ # supp g (|g| ≤ 1).         (93)
+             |GQ |
+     ˆ︁
+                 x∈GQ                         ν
+
+Inflation and multiplication by a character preserve β. For products over the factors in the
+Chinese remainder decomposition, the norms multiply, and coset indicators have norm 1.
+   For an odd prime p set D = t2 − 4x with x a unit. The definition of ψD , with the stated
+conventions at squares and at zero, gives
+                                            j−1                     )︃j−e
+                                                              D/p2e
+                                            ∑︂             (︃
+                             j
+                        ψD (p ) = 1p2j |D +     1vp (D)=2e                .             (94)
+                                                               p
+                                              e=0
+
+The summand indexed by e depends only on the residue class modulo p2e+1 and is nonzero on at
+most p − 1 such classes, while the first term is either zero or a coset indicator. Hence (93) proves
+                                                     √
+                             β ψt2 −4x (pj ) ≤ 1 + j p ≤ (j + 1)p1/2 .
+                              (︁            )︁
+                                                                                                (95)
+If p | t then D is a unit and the function is the character (−4x/p)j , of norm 1. Replacing 4 with
+8 leaves this entire argument valid at odd primes.
+18                                     PRAGYAN MANADHATA
+
+  At 2, if t is odd, then D ≡ 5 (mod 8) and the symbol is constant. If 4 | t, the function depends
+only on x mod 8 and has norm at most 2. For t = 2u, where u is odd, set z = u2 − x. The
+possible values 0, 2, 3 of the 2-adic valuation of a fundamental discriminant give
+                                      j−1                                   )︃max(j−a−1,0)
+                                                                      z/22a
+                                      ∑︂                           (︃
+                       j
+                 ψ4z (2 ) = 122j |z +     1v2 (z)=2a 1z/22a ≡1 (4)                         .   (96)
+                                                                        2
+                                    a=0
+
+If the odd part of z/22a is 1 modulo 4, the conductor exponent is a + 1. Otherwise, and at odd
+valuations of z, the fundamental character vanishes at 2 once the conductor exponent is passed.
+Higher valuations give the first indicator. Since z is even, the stratum a = 0 is empty. The other
+strata require modulus 22j at a = j − 1 and 22a+3 at a ≤ j − 2, with at most eight residue classes
+on which each stratum is nonzero. Consequently
+                         √
+β ψt2 −4x (2j ) ≤ 1 + j 8 ≤ 4(j + 1),        βm := β χ(−x)ψt2 −4x (m) ≤ 4τ (m)m1/2 ≤ Cδ m1/2+δ .
+  (︁           )︁                                     (︁                )︁
+
+                                                                                              (97)
+For the last bound,    use j + 1 ≤ 2j ≤ pδj when pδ ≥ 2. Then, the remaining primes contribute the
+
+finite product pδ <2 supj≥0 (j + 1)p−δj . The functions depend only on the residue class modulo
+                  ∏︁
+
+qm = lcm(8, m2 ), uniformly in t.
+     The principal character coefficient is ψ˜︁t,χ (m). The endpoint hypotheses imply absolute
+continuity by applying the fundamental theorem of calculus on [A + h, B] and letting h ↓ 0.
+Character expansion and partial summation in (92) give
+                    ⃓      ∑︂                                                 ∫︂ B ⃓
+                                      Φ(P )χ(−P )ψt2 −4P (m) log P − ψt,χ (m)     Φ⃓
+                    ⃓                                                ˜︁            ⃓
+                    ⃓
+                     A<P ≤B, (P,2m)=1                                           A             (98)
+                                ≤ Cabs (M + V )βm B 1/2 log2 (2Bm).
+After exponential smoothing, restoring the omitted primes costs
+                      ∑︂ e−m/x ∑︂
+                    M                 log P ≤ Cabs M log2 (2x)          (x ≥ 1),              (99)
+                            m
+                       m≥1           P |2m
+
+since the inner sum is at most log(2m) and integral comparison bounds the remaining series.
+   For a primitive nonprincipal character ν of conductor q, [IK04, Corollary 5.20] gives
+                       |L(σ + iv, ν)| ≤ Cη {q(2 + |v|)}η     (1/2 ≤ σ ≤ 2).                  (100)
+The required RH, Ramanujan bound and degree-one analytic properties hold. For D = df 2 < 0,
+χd is nonprincipal and the prime-power coefficients give
+                             ⎡                         ⎤
+                          ∏︂                    e
+                                               ∑︂          ⃓ ∏︂         ⃓
+ L(s, ψdf 2 ) = L(s, χd )    ⎣1 + (1 − χd (p))    p−js ⎦ ,      [· · · ]⃓ ≤ Cη f η (Re s ≥ 1/2).
+                                                           ⃓            ⃓
+                                                           ⃓
+                       pe ∥ f                  j=1             pe ∥ f
+                                                                                             (101)
+                              √
+Each factor is at most 1 + 2/( p − 1) ≤ pη for sufficiently large p, and the remaining factors are
+bounded independently of e.
+   Apply Mellin inversion [DLM, (2.5.2)] to e−u and move the integral of Γ(w)L(1 + w, ψD )xw
+from Re w = 1 to −1/2 + η, 0 < η < 1/4. Only the pole of Γ at 0 is crossed. Stirling’s formula
+[DLM, (5.11.3), (5.11.9)] gives exponential decay on the vertical lines and horizontal segments.
+(100)–(101), with reduced exponents, then give
+                   ⃓L(1, ψD ) − Sx (D)⃓ ≤ Cη |D|η x−1/2+η
+                   ⃓                  ⃓
+                                                               (D < 0, x ≥ 1),               (102)
+where Sx (D) = m ψD (m)e−m/x /m.
+                ∑︁
+                      LOW-LYING ZEROS IN THE DEPTH ASPECT AT THE PRIME 2                                19
+
+  For each counted prime, A ≥ t2 /4 gives D < 0 and |D| = 4P − t2 ≤ 4B. For 1 ≤ x ≤ B 1/2 ,
+summing (98) with weight e−m/x /m, using (97) and the absolute coefficient tail (85) gives
+                            {︂                                      }︂
+                    |E| ≤ Cη M B 1+η x−1/2 + (M + V )B 1/2+η x1/2+η .                     (103)
+
+For the first term, (102) and Chebyshev give Cη M B 1+2η x−1/2+η and we use xη ≤ B η/2 and
+replace η by 2η/5. The coefficient tail contributes C tail M Bx−1/2 , and the logarithms in (98)–(99)
+are absorbed into B η .
+Theorem 5.5. Assume the Riemann hypothesis for every primitive Dirichlet L-function. Let χ
+be one of the four characters 1, χ−4 , χ8 , χ−8 , t ∈ Z, B ≥ 3, A ≥ t2 /4, and Φ be continuous on
+                                                             ∫︁ B
+[A, B] and C 1 on (A, B] with M = max |Φ| and V = A |Φ′ | < ∞. Then, for every ϵ > 0,
+ ⃓ ∑︂                                                      ∫︂ B         ⃓
+         Φ(P  )χ(−P )L(1, ψ       ) log P −  L(1,  ψ     )       Φ(u) du⃓ ≤ Cϵ M 1/2 (M + V )1/2 B 3/4+ϵ ,
+ ⃓                                                                      ⃓
+ ⃓                           2
+                            t −4P
+                                                   ˜︁t,χ
+  A<P ≤B                                                  A
+                                                                                                    (104)
+uniformly in t, χ, A and Φ.
+Proof. If M = 0 the assertion is immediate. Otherwise set R = (M + V )/M . If R ≤ B 1/2 , choose
+x = B 1/2 /R in (103) and take η ≤ ϵ/3. If R > B 1/2 , Lemma 2.2 combined with Chebyshev’s
+bound gives Cη M B 1+η for the whole discrepancy, because |D| ≤ 4B and the main coefficient is
+uniformly bounded. In that case M 1/2 (M + V )1/2 B 3/4 ≥ M B.                                □
+The prime sum at odd depth. For the odd-depth discriminant t2 − 8P , valuation 3 at 2
+removes the even coefficients and leaves the following odd-modulus average.
+Theorem 5.6. Assume the Riemann hypothesis for every primitive Dirichlet L-function. Let
+8 | t, B ≥ 3, and A ≥ 2, t2 /8. Let Φ be continuous on [A, B], C 1 on (A, B], with M = max |Φ|
+          ∫︁ B
+and V = A |Φ′ | < ∞. Then, for every ϵ > 0,
+             ⃓ ∑︂                                 ∫︂ B ⃓
+                   Φ(P )L(1, ψt2 −8P ) log P − Gt     Φ⃓ ≤ Cϵ M 1/2 (M + V )1/2 B 3/4+ϵ . (105)
+             ⃓                                         ⃓
+             ⃓
+             A<P ≤B                                   A
+
+Proof. The hypothesis A ≥ 2 restricts the sum to odd primes. For every counted odd prime,
+v2 (t2 − 8P ) = 3, the square factor f is odd, and ψD (m) = 0 at even m. For odd m, first project
+the average over invertible residue classes to the units modulo m2 . The coefficient is independent
+of the coordinate modulo 8. On that odd modulus, multiplication by 2 is a bijection and identifies
+the mean with the untwisted odd coefficient in (81). Evaluating the Dirichlet series of these
+averaged coefficients at s = 1 therefore gives Gt , by (84), with 1 being the local factor at 2. Its
+absolute tail is bounded by restricting (85) for χ = 1 to odd m. The Fourier argument (94)–(99)
+is unchanged at odd primes. Apply (102) with |D| ≤ 8B and Chebyshev’s bound, and repeat
+the optimization of Theorem 5.5.                                                                  □
+Uniform summation over the trace indices. Define, for any prime ℓ, sk = (−1)k/2+1 and
+Uj (cos ϑ) sin ϑ = sin((j + 1)ϑ):
+                                     √︁
+                   Fk (u) = Uk−2 (u) 1 − u2 (|u| < 1),           Fk (u) = 0 (|u| ≥ 1),
+                                      √                                 (︃      )︃
+                                 sk 2π y      ∑︂                             r
+                  Mℓ (y) =                         (1ℓ|r − 1/ℓ)pℓ (r)Fk      √     ,
+                             (k − 1)(1 − 1/ℓ)                              2ℓ y        (106)
+                                              r∈Z
+                                (︃             )︃
+                             ∏︂          1
+                    pℓ (r) =       1−             ,      pℓ (0) = 1.
+                                      p(p − 1)
+                             p∤ℓr
+20                                           PRAGYAN MANADHATA
+
+Write Mk,2 = M2 .
+Proposition 5.7 (Bound for the integrated density error). For every fixed even integer k ≥ 2
+and every prime ℓ, the function in (106) satisfies
+                                    |Mℓ (v)| ≤ Ck,ℓ v 1/2      (0 < v ≤ 1),
+                           ∫︂ V
+                                                     }︁ dv                                      (107)
+                                    Mℓ (v) − 12 1v≥1
+                                  {︁
+              Pℓ (V ) :=                                   ,    |Pℓ (V )| ≤ Ck,ℓ    (V > 0).
+                             0                          v
+   Section
+      √                                 √ M = Mr2 . At even depth n ≥ 8, (75) restricts t to
+            6 proves this estimate. Write
+t = r N /2 with Ramanujan√︁     weight (  N /2)(−1) . On   √ the other
+                                                                  √    hand, at odd depth n ≥ 7,
+(76) restricts t to t = r N/2 with weight
+                                       √︁    c2(n+1)/2 (t)/ 2 = ( N /2)(−1)r . In both cases the
+argument of the inverse sine is r/(4 P/N ), and the discriminant is negative exactly when
+P > N r2 /16.
+   All supported t are divisible by 8. The even-depth coefficient is Gt /2 by (90), while the
+odd-depth coefficient is Gt by Theorem 5.6. Since t is r multiplied by a power of 2, Gt = Gr , and
+both give
+    √                        (︄                        )︄
+      Nu      ∑︂
+                         r                       r                                   (k − 1)N
+                     (−1) cos (k − 1) arcsin √︁           Gr = cN M(u/N ),     cN =            .
+   2π|H|       √                             4 u/N                                     32|H|
+          |r|<4    u/N
+                                                                                                (108)
+Here (84) gives Gr = (π 2 /8)p2 (r), and
+                                                        √︁
+                  cos((k − 1) arcsin x) = sk Uk−2 (x)     1 − x2 ,     |cN − 1| ≤ Ck N −1/2 ,   (109)
+by the defining sine formula and Lemma 2.5, respectively.
+   To sum the prime-average errors over the growing index set, we need a bound on variation
+with respect to u that is uniform in t. For X ≥ 2, h = ϕ,     ˆ︁ at even depth set
+                                           (︃                    )︃
+                      −1/2                                    t
+           Φt (u) = u       h(log u/L) cos (k − 1) arcsin √         ,    At = max(X, t2 /4). (110)
+                                                             2 u
+                           √        √
+At odd depth replace 2 u by 2 2u and t2 /4 by t2 /8. Keep only At < 2X. The discriminants
+are negative for every prime in (At , 2X]. At a zero-discriminant endpoint, the cosine vanishes
+and its derivative has an integrable square-root singularity. The angle is monotone with variation
+at most π/2, so the cosine factor has variation at most (k − 1)π/2. Differentiating the other
+factors gives
+                                    ∫︂ 2X
+                      max |Φt | +         |Φ′t (u)| du ≤ Ck (∥h∥∞ + ∥h′ ∥∞ )X −1/2 ,
+                     [At ,2X]         At                                                     (111)
+                                        2
+                                                              √︁
+                              #{r : N r /16 < 2X} ≤ 1 + 8 2X/N .
+  For even depth, expand w(P ) by (90) and apply (104) to each. Their fixed coefficients have
+total absolute value 9/16. At odd depth apply (105). The factor outside the sum over trace
+indices is bounded by Ck N −1/2 after division by |H|, by (71). Summing (111) therefore proves
+                                                    ∫︂ 2X
+                ⃓ ∑︂ log P                Aell                             du ⃓⃓
+                              h(log P/L) P − cN           M(u/N )h(log u/L) ⃓
+                ⃓
+                          P               |H|                              u
+                ⃓
+                 X<P ≤2X                              X                                  (112)
+                                 {︁ −1/2 1/4+ϵ
+                                                 + N −1 X 3/4+ϵ .
+                                                               }︁
+                         ≤ Ck,ϕ,ϵ N      X
+Here ell indicates only the elliptic part of AP is included.
+  The second error comes from the growing trace-index count.
+                    LOW-LYING ZEROS IN THE DEPTH ASPECT AT THE PRIME 2                          21
+
+   Let Xs = (k 2 N )s , where 0 < s < 4/3 and supp h ⊂ [−s, s]. The bounds (111)–(112) also hold
+on a truncated last interval. Use consecutive dyadic intervals beginning at 2, truncating the last
+if necessary. A geometric series, and (112) with ϵ ≤ η/(2(1 + s)), give
+                                                 2cN ∞
+                 ⃓ 2 ∑︂ log P                        ∫︂
+                                           AP                                  dv ⃓⃓
+                                h(log P/L)     −          M(v)h(log(N v)/L) ⃓
+                 ⃓
+                   L        P              |H|    L 0                          v
+                 ⃓
+                      P ≥3
+                                     {︄                                   }︄                (113)
+                                        −1/2   N −1/2+s/4+η + N −1+3s/4+η
+                           ≤ Ck,ϕ,s,η N      +                               .
+                                                            L
+
+The normalized even-depth hyperbolic term is bounded by Ck N −1/2 P 1−k/2 , and Chebyshev with
+partial summation gives
+                          1 ∑︂ log P −1/2 1−k/2
+                                        N     P     ≤ Ck,s N −1/2 .                      (114)
+                          L         P
+                              P ≤Xs
+
+Extending the normalized integral in (113) to 0 < v < 2/N introduces an error of absolute value
+at most Ck,ϕ N −1/2 /L, by the first bound of Proposition 5.7.
+   Integrate the bounded primitive against h(log(N v)/L). The boundary terms vanish by compact
+support, and the derivative integral is ∥h′ ∥1 , giving
+               ⃓∫︂ ∞ {︁                               dv ⃓⃓
+                        M(v) − 21 1v≥1 h(log(N v)/L) ⃓ ≤ Ck ∥h′ ∥1 ,
+               ⃓                      }︁
+                                                      v
+               ⃓
+                  0
+                             ∫︂ ∞                             ∫︂ ∞                        (115)
+                           2                           dv                           −1
+                                   M(v)h(log(N v)/L)        =      h(u) du + Ok,ϕ (L ).
+                          L 0                           v       1
+
+In the second line the integral of the step-function term begins at log N/L, whose distance
+from 1 is exactly 2 log k/L. Equations (109) and (115) also justify replacing cN by 1 with error
+Ck,ϕ N −1/2 .
+
+The explicit formula and the signed average. Average (56) with weight εf . Lemma 4.5 and
+Section 4 give absolute convergence at complex ordinates for the present test function. The term
+j = 1 is the prime expression in (113), with a minus sign. The term independent of the newform
+contributes at most Ck,ϕ N −1/2 by (59) and (71). For the square term, af (p2 ) = λf (p2 ) − 1. Let
+       1/2
+Z = Xs and apply the two Chebyshev estimates in (50) to get
+                     ⃓ 2 ∑︂ ∑︂ log p                           ⃓
+                                εf         af (p2 )h(2 log p/L)⃓
+                     ⃓                                         ⃓
+                       L|H|             p
+                     ⃓
+                             f     p≤Z                                                        (116)
+                                     {︁ −1+s/2+η
+                                                 /L + N −1/2+η /L + N −1/2 .
+                                                                          }︁
+                          ≤ Ck,ϕ,s,η N
+Use Lemma 5.1 with δ = η/(1 + s) at the odd square indices, and (71) for |H| and the −1 term.
+  For j ≥ 3, use |af (pj )| ≤ 2 and the absolute majorant in (60), which is at most 48. Thus
+                            ⃓ 2 ∑︂ ∑︂ ∑︂ log p                               ⃓
+                                                             j
+                                      εf               a  (p   )h(j log p/L)
+                            ⃓                                                ⃓
+                                                   j/2  f
+                              L|H|
+                            ⃓                                                ⃓
+                                   f     p≥3 j≥3
+                                                 p
+                                                                                           (117)
+                                   192∥h∥∞
+                                 ≤            .
+                                       L
+Theorem 5.8 (Signed one-level density). Assume the Riemann hypothesis for every primitive
+Dirichlet L-function, including the ζ function of conductor 1. Let k ≥ 2 be even and let n ≥ 7.
+Then, let ϕ be an even Schwartz function whose Fourier transform h = ϕˆ︁ is supported in
+22                                    PRAGYAN MANADHATA
+
+(−4/3, 4/3). Choose 0 < s < 4/3 with supp h ⊂ [−s, s], and let η be positive and smaller than
+both 1 − 3s/4 and 1/2 − s/4. Then
+                                 ∫︂
+                    ⃓         1                ⃓
+                    ⃓SN (ϕ) +           h(u) du⃓
+                    ⃓                          ⃓
+                              2 |u|>1
+                                  {︂ 1
+                       ≤ Ck,ϕ,s,η      + N −1+3s/4+η + N −1/2+s/4+η                     (118)
+                                     L                                }︂
+                                                  + N −1+s/2+η + N −1/2+η .
+
+In particular the error is Ok,ϕ (L−1 ), and SN (ϕ) → − 21
+                                                            ∫︁
+                                                             |u|>1 h as n → ∞.
+                                                                                ∫︁ ∞
+Proof. Combine (113), (115), (56), (116) and (117), and use evenness to obtain − 1 h =
+− 12 |u|>1 h.
+    ∫︁
+                                                                                     □
+
+Proof of Corollary 1.3. Set δN = RN /dN . For n ≥ 7, by (71) both sign classes are nonempty
+and |(1 ± δN )−1 − 1| ≤ 16(k − 1)−1 N −1/2 . The indicator (1 ± εf )/2 gives
+
+                                     ±         UN (ϕ) ± SN (ϕ)
+                                    DN (ϕ) =                   .                             (119)
+                                                   1 ± δN
+For n ≥ 8, use Theorems 1.1 and 1.2. Their main terms remain bounded, which allows the
+removal of the denominator at cost Ok,ϕ (N −1/2 ), giving
+                                                ∫︂
+                      ±              ϕ(0) 1
+                    DN  (ϕ) = ˆ︁
+                              ϕ(0) +       ∓           ϕ(ξ) dξ + Ok,ϕ (L−1 ).
+                                                       ˆ︁
+                                       2     2 |ξ|>1
+               ∫︁
+Using ϕ(0) =    R ϕ identifies the two main terms with the densities in Section 1.3.
+                    ˆ︁                                                                           □
+
+
+                         6. The murmuration density and its shape
+  For the density (106), we compute the logarithmic mean needed in the signed one-level formula
+and determine its pointwise oscillations. Throughout, k is fixed and even, sk = (−1)k/2+1 , and
+m = k − 1, while Fk and pℓ are as in (106).
+
+Theorem 6.1. Let ℓ be a prime and Mℓ as in (106). Then
+                                     2π √
+                         Mℓ (y) =         y (0 < y ≤ 1/(4ℓ2 )),
+                                   k−1
+                         ⃓∫︂ Y                   ⃓
+                         ⃓            dy 1       ⃓
+                         ⃓     Mℓ (y) − log Y ⃓⃓ ≤ Ck,ℓ (Y ≥ 1),                             (120)
+                         ⃓
+                            1         y    2
+                                   1            √
+                         Mℓ (y) − = y 1/4 Ak,ℓ ( y) + Ok,ℓ (1) (y ≥ 1),
+                                   2
+where Ak,ℓ is the absolutely and uniformly convergent trigonometric series (131) below. The
+density is unbounded above and below, with oscillations attaining order y 1/4 , and does not
+converge.
+                                                                                     √
+Proof of the first line of (120). For 0 < y ≤ 1/(4ℓ2 ), only r = 0 satisfies |r| < 2ℓ y. Its weight
+1 − 1/ℓ, pℓ (0) = 1, and Fk (0) = sk give the stated value.                                      □
+                      LOW-LYING ZEROS IN THE DEPTH ASPECT AT THE PRIME 2                                                 23
+
+  To separate the arithmetic weight from the kernel before applying Poisson summation, write
+                           ∏︂ (︃               )︃
+                                         1
+                     Bℓ =       1−                ,
+                                      p(p − 1)
+                           p̸=ℓ
+                                          ∏︂
+                  bℓ (d) = µ(d)2 1(d,ℓ)=1 (p2 − p − 1)−1 ,   cℓ (d) = dbℓ (d),         (121)
+                                                     p|d
+                                    ∑︂
+                     pℓ (r) = Bℓ          bℓ (d).
+                                    d|r
+
+At r = 0, the divisor sum runs over all d ≥ 1 and equals Bℓ−1 by an absolutely convergent Euler
+product.
+Lemma 6.2. For Re z > 0,
+      ∑︂
+          cℓ (d)d−z = ζ(1 + z)Hℓ (z),
+          d≥1
+                                                                                                                      (122)
+                                              ∏︂ (︃             p1−z
+                                                                            )︃                    ∑︂
+                  Hℓ (z) = (1 − ℓ    −1−z
+                                            )      1+                            (1 − p−1−z ) =         hℓ (a)a−z .
+                                                             p2 − p − 1
+                                              p̸=ℓ                                                a≥1
+                                                                                                         3/8 ≤ C .
+                                                                                           ∑︁
+The last series converges absolutely for Re z > −1/2; in particular                           a |hℓ (a)|a       ℓ
+
+Proof. Factoring the Euler product of cℓ against ζ(1 + z) leaves coefficients of p−z and p−2z
+equal to p/(p2 − p − 1) − 1/p and −1/(p2 − p − 1), both bounded in modulus by Cabs p−2 . Thus
+∑︁ −2+2σ
+  pp       < ∞ for σ < 1/2 proves the assertion.                                           □
+Lemma 6.3.
+                           ∑︂
+                                 cℓ (d) = Rℓ log X + Cℓ0 + Oℓ (X −1/4 )                 (X ≥ 1),
+                           d≤X
+                                                                                 ∑︂
+                                   Rℓ = Hℓ (0),              Cℓ0 = γRℓ −              hℓ (a) log a,
+                                                                                                                      (123)
+                                                                                  a
+                                                           ∏︂                          ℓ
+                                 Bℓ Rℓ = (1 − ℓ−1 )               (1 − p−2 ) =                .
+                                                                                  (ℓ + 1)ζ(2)
+                                                           p̸=ℓ
+                                              ∑︁
+Proof. Equation (122) gives cℓ (d) =                ab=d hℓ (a)/b. Thus
+                                                            ⃓                   ⃓
+                                                            ⃓                   ⃓
+          ∑︂               ∑︂           ∑︂ 1                ⃓∑︂ 1
+                                                                   − log T − γ ⃓⃓ ≤ Cabs T −1
+                                                                                ⃓
+                cℓ (d) =         hℓ (a)      ,              ⃓                                            (T ≥ 1).     (124)
+                                           b                ⃓b≤T b
+                                                            ⃓
+          d≤X              a≤X        b≤X/a                                     ⃓
+
+The harmonic-sum bound follows by integral comparison. By the bound on a |hℓ (a)|a3/8 in
+                                                                                     ∑︁
+
+Lemma 6.2 and log u ≤ 8u1/8 for u ≥ 1, substituting T = X/a and extending the main sums to
+infinity costs at most Cℓ X −1/4 . Multiplication of the local factors gives Bℓ Rℓ .    □
+  Equation (123) bounds the mass on each [X, 2X] by Cℓ , so dyadic summation gives
+                  ∑︂
+                      cℓ (d)d1/2 ≤ Cℓ X 1/2 ,
+                      d≤X
+                     ∑︂
+                           cℓ (d)d−1/2 ≤ Cℓ X −1/2 ,                                                                  (125)
+                     d>X
+                       ∑︂                                          ∑︂          √
+                             cℓ (d)d−1 ≤ Cℓ X −1 ,                       bℓ (d) d ≤ Cℓ       (X ≥ 1).
+                       d>X                                         d≥1
+24                                           PRAGYAN MANADHATA
+
+For the positive odd integer m = k − 1, the Bessel integral, recurrence, asymptotic, and odd-order
+antiderivative [DLM, (10.9.2), (10.6.1), (10.17.3), (10.22.9)] give
+                                 √︃       (︃               )︃
+                                    2          (2m + 1)π
+                        Jm (t) =       cos t −                + Ok (t−3/2 ) (t ≥ 1),
+                                    πt               4
+                            |Jm (t)| ≤ Ck min(tm , t−1/2 )         (t > 0),
+                    ∫︂ T                                 (m−1)/2                                       (126)
+                                                             ∑︂
+       Im (T ) :=          Jm (t) dt = 1 − J0 (T ) − 2               J2j (T ),
+                     0                                       j=1
+
+                           |Im (T )| ≤ Ck    (T ≥ 0),          |Im (T ) − 1| ≤ Ck T −1/2    (T ≥ 1).
+The defining power series [DLM, (10.2.2)] gives the small-argument bound on 0 < t ≤ 1.
+  The substitution u = cos θ and identity 2 sin θ sin((k − 1)θ) = cos((k − 2)θ) − cos(kθ) in the
+Fourier integral, followed by the Bessel integral and recurrence, give
+                         (k − 1)sk
+              Fˆ︁k (ξ) =           Jk−1 (2πξ) (ξ ̸= 0),   |Fˆ︁k (ξ)| ≤ Ck (1 + |ξ|)−3/2 .         (127)
+                            2ξ
+Parity treats ξ < 0, continuity gives the value at zero, and (126) gives the decay.
+  Poisson summation works even when a lattice point meets the boundary of the kernel’s support.
+The continuous periodization of Fk has the absolutely summable Fourier coefficients (127). Its
+Fejér means converge uniformly, since the nonnegative kernels J −1 | J−1       2πijx |2 have integral 1
+                                                                       ∑︁
+                                                                          j=0 e
+and are bounded by 1/(J sin2 (πδ)) outside distance δ from the integers. They therefore identify
+the periodization with its uniformly convergent Fourier series.
+Lemma 6.4. Let gℓ be (106) with pℓ (r) replaced by 1. Then
+                         √        {︃          √             √ }︃
+                       2π y ∑︂ Jm (4πν y) Jm (4πℓν y)
+             gℓ (y) =                             −              ,
+                      1 − 1/ℓ              ν             ℓν
+                              ν≥1
+                                                                                                       (128)
+                         ∑︂
+            Mℓ (y) = Bℓ     cℓ (d)gℓ (y/d2 ),
+                                  d≥1
+
+                 |gℓ (y)| ≤ Ck,ℓ y 1/4      (y ≥ 1),         |gℓ (y)| ≤ Ck,ℓ y 1/2   (0 < y ≤ 1).
+Proof. Poisson summation on the full lattice and its ℓ-sublattice cancels the zero frequencies,
+and (127) gives the remaining Bessel series. Insert (121) and use (d, ℓ) = 1 to get the divisor
+                                              √
+sum. Its tail converges absolutely. For d > 2ℓ y, only the zero lattice index contributes, giving
+               √
+gℓ (y/d2 ) = 2π y/((k − 1)d). The same observation gives the small-y bound, with finitely many
+indices on the remaining compact interval. For large y, use (126) and ν ν −3/2 < ∞.
+                                                                         ∑︁
+                                                                                               □
+                            ∫︁ Z                    √
+Lemma 6.5. For Gℓ (Z) = 0 gℓ (y)dy/y and x = Z,
+                                        1    ∑︂
+                          Gℓ (Z) =              ν −2 {Im (4πνx) − ℓ−2 Im (4πℓνx)},
+                                     1 − 1/ℓ
+                                                       ν≥1
+                                Gℓ (∞) = (1 + 1/ℓ)ζ(2),                                                (129)
+                                                 −1/4
+                |Gℓ (Z) − Gℓ (∞)| ≤ Ck,ℓ Z                   (Z ≥ 1),
+                               |Gℓ (Z)| ≤ Ck,ℓ Z 1/2     (0 < Z ≤ 1).
+
+Proof. By (126), the absolute integral of the νth term is at most Ck,ℓ ν −3/2 Z 1/4 , which permits
+termwise integration. Boundedness of Im allows passage to infinity, where Im → 1. Its remainder
+                                                             √
+in (126) gives the large-Z bound. Integrating |gℓ (y)| ≤ Ck,ℓ y gives the small-Z bound.         □
+                     LOW-LYING ZEROS IN THE DEPTH ASPECT AT THE PRIME 2                         25
+                                                                    √
+Proof of the logarithmic-mean  assertion in Theorem 6.1. Set x = Y for Y ≥ 1. Integrating
+(128) gives Bℓ d cℓ (d){Gℓ (Y /d2 ) − Gℓ (1/d2 )}. The absolute tail in Lemma 6.4 justifies the
+               ∑︁
+interchange, and the terms Gℓ (1/d2 ) have a bounded total by (125). For d ≤ x, replace Gℓ (Y /d2 )
+by Gℓ (∞). For d > x, use the small-argument bound in (129). The errors are at most Ck,ℓ times
+x−1/2 d≤x cℓ (d)d1/2 and x d>x cℓ (d)/d, both bounded by (125). Equation (123) therefore
+      ∑︁                     ∑︁
+gives
+                ∫︂ Y
+                            dy                                  1
+                     Mℓ (y)    = Bℓ Rℓ Gℓ (∞) log x + Ok,ℓ (1) = log Y + Ok,ℓ (1),          (130)
+                  1         y                                   2
+since (123) and (129) give Bℓ Rℓ Gℓ (∞) = 1.                                                    □
+Proof of Proposition 5.7. For V ≥ 1, apply (130). On (0, 1], (128) gives
+                                             √ ∑︂               √
+                           |Mℓ (v)| ≤ Ck,ℓ Bℓ v    bℓ (d) ≤ Ck,ℓ v,
+                                                               d
+            ∫︁ 1
+and hence    0 |Mℓ (v)|dv/v ≤ Ck,ℓ .                                                            □
+   For pointwise behavior, retain the leading Bessel terms rather than integrating them. Set
+δk = (2k − 1)π/4 and
+              √
+                2Bℓ ∑︂       √ ∑︂ −3/2 {︁
+                                          cos(4πνx/d − δk ) − ℓ−3/2 cos(4πℓνx/d − δk ) . (131)
+                                                                                      }︁
+  Ak,ℓ (x) =           bℓ (d) d     ν
+             1 − 1/ℓ
+                     d≥1          ν≥1
+
+This series converges absolutely and uniformly by (125), and hence defines a bounded continuous
+function.
+                                                                             √
+Proof of the oscillation assertion in Theorem 6.1. Apply (126) to the d ≤ y terms in (128).
+The accumulated Bessel remainder, the original tail, and the leading-term tail are bounded by
+Ck,ℓ times the following three quantities, respectively:
+                                           ∑︂
+                                    y −1/4     cℓ (d)d1/2 ≤ Cℓ ,
+                                                  √
+                                                d≤ y
+
+                                                √       ∑︂ cℓ (d)
+                                                    y                  ≤ Cℓ ,                (132)
+                                                          √        d
+                                                        d> y
+                                               ∑︂
+                                       y 1/4            cℓ (d)d−1/2 ≤ Cℓ .
+                                                 √
+                                               d> y
+
+By (125), these give the expansion in (120). Subtracting 1/2 changes only the bounded remainder.
+Boundedness of Ak,ℓ also gives
+                                   |Mℓ (y)| ≤ Ck,ℓ y 1/4               (y ≥ 1).              (133)
+  All frequencies in (131) are nonzero, so uniform convergence gives mean zero for Ak,ℓ . Its
+coefficient at frequency 2 is
+                         1 T                         Bℓ e−iδk ∑︂ bℓ (d)
+                            ∫︂
+                     lim       Ak,ℓ (x)e−4πix dx = √                    ̸= 0.          (134)
+                    T →∞ T 0                         2(1 − 1/ℓ)     d
+                                                                                  d≥1
+
+The first cosine in (131) has frequency 2 precisely when ν = d, but the second would require
+d = ℓν, which is excluded by (d, ℓ) = 1 on the support of bℓ . The coefficient is nonzero since
+bℓ ≥ 0 and bℓ (1) = 1.                           √                                             √
+                                                                     ∑︁               ∑︁
+   To obtain both signs quantitatively, set Kℓ = 2Bℓ /(1−1/ℓ), Sℓ = bℓ (d)/d, Tℓ = bℓ (d) d,
+q = Kℓ Sℓ /2, and Q = Kℓ (1 + ℓ−3/2 )ζ(3/2)Tℓ . Then |A| ≤ Q, while its two conjugate coefficients
+26                                        PRAGYAN MANADHATA
+
+in (134) give mean square at least 2q 2 by finite orthogonality and uniform approximation.
+Since its mean is zero, each of its positive and negative parts has mean at least q 2 /Q. Finite
+approximations to (131) have rational frequencies. For any prescribed error, choose a sufficiently
+close finite approximation. Integer multiples of its common period then change A by at most
+that error, uniformly in its argument. Hence both signs recur arbitrarily far out, and (120) gives
+sequences tending to infinity with
+                Mℓ (yj+ ) ≥ ck,ℓ (yj+ )1/4 ,      Mℓ (yj− ) ≤ −ck,ℓ (yj− )1/4 ,   ck,ℓ > 0.   (135)
+One may take ck,ℓ = q 2 /(4Q) after discarding finitely many points.
+                                                                                                  □
+
+                      7. Support limitations and further directions
+   The thresholds 3/2 and 4/3 arise from the following estimates. They do not need to be optimal
+for the density statements.
+
+The unconditional support 3/2. For a > 0, a smooth function g supported in [0, a], and
+X = (k 2 N )a , let
+                                                 (︃       )︃
+                               1 ∑︂ log P           log P
+                      TN (g) =       √ EN (P )g              .                    (136)
+                               L       P              L
+                                               P ≤X
+Combining (35) and (44) as in (45) gives, for n ≥ 8 and 0 < δ < 1/2,
+                                              √
+                                      48aKδ 2
+                           |TN (g)| ≤            ∥g∥∞ N −3/2 X 1+δ .                          (137)
+                                      1 − 2−1−δ
+The exponent −3/2 + a(1 + δ) is negative for 0 < δ < min{1/2, (3/2 − a)/a} when a < 3/2,
+and positive for every δ > 0 when a ≥ 3/2. The prime powers in Section 4 impose no further
+restriction.
+   For q = N/16, the underlying integer pair count satisfies
+                             ∑︂
+             2B 3/2 N −1 ≤         TN (m) ≤ 128B 3/2 N −1    (B ≥ max{2q, 64}).      (138)
+                              B<m≤2B
+                               m odd
+                                           √                                      √
+For the lower bound, choose the at least B/4 odd integers r such that |r| ≤ B/2. For each,
+the interval (B − r2 )/q < v ≤ (2B − r2 )/q contains at least B/(2q) positive integers, and each
+                                                                                             √
+gives an odd m = r2 + qv counted by TN (m). For the upper bound there are at most 4 B
+choices of r with r2 < 2B and at most B/q + 1 ≤ 3B/(2q) choices of v for each. Their product
+is 96B 3/2 /N .
+   For fixed 0 < a < 2, each prime P ≤ X has at most two surviving indices once the depth is
+large. Let
+                                                       log2 (64k a )
+                                             {︃     ⌈︃               ⌉︃}︃
+                             n0 (k, a) = max 8, 1 +                       .                (139)
+                                                         1 − a/2
+                       √
+If n ≥ n0 (k, a) then X < q/4. By (33), a contributing t = 2r has r odd and r2 ≡ P (mod q).
+Any two such roots satisfy r ≡ ±s (mod q/2) and within (−q/4, q/4), this forces r = ±s. Hence
+                           √
+                #{r : |r| < P , r2 ≡ P (mod q)} ≤ 2           (P ≤ X, n ≥ n0 (k, a)).      (140)
+Negating the local matrix leaves its projective fixed lines unchanged, and Uk−2 is even so these two
+contributions add. At k = 2, U0 = 1 also removes angular oscillation. Extending this argument
+beyond 3/2 therefore requires a bound for (136) that improves on its absolute majorant.
+                      LOW-LYING ZEROS IN THE DEPTH ASPECT AT THE PRIME 2                                     27
+
+The conditional support 4/3. Under Dirichlet GRH, the exponent 3/4 in Theorems 5.5
+and 5.6 balances the smoothing error Cη M B 1+η x−1/2 against the error from the character-sum
+estimates Cη (M + V )B 1/2+η x1/2+η in (103).
+   The variation bound M + V ≤ Ck,ϕ B −1/2 , the count of at most 1 + 8 2B/N trace indices in
+                                                                          √︁
+
+(111), and the factor Ck N −1/2 outside the trace-index sum give the block error
+                               Ck,ϕ,ϵ (︂ −1/2 1/4+ϵ               )︂
+                                        N    B      + N −1 B 3/4+ϵ .                        (141)
+                                 L
+At B = (k 2 N )a , the second term requires a < 4/3, while the first and (116) permit every fixed
+a < 2. A bound with B 1/2+ϵ in both prime-sum theorems, with the same uniformity in the index
+and test weight, would instead give Ck,ϕ,ϵ L−1 (N −1/2 B ϵ + N −1 B 1/2+ϵ ) and would yield every
+fixed support below 2 for SN . For comparison, Iwaniec–Luo–Sarnak [ILS00, Theorem 1.1] obtain
+support below 2 at squarefree levels under their stated Riemann hypotheses.
+
+                                               References
+[Apo76]   Tom M. Apostol, Introduction to analytic number theory, Springer, 1976.
+[BBD+ 17] Owen Barrett, Paula Burkhardt, Jonathan DeWitt, Robert Dorward, and Steven J. Miller, One-level
+          density for holomorphic cusp forms of arbitrary level, Res. Number Theory 3 (2017), Paper No. 25,
+          arXiv:1604.03224v2.
+[BKL+ 26] Claire Burrin, Vivian Kuperberg, Min Lee, Catinca Mujdei, and Hsin-Yi Yang, Murmurations in the
+          depth aspect, 2026, Preprint, arXiv:2603.25564v2.
+[DFS25] Lucile Devin, Daniel Fiorilli, and Anders Södergren, Extending the unconditional support in an Iwaniec–
+          Luo–Sarnak family, Algebra Number Theory 19 (2025), no. 8, 1621–1635, arXiv:2210.15782.
+[DLM]     DLMF, NIST digital library of mathematical functions, Version 1.2.7, released 15 June 2026, https:
+          //dlmf.nist.gov/
+[IK04]    Henryk Iwaniec and Emmanuel Kowalski, Analytic number theory, Amer. Math. Soc. Colloq. Publ.,
+          vol. 53, American Mathematical Society, 2004.
+[ILS00]   Henryk Iwaniec, Wenzhi Luo, and Peter Sarnak, Low lying zeros of families of L-functions, Inst. Hautes
+          Études Sci. Publ. Math. (2000), no. 91, 55–131.
+[Kro23]   Matthew Kroesche, Low-lying zeros of a thin family of automorphic L-functions in the level aspect,
+          2023, Preprint, arXiv:2308.06359v1.
+[Mar05]   Greg Martin, Dimensions of the spaces of cusp forms and newforms on Γ0 (N ) and Γ1 (N ), J. Number
+          Theory 112 (2005), 298–331.
+[MV06]    Hugh L. Montgomery and Robert C. Vaughan, Multiplicative number theory I: Classical theory,
+          Cambridge University Press, 2006.
+[Pop18]   Alexandru A. Popa, On the trace formula for Hecke operators on congruence subgroups, II, Res. Math.
+          Sci. 5 (2018), Paper No. 3, arXiv:1706.02691v1.
+[ST16]    Sug Woo Shin and Nicolas Templier, Sato–Tate theorem for families and low-lying zeros of automorphic
+          L-functions, Invent. Math. 203 (2016), 1–177.
+[SZ88]    Nils-Peter Skoruppa and Don Zagier, Jacobi forms and a certain space of modular forms, Invent. Math.
+          94 (1988), 113–146.
+[Tom26] Leonard Tomczak, Murmurations in the depth aspect for Maass and modular forms, 2026, Preprint,
+          arXiv:2606.08353v1.
+
+  Mission San Jose High School, Fremont, California
+  Email address: pragyanmanadhata10@gmail.com
+

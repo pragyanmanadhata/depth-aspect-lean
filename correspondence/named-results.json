@@ -1,0 +1,1565 @@
+{
+  "recorded_at": "2026-10-25T07:24:15.981048+00:00",
+  "scope": "Paper-to-source correspondence review. Lean build and axiom verification are recorded separately in verification/summary.json.",
+  "paper_pdf_sha256": "20b71677582cf2bf04965d91c82cfb05074e3d66bc49fe9be004229743f0cc71",
+  "paper_text_file": "correspondence/paper-text.txt",
+  "paper_text_sha256": "34e39adf6b158758c602adb28794520edd4cc767c9ff526ecd4198f14189806c",
+  "paper_text_note": "Text extraction supplied for line-pointer navigation. The original PDF remains authoritative for mathematical typography.",
+  "source_paths_relative_to": "project root",
+  "named_result_count": 31,
+  "claims": [
+    {
+      "paper_claim": "Theorem 1.1",
+      "paper_text_line": 49,
+      "endpoints": [
+        {
+          "module": "DepthAspect.UnsignedDensityTheorem",
+          "declaration": "DepthAspect.UnsignedDensity.unsigned_density_theorem_1_1",
+          "source": "DepthAspect/UnsignedDensityTheorem.lean",
+          "line": 250,
+          "kind": "theorem",
+          "source_sha256": "accfbd218917a3bc07a9a0ab40ac97e5c88dfb8d1204e14cba47a4c99e9e0604",
+          "role": "final_density_endpoint",
+          "note": "Exact finite zero average; fixed endpoint3/2, strict closed Fourier support and inverse-log error."
+        },
+        {
+          "module": "DepthAspect.UnsignedOrthogonalTheorem",
+          "declaration": "DepthAspect.UnsignedDensity.unsigned_orthogonal_error",
+          "source": "DepthAspect/UnsignedOrthogonalTheorem.lean",
+          "line": 12,
+          "kind": "theorem",
+          "source_sha256": "c6c1d6870dab02ffc7f7d29a82035e2cf967140c042c241ed9208a6fa83910c4",
+          "role": "final_integral_main_term_endpoint",
+          "note": "Same quantitative result with literal orthogonal integral functional."
+        },
+        {
+          "module": "DepthAspect.UnsignedOrthogonalTheorem",
+          "declaration": "DepthAspect.UnsignedDensity.unsigned_orthogonal_limit",
+          "source": "DepthAspect/UnsignedOrthogonalTheorem.lean",
+          "line": 30,
+          "kind": "theorem",
+          "source_sha256": "c6c1d6870dab02ffc7f7d29a82035e2cf967140c042c241ed9208a6fa83910c4",
+          "role": "final_limit_endpoint"
+        },
+        {
+          "module": "DepthAspect.UnsignedZeroConvergence",
+          "declaration": "DepthAspect.UnsignedDensity.unsigned_density_convergent",
+          "source": "DepthAspect/UnsignedZeroConvergence.lean",
+          "line": 56,
+          "kind": "theorem",
+          "source_sha256": "080a2eebf2384e3ab0caf63f6a65f3b294ebf75bf618895038f3e4440eb35e8b",
+          "role": "final_convergence_and_error_endpoint",
+          "note": "Conjoins actual absolute zero convergence and the uniform error; convergence is proved from standard counting/strip data."
+        },
+        {
+          "module": "DepthAspect.UnsignedZeroConvergence",
+          "declaration": "DepthAspect.UnsignedDensity.zero_sum_absolutely_convergent",
+          "source": "DepthAspect/UnsignedZeroConvergence.lean",
+          "line": 35,
+          "kind": "theorem",
+          "source_sha256": "080a2eebf2384e3ab0caf63f6a65f3b294ebf75bf618895038f3e4440eb35e8b",
+          "role": "convergence_component"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Theorem 1.2",
+      "paper_text_line": 62,
+      "endpoints": [
+        {
+          "module": "DepthAspect.SignedDensityTheorem",
+          "declaration": "DepthAspect.SignedDensity.signed_density_theorem_1_2",
+          "source": "DepthAspect/SignedDensityTheorem.lean",
+          "line": 226,
+          "kind": "theorem",
+          "source_sha256": "56c46f9fae8f42639a0f8f19fc612e2f58127171ac1c2f43dbff5705dec30d6c",
+          "role": "final_density_endpoint",
+          "note": "Exact signed finite zero average, support4/3, depth\u22657, actual primitive Dirichlet RH and general cited implications."
+        },
+        {
+          "module": "DepthAspect.SignedDensityTheorem",
+          "declaration": "DepthAspect.SignedDensity.signed_density_limit",
+          "source": "DepthAspect/SignedDensityTheorem.lean",
+          "line": 250,
+          "kind": "theorem",
+          "source_sha256": "56c46f9fae8f42639a0f8f19fc612e2f58127171ac1c2f43dbff5705dec30d6c",
+          "role": "final_limit_endpoint"
+        },
+        {
+          "module": "DepthAspect.SignedDensityTheorem",
+          "declaration": "DepthAspect.SignedDensity.signed_zero_sum_absolutely_convergent",
+          "source": "DepthAspect/SignedDensityTheorem.lean",
+          "line": 275,
+          "kind": "theorem",
+          "source_sha256": "56c46f9fae8f42639a0f8f19fc612e2f58127171ac1c2f43dbff5705dec30d6c",
+          "role": "final_convergence_endpoint"
+        },
+        {
+          "module": "DepthAspect.SignedDensityTheorem",
+          "declaration": "DepthAspect.SignedDensity.signed_density_uniform",
+          "source": "DepthAspect/SignedDensityTheorem.lean",
+          "line": 144,
+          "kind": "theorem",
+          "source_sha256": "56c46f9fae8f42639a0f8f19fc612e2f58127171ac1c2f43dbff5705dec30d6c",
+          "role": "uniform_family_component"
+        },
+        {
+          "module": "DepthAspect.SignedDensityTheorem",
+          "declaration": "DepthAspect.SignedDensity.signed_density_quantitative",
+          "source": "DepthAspect/SignedDensityTheorem.lean",
+          "line": 56,
+          "kind": "theorem",
+          "source_sha256": "56c46f9fae8f42639a0f8f19fc612e2f58127171ac1c2f43dbff5705dec30d6c",
+          "role": "quantitative_component"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Corollary 1.3",
+      "paper_text_line": 72,
+      "endpoints": [
+        {
+          "module": "DepthAspect.SignedCorollary",
+          "declaration": "DepthAspect.SignedSieve.SignedArithmeticData.root_number_density_corollary_1_3",
+          "source": "DepthAspect/SignedCorollary.lean",
+          "line": 23,
+          "kind": "theorem",
+          "source_sha256": "42615dcbe0d5ef5390719d23f9991d510f3eeda02f2f3c22c6303c95c69773ce",
+          "role": "full_conditional_endpoint",
+          "scope_note": "Quantitative bound for the same actual root-number filters and the same zero family; n>=8 and support compactly contained in (-4/3,4/3)."
+        },
+        {
+          "module": "DepthAspect.SignedCorollary",
+          "declaration": "DepthAspect.SignedSieve.SignedArithmeticData.root_number_density_limits",
+          "source": "DepthAspect/SignedCorollary.lean",
+          "line": 59,
+          "kind": "theorem",
+          "source_sha256": "42615dcbe0d5ef5390719d23f9991d510f3eeda02f2f3c22c6303c95c69773ce",
+          "role": "full_conditional_endpoint",
+          "scope_note": "Both literal special-orthogonal integral limits, including the odd central mass."
+        },
+        {
+          "module": "DepthAspect.SignedCorollary",
+          "declaration": "DepthAspect.SignedSieve.SignedArithmeticData.root_number_zero_sums_absolutely_convergent",
+          "source": "DepthAspect/SignedCorollary.lean",
+          "line": 90,
+          "kind": "theorem",
+          "source_sha256": "42615dcbe0d5ef5390719d23f9991d510f3eeda02f2f3c22c6303c95c69773ce",
+          "role": "convergence_companion"
+        },
+        {
+          "module": "DepthAspect.SignedSplitReduction",
+          "declaration": "DepthAspect.SignedSieve.SignedArithmeticData.split_error_from_unsigned_and_signed",
+          "source": "DepthAspect/SignedSplitReduction.lean",
+          "line": 75,
+          "kind": "theorem",
+          "source_sha256": "054720d68d7b66cd4b83e7e9150e4b183515e78cd9e4c9916901f7de474d61fe",
+          "role": "proved_component_or_reusable_intermediate",
+          "scope_note": "Reusable rate inputs are discharged by the two actual density theorem calls in the final corollary."
+        },
+        {
+          "module": "DepthAspect.SignedProjection",
+          "declaration": "DepthAspect.SignedSieve.SignedArithmeticData.signAverage_error",
+          "source": "DepthAspect/SignedProjection.lean",
+          "line": 40,
+          "kind": "theorem",
+          "source_sha256": "e56919ee61b38bfd53c79b9f8df429635cb4581f90c567803e527fbe3a1f45ee",
+          "role": "proved_component_or_reusable_intermediate"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Theorem 2.1",
+      "paper_text_line": 162,
+      "endpoints": [
+        {
+          "module": "DepthAspect.PopaTrace",
+          "declaration": "DepthAspect.PopaTrace.generalTraceExpression",
+          "source": "DepthAspect/PopaTrace.lean",
+          "line": 57,
+          "kind": "def",
+          "source_sha256": "e54aadfcd36f25e578dfdae54cbfc49849859f8844b0578ae732f2442d5b6706",
+          "role": "literal_equivalent_general_trace_expression"
+        },
+        {
+          "module": "DepthAspect.UniformSpectralPrimeBounds",
+          "declaration": "DepthAspect.UnsignedDensity.ArithmeticSpectralData.full_trace_formula",
+          "source": "DepthAspect/UniformSpectralPrimeBounds.lean",
+          "line": 64,
+          "kind": "structure_field",
+          "source_sha256": "02d78ede3887d29889eea61e2e1ba4c67e442597d056d9f7d621648680a1a474",
+          "role": "cited_general_input_not_a_derived_internal_conclusion",
+          "scope_note": "The cited general primitive-class form of Popa (2.16), with its cuspidal and scalar remarks, is an explicit structural field."
+        },
+        {
+          "module": "DepthAspect.PopaLocalInterpretation",
+          "declaration": "DepthAspect.PopaLocalInterpretation.GeneralPopaLocalFormula",
+          "source": "DepthAspect/PopaLocalInterpretation.lean",
+          "line": 145,
+          "kind": "structure",
+          "source_sha256": "a149f023ca8cc329546466f0fcc85137551c5933fd1171ede441037d61c3b5f9",
+          "role": "cited_general_input_not_a_derived_internal_conclusion"
+        },
+        {
+          "module": "DepthAspect.PopaClassReindex",
+          "declaration": "DepthAspect.PopaLiteralFunctions.classCoefficient_eq_primitive",
+          "source": "DepthAspect/PopaClassReindex.lean",
+          "line": 81,
+          "kind": "theorem",
+          "source_sha256": "cd39b5e12ae64102f656eb030125a4c4b0fc1e12110c3845107e3f2fa3266feb",
+          "role": "literal_notation_bridge",
+          "scope_note": "The internal finite Hurwitz-to-primitive substitution from the displayed C_Q formulation."
+        }
+      ]
+    },
+    {
+      "paper_claim": "Lemma 2.2",
+      "paper_text_line": 190,
+      "endpoints": [
+        {
+          "module": "DepthAspect.DiscriminantClassBound",
+          "declaration": "DepthAspect.DiscriminantClassBound.lemma_2_2",
+          "source": "DepthAspect/DiscriminantClassBound.lean",
+          "line": 50,
+          "kind": "theorem",
+          "source_sha256": "ba15e56e3c5964a95c05b5cc48dff8636107194a53c440014f93023c808d8326",
+          "role": "literal uniform L-value and class-number bound, printed constant"
+        },
+        {
+          "module": "DepthAspect.DiscriminantClassBound",
+          "declaration": "DepthAspect.DiscriminantClassBound.lemma_2_2",
+          "source": "DepthAspect/DiscriminantClassBound.lean",
+          "line": 50,
+          "kind": "theorem",
+          "source_sha256": "ba15e56e3c5964a95c05b5cc48dff8636107194a53c440014f93023c808d8326",
+          "role": "full_conditional_endpoint",
+          "scope_note": "One exact printed positive C_delta, chosen before H/G/D, bounds both actual discriminant-indexed quantities; only the general quadratic class formula is input."
+        },
+        {
+          "module": "DepthAspect.DiscriminantClassBound",
+          "declaration": "DepthAspect.DiscriminantClassBound.LAtOne_bound",
+          "source": "DepthAspect/DiscriminantClassBound.lean",
+          "line": 19,
+          "kind": "theorem",
+          "source_sha256": "ba15e56e3c5964a95c05b5cc48dff8636107194a53c440014f93023c808d8326",
+          "role": "full_conditional_endpoint"
+        },
+        {
+          "module": "DepthAspect.DiscriminantClassBound",
+          "declaration": "DepthAspect.DiscriminantClassBound.hurwitz_bound",
+          "source": "DepthAspect/DiscriminantClassBound.lean",
+          "line": 29,
+          "kind": "theorem",
+          "source_sha256": "ba15e56e3c5964a95c05b5cc48dff8636107194a53c440014f93023c808d8326",
+          "role": "full_conditional_endpoint"
+        },
+        {
+          "module": "DepthAspect.ImprimitiveExplicitConstant",
+          "declaration": "DepthAspect.ImprimitiveExplicitConstant.imprimitive_one_eq_product",
+          "source": "DepthAspect/ImprimitiveExplicitConstant.lean",
+          "line": 18,
+          "kind": "theorem",
+          "source_sha256": "f4578aab4b3848a8c8517b8187f6c772a89cb0974ad5f1325fbf6d607b9d4169",
+          "role": "proved_component_or_reusable_intermediate"
+        },
+        {
+          "module": "DepthAspect.EulerFactorBounds",
+          "declaration": "DepthAspect.EulerFactorBounds.finite_correction_product_bound",
+          "source": "DepthAspect/EulerFactorBounds.lean",
+          "line": 134,
+          "kind": "theorem",
+          "source_sha256": "0f9f7ec7a430c619a03818804089e181f474cb569fc54a442017de947c70f577",
+          "role": "proved_component_or_reusable_intermediate"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Lemma 2.3",
+      "paper_text_line": 231,
+      "endpoints": [
+        {
+          "module": "DepthAspect.OldformTrace",
+          "declaration": "DepthAspect.OldformTrace.full_trace_dyadic",
+          "source": "DepthAspect/OldformTrace.lean",
+          "line": 58,
+          "kind": "theorem",
+          "source_sha256": "b0dbc3b4ea0e61e8f4016d81597baf163e171ee8a6722933841d42b576f02742",
+          "role": "full_conditional_endpoint",
+          "scope_note": "Actual LinearMap.trace of the general oldform-indexed eigenbasis gives n-a+1 multiplicity."
+        },
+        {
+          "module": "DepthAspect.OldformTrace",
+          "declaration": "DepthAspect.OldformTrace.new_trace_second_difference_odd_index",
+          "source": "DepthAspect/OldformTrace.lean",
+          "line": 147,
+          "kind": "theorem",
+          "source_sha256": "b0dbc3b4ea0e61e8f4016d81597baf163e171ee8a6722933841d42b576f02742",
+          "role": "full_conditional_endpoint",
+          "scope_note": "Only coprime-level eigenvectors are assumed; odd m discharges the dyadic coprimality."
+        },
+        {
+          "module": "DepthAspect.OldformTrace",
+          "declaration": "DepthAspect.OldformTrace.oldTraceComplex_second_difference",
+          "source": "DepthAspect/OldformTrace.lean",
+          "line": 110,
+          "kind": "theorem",
+          "source_sha256": "b0dbc3b4ea0e61e8f4016d81597baf163e171ee8a6722933841d42b576f02742",
+          "role": "proved_component_or_reusable_intermediate"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Proposition 2.4",
+      "paper_text_line": 252,
+      "endpoints": [
+        {
+          "module": "DepthAspect.PopaLiteralTrace",
+          "declaration": "DepthAspect.UnsignedDensity.ArithmeticSpectralData.newform_sum_literal",
+          "source": "DepthAspect/PopaLiteralTrace.lean",
+          "line": 81,
+          "kind": "theorem",
+          "source_sha256": "59b4f5113ed0ef5d7226b141186d77f4f7b15974477b2b8a76be46f7939cd1ab",
+          "role": "full_conditional_endpoint",
+          "scope_note": "Actual same-family newform eigenvalue sum with the literal Hurwitz/C_Q K_n. Inputs are the shared general arithmetic identities and the cited general B/projective interpretation."
+        },
+        {
+          "module": "DepthAspect.PopaLiteralTrace",
+          "declaration": "DepthAspect.UnsignedDensity.ArithmeticSpectralData.mean_trace_literal",
+          "source": "DepthAspect/PopaLiteralTrace.lean",
+          "line": 100,
+          "kind": "theorem",
+          "source_sha256": "59b4f5113ed0ef5d7226b141186d77f4f7b15974477b2b8a76be46f7939cd1ab",
+          "role": "full_conditional_endpoint",
+          "scope_note": "Normalized literal K version of the same exact finite-family identity."
+        },
+        {
+          "module": "DepthAspect.PopaTrace",
+          "declaration": "DepthAspect.PopaTrace.heckeAverage_canonical_from_general_inputs",
+          "source": "DepthAspect/PopaTrace.lean",
+          "line": 344,
+          "kind": "theorem",
+          "source_sha256": "e54aadfcd36f25e578dfdae54cbfc49849859f8844b0578ae732f2442d5b6706",
+          "role": "full_normalized_equivalent_endpoint",
+          "scope_note": "Actual finite-family mean; selected primitive matrices and the dyadic local interpretation are derived from general inputs."
+        },
+        {
+          "module": "DepthAspect.PopaTrace",
+          "declaration": "DepthAspect.PopaTrace.newform_sum_from_general_trace",
+          "source": "DepthAspect/PopaTrace.lean",
+          "line": 229,
+          "kind": "theorem",
+          "source_sha256": "e54aadfcd36f25e578dfdae54cbfc49849859f8844b0578ae732f2442d5b6706",
+          "role": "proved_component_or_reusable_intermediate",
+          "scope_note": "Unnormalized newspace sum; its local-count premise is discharged in the canonical wrapper."
+        },
+        {
+          "module": "DepthAspect.PopaLiteralBridge",
+          "declaration": "DepthAspect.PopaLiteralFunctions.K_eq_literalContentTrace",
+          "source": "DepthAspect/PopaLiteralBridge.lean",
+          "line": 63,
+          "kind": "theorem",
+          "source_sha256": "be1065e51866b8706e70357cdc44a2674dfc0daafad2a64c204e4a25636b1cf3",
+          "role": "literal_notation_bridge",
+          "scope_note": "Identifies the literal displayed Hurwitz/C_Q K_n with the actual content-weighted matrix expression."
+        },
+        {
+          "module": "DepthAspect.PopaClassReindex",
+          "declaration": "DepthAspect.PopaLiteralFunctions.Xi_eq_primitive",
+          "source": "DepthAspect/PopaClassReindex.lean",
+          "line": 126,
+          "kind": "theorem",
+          "source_sha256": "cd39b5e12ae64102f656eb030125a4c4b0fc1e12110c3845107e3f2fa3266feb",
+          "role": "literal_notation_bridge"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Lemma 2.5",
+      "paper_text_line": 279,
+      "endpoints": [
+        {
+          "module": "DepthAspect.MartinDimension",
+          "declaration": "DepthAspect.MartinDimension.dimension_even",
+          "source": "DepthAspect/MartinDimension.lean",
+          "line": 141,
+          "kind": "theorem",
+          "source_sha256": "c9e78f20be85a4f0dbf7497ef3344c3f2ae8d027e7c1804ad72191262e6f1ac7",
+          "role": "full_conditional_endpoint"
+        },
+        {
+          "module": "DepthAspect.MartinDimension",
+          "declaration": "DepthAspect.MartinDimension.dimension_odd",
+          "source": "DepthAspect/MartinDimension.lean",
+          "line": 147,
+          "kind": "theorem",
+          "source_sha256": "c9e78f20be85a4f0dbf7497ef3344c3f2ae8d027e7c1804ad72191262e6f1ac7",
+          "role": "full_conditional_endpoint"
+        },
+        {
+          "module": "DepthAspect.MartinDimension",
+          "declaration": "DepthAspect.MartinDimension.dimension_bounds",
+          "source": "DepthAspect/MartinDimension.lean",
+          "line": 153,
+          "kind": "theorem",
+          "source_sha256": "c9e78f20be85a4f0dbf7497ef3344c3f2ae8d027e7c1804ad72191262e6f1ac7",
+          "role": "full_conditional_endpoint"
+        },
+        {
+          "module": "DepthAspect.MartinDimension",
+          "declaration": "DepthAspect.MartinDimension.scalarCoefficient_error",
+          "source": "DepthAspect/MartinDimension.lean",
+          "line": 225,
+          "kind": "theorem",
+          "source_sha256": "c9e78f20be85a4f0dbf7497ef3344c3f2ae8d027e7c1804ad72191262e6f1ac7",
+          "role": "full_conditional_endpoint"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Lemma 3.1",
+      "paper_text_line": 356,
+      "endpoints": [
+        {
+          "module": "DepthAspect.LocalCancellation",
+          "declaration": "DepthAspect.LocalCancellation.local_cancellation",
+          "source": "DepthAspect/LocalCancellation.lean",
+          "line": 153,
+          "kind": "theorem",
+          "source_sha256": "33c4fff70c9b12489c8f62f9b517a3692a244c40672e131640a716e24ddb017e",
+          "role": "primitive/content-scaled rho cancellation"
+        },
+        {
+          "module": "DepthAspect.DyadicFixedLines",
+          "declaration": "DepthAspect.DyadicFixedLines.fixedLineCount_local_cancellation",
+          "source": "DepthAspect/DyadicFixedLines.lean",
+          "line": 57,
+          "kind": "theorem",
+          "source_sha256": "602284557a916b7e54f2623ded87ab027421f827b8d26c0715d71b3ea72190d6",
+          "role": "actual projective fixed-line count cancellation"
+        },
+        {
+          "module": "DepthAspect.DyadicFixedLines",
+          "declaration": "DepthAspect.DyadicFixedLines.fixedLineCount_local_cancellation",
+          "source": "DepthAspect/DyadicFixedLines.lean",
+          "line": 57,
+          "kind": "theorem",
+          "source_sha256": "602284557a916b7e54f2623ded87ab027421f827b8d26c0715d71b3ea72190d6",
+          "role": "full_conditional_endpoint",
+          "scope_note": "Actual integral-matrix fixed projective lines; content-sensitive cutoff with primitive-at-two coefficient witness, n>=3."
+        },
+        {
+          "module": "DepthAspect.DyadicFixedLines",
+          "declaration": "DepthAspect.DyadicFixedLines.fixedLineCount_discriminant_support",
+          "source": "DepthAspect/DyadicFixedLines.lean",
+          "line": 125,
+          "kind": "theorem",
+          "source_sha256": "602284557a916b7e54f2623ded87ab027421f827b8d26c0715d71b3ea72190d6",
+          "role": "full_conditional_endpoint",
+          "scope_note": "Witness-free weaker cutoff uses odd determinant and actual trace/determinant discriminant."
+        },
+        {
+          "module": "DepthAspect.LocalCancellation",
+          "declaration": "DepthAspect.LocalCancellation.local_cancellation",
+          "source": "DepthAspect/LocalCancellation.lean",
+          "line": 153,
+          "kind": "theorem",
+          "source_sha256": "33c4fff70c9b12489c8f62f9b517a3692a244c40672e131640a716e24ddb017e",
+          "role": "proved_component_or_reusable_intermediate"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Corollary 3.2",
+      "paper_text_line": 367,
+      "endpoints": [
+        {
+          "module": "DepthAspect.DyadicFixedLines",
+          "declaration": "DepthAspect.DyadicFixedLines.weighted_fixedLineCount_support",
+          "source": "DepthAspect/DyadicFixedLines.lean",
+          "line": 140,
+          "kind": "theorem",
+          "source_sha256": "602284557a916b7e54f2623ded87ab027421f827b8d26c0715d71b3ea72190d6",
+          "role": "checked weighted fixed-line support component"
+        },
+        {
+          "module": "DepthAspect.PopaLiteralBridge",
+          "declaration": "DepthAspect.PopaLiteralFunctions.literal_K_discriminant_support",
+          "source": "DepthAspect/PopaLiteralBridge.lean",
+          "line": 83,
+          "kind": "theorem",
+          "source_sha256": "be1065e51866b8706e70357cdc44a2674dfc0daafad2a64c204e4a25636b1cf3",
+          "role": "final literal Hurwitz/C_Q K endpoint"
+        },
+        {
+          "module": "DepthAspect.PopaLiteralBridge",
+          "declaration": "DepthAspect.PopaLiteralFunctions.literal_K_discriminant_support",
+          "source": "DepthAspect/PopaLiteralBridge.lean",
+          "line": 83,
+          "kind": "theorem",
+          "source_sha256": "be1065e51866b8706e70357cdc44a2674dfc0daafad2a64c204e4a25636b1cf3",
+          "role": "full_conditional_endpoint",
+          "scope_note": "The exact literal Hurwitz/C_Q K_n vanishes when 2^(n-2) does not divide t\u00b2-4m."
+        },
+        {
+          "module": "DepthAspect.DyadicFixedLines",
+          "declaration": "DepthAspect.DyadicFixedLines.weighted_fixedLineCount_support",
+          "source": "DepthAspect/DyadicFixedLines.lean",
+          "line": 140,
+          "kind": "theorem",
+          "source_sha256": "602284557a916b7e54f2623ded87ab027421f827b8d26c0715d71b3ea72190d6",
+          "role": "proved_component_or_reusable_intermediate"
+        },
+        {
+          "module": "DepthAspect.TraceBounds",
+          "declaration": "DepthAspect.TraceBounds.contentTrace_zero",
+          "source": "DepthAspect/TraceBounds.lean",
+          "line": 213,
+          "kind": "theorem",
+          "source_sha256": "e0677761d1a5c8e145cfb78d9047c3314a2bd44d8d89aad93d66c22668d5f082",
+          "role": "proved_component_or_reusable_intermediate"
+        },
+        {
+          "module": "DepthAspect.PopaLiteralBridge",
+          "declaration": "DepthAspect.PopaLiteralFunctions.K_eq_literalContentTrace",
+          "source": "DepthAspect/PopaLiteralBridge.lean",
+          "line": 63,
+          "kind": "theorem",
+          "source_sha256": "be1065e51866b8706e70357cdc44a2674dfc0daafad2a64c204e4a25636b1cf3",
+          "role": "literal_notation_bridge"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Theorem 3.3",
+      "paper_text_line": 421,
+      "endpoints": [
+        {
+          "module": "DepthAspect.UniformPointwiseTrace",
+          "declaration": "DepthAspect.UnsignedDensity.ArithmeticSpectralData.uniform_unsigned_trace_bound",
+          "source": "DepthAspect/UniformPointwiseTrace.lean",
+          "line": 138,
+          "kind": "theorem",
+          "source_sha256": "663e37d2fd39434c8e11acf9424bfa7f3f210139d23e3013e99a975732c01f13",
+          "role": "full_conditional_endpoint",
+          "scope_note": "Actual finite-family V_N(m), the literal divisor-ratio sum, and exact C=K_delta+576/(weight-1)."
+        },
+        {
+          "module": "DepthAspect.UniformPointwiseTrace",
+          "declaration": "DepthAspect.UnsignedDensity.ArithmeticSpectralData.uniform_prime_trace_bound",
+          "source": "DepthAspect/UniformPointwiseTrace.lean",
+          "line": 185,
+          "kind": "theorem",
+          "source_sha256": "663e37d2fd39434c8e11acf9424bfa7f3f210139d23e3013e99a975732c01f13",
+          "role": "full_conditional_endpoint"
+        },
+        {
+          "module": "DepthAspect.UniformTraceBounds",
+          "declaration": "DepthAspect.TraceBounds.canonicalLiteralElliptic_bound",
+          "source": "DepthAspect/UniformTraceBounds.lean",
+          "line": 82,
+          "kind": "theorem",
+          "source_sha256": "22153d339b54cb9fd711b3c29e69701fa7f6639bcdac4f717906fbf8d3d01d55",
+          "role": "proved_component_or_reusable_intermediate"
+        },
+        {
+          "module": "DepthAspect.TraceBounds",
+          "declaration": "DepthAspect.TraceBounds.normalizedCusp_bound",
+          "source": "DepthAspect/TraceBounds.lean",
+          "line": 270,
+          "kind": "theorem",
+          "source_sha256": "e0677761d1a5c8e145cfb78d9047c3314a2bd44d8d89aad93d66c22668d5f082",
+          "role": "proved_component_or_reusable_intermediate"
+        },
+        {
+          "module": "DepthAspect.TraceZeta",
+          "declaration": "DepthAspect.TraceBounds.ellipticConstant_eq_zeta",
+          "source": "DepthAspect/TraceZeta.lean",
+          "line": 28,
+          "kind": "theorem",
+          "source_sha256": "59372286b1e0e5cae4dd40e869b51b6af5a93d228fbdba08158e0aa75e8854f9",
+          "role": "literal_notation_bridge"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Proposition 3.4",
+      "paper_text_line": 441,
+      "endpoints": [
+        {
+          "module": "DepthAspect.UniformPointwiseTrace",
+          "declaration": "DepthAspect.UnsignedDensity.ArithmeticSpectralData.small_prime_square_trace_bound",
+          "source": "DepthAspect/UniformPointwiseTrace.lean",
+          "line": 266,
+          "kind": "theorem",
+          "source_sha256": "663e37d2fd39434c8e11acf9424bfa7f3f210139d23e3013e99a975732c01f13",
+          "role": "full_conditional_endpoint",
+          "scope_note": "Canonical T_N(p\u00b2)=0 and actual V_N(p\u00b2)-1/p bound, with p<N/64."
+        },
+        {
+          "module": "DepthAspect.UniformPointwiseTrace",
+          "declaration": "DepthAspect.UnsignedDensity.ArithmeticSpectralData.small_square_elliptic_zero",
+          "source": "DepthAspect/UniformPointwiseTrace.lean",
+          "line": 257,
+          "kind": "theorem",
+          "source_sha256": "663e37d2fd39434c8e11acf9424bfa7f3f210139d23e3013e99a975732c01f13",
+          "role": "proved_component_or_reusable_intermediate"
+        },
+        {
+          "module": "DepthAspect.PrimeSquareCount",
+          "declaration": "DepthAspect.PrimeSquareCount.canonical_square_count_zero",
+          "source": "DepthAspect/PrimeSquareCount.lean",
+          "line": 96,
+          "kind": "theorem",
+          "source_sha256": "57d7ad5a83e9f6c1d862899758e6426f5eae74ed75136d00e83032b8d7f7716c",
+          "role": "proved_component_or_reusable_intermediate"
+        },
+        {
+          "module": "DepthAspect.TraceSquares",
+          "declaration": "DepthAspect.TraceBounds.classElliptic_prime_square_zero",
+          "source": "DepthAspect/TraceSquares.lean",
+          "line": 96,
+          "kind": "theorem",
+          "source_sha256": "71e7a1d50c695d1c72be97fbc5aaafa449305ff3eccaeeb9d95b2facceb487b5",
+          "role": "proved_component_or_reusable_intermediate"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Theorem 4.1",
+      "paper_text_line": 473,
+      "endpoints": [
+        {
+          "module": "DepthAspect.UnsignedDensityTheorem",
+          "declaration": "DepthAspect.UnsignedDensity.unsigned_density_uniform",
+          "source": "DepthAspect/UnsignedDensityTheorem.lean",
+          "line": 205,
+          "kind": "theorem",
+          "source_sha256": "accfbd218917a3bc07a9a0ab40ac97e5c88dfb8d1204e14cba47a4c99e9e0604",
+          "role": "final_endpoint_equation_41"
+        },
+        {
+          "module": "DepthAspect.UnsignedDensityTheorem",
+          "declaration": "DepthAspect.UnsignedDensity.unsigned_density_quantitative",
+          "source": "DepthAspect/UnsignedDensityTheorem.lean",
+          "line": 176,
+          "kind": "theorem",
+          "source_sha256": "accfbd218917a3bc07a9a0ab40ac97e5c88dfb8d1204e14cba47a4c99e9e0604",
+          "role": "final_endpoint_equation_42"
+        },
+        {
+          "module": "DepthAspect.UnsignedDensityTheorem",
+          "declaration": "DepthAspect.UnsignedDensity.unsigned_five_term",
+          "source": "DepthAspect/UnsignedDensityTheorem.lean",
+          "line": 90,
+          "kind": "theorem",
+          "source_sha256": "accfbd218917a3bc07a9a0ab40ac97e5c88dfb8d1204e14cba47a4c99e9e0604",
+          "role": "error_assembly_component"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Lemma 4.2",
+      "paper_text_line": 490,
+      "endpoints": [
+        {
+          "module": "DepthAspect.SurvivingTraces",
+          "declaration": "DepthAspect.SurvivingTraces.survivingTraces_card_eq",
+          "source": "DepthAspect/SurvivingTraces.lean",
+          "line": 56,
+          "kind": "theorem",
+          "source_sha256": "faf1900aeb2a04da5ec3589d9aa1597e6032dde0b714cc8bb98b1c3aea2464f9",
+          "role": "final_endpoint_equation_43"
+        },
+        {
+          "module": "DepthAspect.SurvivingTraces",
+          "declaration": "DepthAspect.SurvivingTraces.survivingTraces_empty_of_lt",
+          "source": "DepthAspect/SurvivingTraces.lean",
+          "line": 65,
+          "kind": "theorem",
+          "source_sha256": "faf1900aeb2a04da5ec3589d9aa1597e6032dde0b714cc8bb98b1c3aea2464f9",
+          "role": "final_vanishing_endpoint"
+        },
+        {
+          "module": "DepthAspect.PrimePairBound",
+          "declaration": "DepthAspect.PrimePairBound.original_trace_sum_bound",
+          "source": "DepthAspect/PrimePairBound.lean",
+          "line": 176,
+          "kind": "theorem",
+          "source_sha256": "e114950c9d89d5e6a0975625c39aad9fd91315ff32ef92d4b3cdb58144a515f6",
+          "role": "final_endpoint_equation_44",
+          "note": "Stronger arbitrary finite integer-index bound; the prime interval is a direct specialization."
+        },
+        {
+          "module": "DepthAspect.SurvivingTraces",
+          "declaration": "DepthAspect.SurvivingTraces.survivingTraces_eq_image",
+          "source": "DepthAspect/SurvivingTraces.lean",
+          "line": 41,
+          "kind": "theorem",
+          "source_sha256": "faf1900aeb2a04da5ec3589d9aa1597e6032dde0b714cc8bb98b1c3aea2464f9",
+          "role": "reindex_component"
+        },
+        {
+          "module": "DepthAspect.PrimePairBound",
+          "declaration": "DepthAspect.PrimePairBound.integer_pairs_bound_rpow",
+          "source": "DepthAspect/PrimePairBound.lean",
+          "line": 85,
+          "kind": "theorem",
+          "source_sha256": "e114950c9d89d5e6a0975625c39aad9fd91315ff32ef92d4b3cdb58144a515f6",
+          "role": "counting_component"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Lemma 4.3",
+      "paper_text_line": 503,
+      "endpoints": [
+        {
+          "module": "DepthAspect.TracePrimeApplications",
+          "declaration": "DepthAspect.TracePrimeApplications.literalElliptic_prime_sum_bound",
+          "source": "DepthAspect/TracePrimeApplications.lean",
+          "line": 61,
+          "kind": "theorem",
+          "source_sha256": "2dd8455d824a58444b0af489358fe2aea2cb82013d2ce0c74717d8bc8778945b",
+          "role": "literal_model_endpoint_equation_45",
+          "note": "Has reusable class-growth, primitive-representative, and dimension interfaces; these are internally discharged in the general-data spectral composition below."
+        },
+        {
+          "module": "DepthAspect.CuspPrimeApplications",
+          "declaration": "DepthAspect.TracePrimeApplications.normalizedCusp_prime_sum_bound",
+          "source": "DepthAspect/CuspPrimeApplications.lean",
+          "line": 12,
+          "kind": "theorem",
+          "source_sha256": "1456a9907d4fef775986fbce262d80195715f4da3cd3351c8d45e09f02749bb1",
+          "role": "literal_model_endpoint_equation_46",
+          "note": "Has the dimension lower bound as a reusable interface, discharged from Martin in the spectral composition."
+        },
+        {
+          "module": "DepthAspect.PrimeSumBounds",
+          "declaration": "DepthAspect.PrimeSumBounds.dyadic_block_bound_level",
+          "source": "DepthAspect/PrimeSumBounds.lean",
+          "line": 109,
+          "kind": "theorem",
+          "source_sha256": "15956a6ebad5b075befbecee51081df3ad766895f66b22ac7bb513c31b0ca9e7",
+          "role": "component_equation_47"
+        },
+        {
+          "module": "DepthAspect.PrimeSumBounds",
+          "declaration": "DepthAspect.PrimeSumBounds.prime_sum_bound",
+          "source": "DepthAspect/PrimeSumBounds.lean",
+          "line": 140,
+          "kind": "theorem",
+          "source_sha256": "15956a6ebad5b075befbecee51081df3ad766895f66b22ac7bb513c31b0ca9e7",
+          "role": "dyadic_sum_component"
+        },
+        {
+          "module": "DepthAspect.UniformSpectralPrimeBounds",
+          "declaration": "DepthAspect.UnsignedDensity.ArithmeticSpectralData.prime_sum",
+          "source": "DepthAspect/UniformSpectralPrimeBounds.lean",
+          "line": 123,
+          "kind": "theorem",
+          "source_sha256": "02d78ede3887d29889eea61e2e1ba4c67e442597d056d9f7d621648680a1a474",
+          "role": "general_input_spectral_assembly"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Lemma 4.4",
+      "paper_text_line": 536,
+      "endpoints": [
+        {
+          "module": "DepthAspect.TraceSquareApplications",
+          "declaration": "DepthAspect.TracePrimeApplications.literalElliptic_square_sum_bound",
+          "source": "DepthAspect/TraceSquareApplications.lean",
+          "line": 17,
+          "kind": "theorem",
+          "source_sha256": "3adc6346b0a1ab4e049e2525c58350cec1b228d8aa0d39e9ceb92a82a60f870c",
+          "role": "literal_model_endpoint_equation_48",
+          "note": "Reusable internal class/dimension interfaces are discharged in the spectral composition."
+        },
+        {
+          "module": "DepthAspect.CuspPrimeApplications",
+          "declaration": "DepthAspect.TracePrimeApplications.normalizedCusp_square_sum_bound",
+          "source": "DepthAspect/CuspPrimeApplications.lean",
+          "line": 32,
+          "kind": "theorem",
+          "source_sha256": "1456a9907d4fef775986fbce262d80195715f4da3cd3351c8d45e09f02749bb1",
+          "role": "literal_model_endpoint_equation_49_cusp"
+        },
+        {
+          "module": "DepthAspect.CuspPrimeApplications",
+          "declaration": "DepthAspect.TracePrimeApplications.scalarCoefficient_square_sum_bound",
+          "source": "DepthAspect/CuspPrimeApplications.lean",
+          "line": 51,
+          "kind": "theorem",
+          "source_sha256": "1456a9907d4fef775986fbce262d80195715f4da3cd3351c8d45e09f02749bb1",
+          "role": "literal_model_endpoint_equation_49_scalar",
+          "note": "Scalar coefficient bounds are discharged from Martin in the spectral composition."
+        },
+        {
+          "module": "DepthAspect.PrimePowerApplications",
+          "declaration": "DepthAspect.PrimePowerApplications.elliptic_square_sum_bound",
+          "source": "DepthAspect/PrimePowerApplications.lean",
+          "line": 248,
+          "kind": "theorem",
+          "source_sha256": "4ac1d1386c999654919a4e041accd338f54c13b5eadff6904c8147a788a28827",
+          "role": "generic_weighting_component"
+        },
+        {
+          "module": "DepthAspect.ChebyshevWeights",
+          "declaration": "DepthAspect.ChebyshevWeights.primePowerSum_nonnegative_exponent",
+          "source": "DepthAspect/ChebyshevWeights.lean",
+          "line": 76,
+          "kind": "theorem",
+          "source_sha256": "5d981367aa626bcc2e01765e5a1b44b64133cbab9066ef6218f7be3b2d5b0c68",
+          "role": "component_equation_50_first"
+        },
+        {
+          "module": "DepthAspect.ChebyshevWeights",
+          "declaration": "DepthAspect.ChebyshevWeights.primePowerSum_negative_exponent_all",
+          "source": "DepthAspect/ChebyshevWeights.lean",
+          "line": 203,
+          "kind": "theorem",
+          "source_sha256": "5d981367aa626bcc2e01765e5a1b44b64133cbab9066ef6218f7be3b2d5b0c68",
+          "role": "component_equation_50_second"
+        },
+        {
+          "module": "DepthAspect.UniformSpectralPrimeBounds",
+          "declaration": "DepthAspect.UnsignedDensity.ArithmeticSpectralData.square_sum",
+          "source": "DepthAspect/UniformSpectralPrimeBounds.lean",
+          "line": 150,
+          "kind": "theorem",
+          "source_sha256": "02d78ede3887d29889eea61e2e1ba4c67e442597d056d9f7d621648680a1a474",
+          "role": "general_input_spectral_assembly"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Lemma 4.5",
+      "paper_text_line": 602,
+      "endpoints": [
+        {
+          "module": "DepthAspect.FourierDecay",
+          "declaration": "DepthAspect.EntireExtension.schwartz_entire_extension_unique",
+          "source": "DepthAspect/FourierDecay.lean",
+          "line": 152,
+          "kind": "theorem",
+          "source_sha256": "b818996a3cb3dbef8e30ebaff8ec0c87ce91cf0999b4a00167da79a332012d1b",
+          "role": "actual entire extension, restriction, uniqueness"
+        },
+        {
+          "module": "DepthAspect.FourierDecay",
+          "declaration": "DepthAspect.EntireExtension.schwartz_extension_decay",
+          "source": "DepthAspect/FourierDecay.lean",
+          "line": 162,
+          "kind": "theorem",
+          "source_sha256": "b818996a3cb3dbef8e30ebaff8ec0c87ce91cf0999b4a00167da79a332012d1b",
+          "role": "literal uniform bound with printed constant"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Lemma 4.6",
+      "paper_text_line": 646,
+      "endpoints": [
+        {
+          "module": "DepthAspect.DigammaBound",
+          "declaration": "DepthAspect.DigammaBound.gamma_derivative_quotient_bound_of_dlmf",
+          "source": "DepthAspect/DigammaBound.lean",
+          "line": 162,
+          "kind": "theorem",
+          "source_sha256": "768eb32d6e5606948cc618186341fc0caaa087e457326b8ea5802fd94ac75439",
+          "role": "Literal Gamma logarithmic-derivative vertical estimate"
+        },
+        {
+          "module": "DepthAspect.DigammaBound",
+          "declaration": "DepthAspect.DigammaBound.digamma_vertical_bound_of_dlmf",
+          "source": "DepthAspect/DigammaBound.lean",
+          "line": 154,
+          "kind": "theorem",
+          "source_sha256": "768eb32d6e5606948cc618186341fc0caaa087e457326b8ea5802fd94ac75439",
+          "role": "Actual digamma estimate from the cited DLMF identity"
+        },
+        {
+          "module": "DepthAspect.DigammaBound",
+          "declaration": "DepthAspect.DigammaBound.seriesTerm_summable",
+          "source": "DepthAspect/DigammaBound.lean",
+          "line": 120,
+          "kind": "theorem",
+          "source_sha256": "768eb32d6e5606948cc618186341fc0caaa087e457326b8ea5802fd94ac75439",
+          "role": "Absolute convergence derived for the concrete DLMF series"
+        },
+        {
+          "module": "DepthAspect.DigammaBound",
+          "declaration": "DepthAspect.DigammaBound.seriesDigamma_vertical_bound",
+          "source": "DepthAspect/DigammaBound.lean",
+          "line": 138,
+          "kind": "theorem",
+          "source_sha256": "768eb32d6e5606948cc618186341fc0caaa087e457326b8ea5802fd94ac75439",
+          "role": "Estimate derived term by term for the concrete series"
+        },
+        {
+          "module": "DepthAspect.DigammaBound",
+          "declaration": "DepthAspect.DigammaBound.digamma_positive_integer",
+          "source": "DepthAspect/DigammaBound.lean",
+          "line": 190,
+          "kind": "theorem",
+          "source_sha256": "768eb32d6e5606948cc618186341fc0caaa087e457326b8ea5802fd94ac75439",
+          "role": "Actual harmonic-number value from the digamma recurrence"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Lemma 5.1",
+      "paper_text_line": 839,
+      "endpoints": [
+        {
+          "module": "DepthAspect.SignedArithmeticData",
+          "declaration": "DepthAspect.SignedSieve.SignedArithmeticData.signed_square_bound",
+          "source": "DepthAspect/SignedArithmeticData.lean",
+          "line": 184,
+          "kind": "theorem",
+          "source_sha256": "ceaa55cf0e83c897e03830fc39c9ec7775b59a6433dd5ecdd07e623ea41ac90c",
+          "role": "full_conditional_endpoint",
+          "scope_note": "Uses precisely the shared finite family/eigenvalues and its structural arithmetic inputs."
+        },
+        {
+          "module": "DepthAspect.SignedTraceBound",
+          "declaration": "DepthAspect.SignedSieve.signedHeckeSum_prime_square_bound_from_general_inputs",
+          "source": "DepthAspect/SignedTraceBound.lean",
+          "line": 106,
+          "kind": "theorem",
+          "source_sha256": "f9840a13bcbbbf572677ac4f872640bdfc0780c2b5226a9a6f669c36f13e6274",
+          "role": "full_conditional_endpoint",
+          "scope_note": "Actual finite signed Hecke sum from general SZ/eigenbasis and class-formula inputs; no internal count/growth bound premise."
+        },
+        {
+          "module": "DepthAspect.SignedTraceBound",
+          "declaration": "DepthAspect.SignedSieve.normalizedSignedExpression_square_bound_uniform",
+          "source": "DepthAspect/SignedTraceBound.lean",
+          "line": 83,
+          "kind": "theorem",
+          "source_sha256": "f9840a13bcbbbf572677ac4f872640bdfc0780c2b5226a9a6f669c36f13e6274",
+          "role": "proved_component_or_reusable_intermediate"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Proposition 5.2",
+      "paper_text_line": 857,
+      "endpoints": [
+        {
+          "module": "DepthAspect.SignedPrimeFormula",
+          "declaration": "DepthAspect.SignedSieve.SignedArithmeticData.primeSignedTrace_even",
+          "source": "DepthAspect/SignedPrimeFormula.lean",
+          "line": 294,
+          "kind": "theorem",
+          "source_sha256": "d5e2495962acf793a4e3764626c5aff62f631fd5c4f7a99c3cd43f53cda20b17",
+          "role": "full_conditional_endpoint",
+          "scope_note": "Even depth n=2a+4, a>=2; actual common family, Ramanujan coefficient, canonical LAtOne, and hyperbolic term."
+        },
+        {
+          "module": "DepthAspect.SignedPrimeFormula",
+          "declaration": "DepthAspect.SignedSieve.SignedArithmeticData.primeSignedTrace_odd",
+          "source": "DepthAspect/SignedPrimeFormula.lean",
+          "line": 308,
+          "kind": "theorem",
+          "source_sha256": "d5e2495962acf793a4e3764626c5aff62f631fd5c4f7a99c3cd43f53cda20b17",
+          "role": "full_conditional_endpoint",
+          "scope_note": "Odd depth n=2a+5, a>=1; exact hyperbolic cancellation."
+        },
+        {
+          "module": "DepthAspect.SignedPrimeFormula",
+          "declaration": "DepthAspect.SignedSieve.normalized_prime_expression_even",
+          "source": "DepthAspect/SignedPrimeFormula.lean",
+          "line": 220,
+          "kind": "theorem",
+          "source_sha256": "d5e2495962acf793a4e3764626c5aff62f631fd5c4f7a99c3cd43f53cda20b17",
+          "role": "proved_component_or_reusable_intermediate"
+        },
+        {
+          "module": "DepthAspect.SignedPrimeFormula",
+          "declaration": "DepthAspect.SignedSieve.normalized_prime_expression_odd",
+          "source": "DepthAspect/SignedPrimeFormula.lean",
+          "line": 266,
+          "kind": "theorem",
+          "source_sha256": "d5e2495962acf793a4e3764626c5aff62f631fd5c4f7a99c3cd43f53cda20b17",
+          "role": "proved_component_or_reusable_intermediate"
+        },
+        {
+          "module": "DepthAspect.DyadicClassScaling",
+          "declaration": "DepthAspect.DyadicClassScaling.hurwitz_four_pow_difference",
+          "source": "DepthAspect/DyadicClassScaling.lean",
+          "line": 216,
+          "kind": "theorem",
+          "source_sha256": "37735d787d066357826487ddfbab0f8ecc956f2b97389414e80aeac5efa80ec7",
+          "role": "proved_component_or_reusable_intermediate"
+        },
+        {
+          "module": "DepthAspect.SignedPrimeAuxiliary",
+          "declaration": "DepthAspect.SignedSieve.hyperbolic_prime_even_sieve",
+          "source": "DepthAspect/SignedPrimeAuxiliary.lean",
+          "line": 78,
+          "kind": "theorem",
+          "source_sha256": "27b76e4fd24edb7faa8ea93583ba647b2558002c4e5f755654a09cb17541a65c",
+          "role": "proved_component_or_reusable_intermediate"
+        },
+        {
+          "module": "DepthAspect.SignedPrimeAuxiliary",
+          "declaration": "DepthAspect.SignedSieve.hyperbolic_prime_odd_sieve",
+          "source": "DepthAspect/SignedPrimeAuxiliary.lean",
+          "line": 93,
+          "kind": "theorem",
+          "source_sha256": "27b76e4fd24edb7faa8ea93583ba647b2558002c4e5f755654a09cb17541a65c",
+          "role": "proved_component_or_reusable_intermediate"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Lemma 5.3",
+      "paper_text_line": 946,
+      "endpoints": [
+        {
+          "module": "DepthAspect.LocalGeneratingFunctions",
+          "declaration": "DepthAspect.LocalGeneratingFunctions.unitMean_zero_hasSum",
+          "source": "DepthAspect/LocalGeneratingFunctions.lean",
+          "line": 107,
+          "kind": "theorem",
+          "source_sha256": "f5dd76884d792f4e0248de5bca6e287feec407d79994cda105bdbd99211a8925",
+          "role": "Odd-prime factor when p divides t"
+        },
+        {
+          "module": "DepthAspect.LocalGeneratingFunctions",
+          "declaration": "DepthAspect.LocalGeneratingFunctions.unitMean_nonzero_hasSum",
+          "source": "DepthAspect/LocalGeneratingFunctions.lean",
+          "line": 113,
+          "kind": "theorem",
+          "source_sha256": "f5dd76884d792f4e0248de5bca6e287feec407d79994cda105bdbd99211a8925",
+          "role": "Odd-prime factor when p does not divide t"
+        },
+        {
+          "module": "DepthAspect.CoefficientHalfPlane",
+          "declaration": "DepthAspect.CoefficientHalfPlane.LSeriesSummable_average",
+          "source": "DepthAspect/CoefficientHalfPlane.lean",
+          "line": 138,
+          "kind": "theorem",
+          "source_sha256": "c1ef2a7f37d3f37bbbaebe75d766b2dc2876188c6cb5c6ac7c2203457b221019",
+          "role": "Absolute convergence for Re(s)>1/2"
+        },
+        {
+          "module": "DepthAspect.DyadicOddSeries",
+          "declaration": "DepthAspect.DyadicOddSeries.LSeries_factorization",
+          "source": "DepthAspect/DyadicOddSeries.lean",
+          "line": 176,
+          "kind": "theorem",
+          "source_sha256": "68a29811a22b9f390498a84aa4f5891b9da4be2d29e5f02c4fc3af86a10e1f2c",
+          "role": "Actual averaged L-series splits into dyadic series and odd coefficient series"
+        },
+        {
+          "module": "DepthAspect.OddAverageEuler",
+          "declaration": "DepthAspect.OddAverageEuler.localFactor_hasProd",
+          "source": "DepthAspect/OddAverageEuler.lean",
+          "line": 152,
+          "kind": "theorem",
+          "source_sha256": "3693216cbab8c46c93ddb059cc7e04f726f5a9a34d7fe675d5062d9c65d68268",
+          "role": "Odd coefficient series equals its local Euler product"
+        },
+        {
+          "module": "DepthAspect.OddAverageEuler",
+          "declaration": "DepthAspect.OddAverageEuler.localFactor_deviation_summable",
+          "source": "DepthAspect/OddAverageEuler.lean",
+          "line": 196,
+          "kind": "theorem",
+          "source_sha256": "3693216cbab8c46c93ddb059cc7e04f726f5a9a34d7fe675d5062d9c65d68268",
+          "role": "Absolute Euler-product convergence"
+        },
+        {
+          "module": "DepthAspect.OddEulerAtOne",
+          "declaration": "DepthAspect.OddEulerAtOne.odd_series_at_one",
+          "source": "DepthAspect/OddEulerAtOne.lean",
+          "line": 121,
+          "kind": "theorem",
+          "source_sha256": "3cf830648b453abb3398443f2ba13e3641c93c23da980dacdc5f9f7047b3d44e",
+          "role": "At-one value equals pi^2/8 times actual arithmetic prime product"
+        },
+        {
+          "module": "DepthAspect.GlobalCoefficientTail",
+          "declaration": "DepthAspect.GlobalCoefficientTail.exponential_tail",
+          "source": "DepthAspect/GlobalCoefficientTail.lean",
+          "line": 44,
+          "kind": "theorem",
+          "source_sha256": "f08161bb37f3cca5be0bcbec14a0958f568003904a0dafd4663207fb93c065fd",
+          "role": "Literal exponential smoothing tail with the displayed uniform constant"
+        },
+        {
+          "module": "DepthAspect.GlobalCoefficientTail",
+          "declaration": "DepthAspect.GlobalCoefficientTail.absolute_sum_bound",
+          "source": "DepthAspect/GlobalCoefficientTail.lean",
+          "line": 32,
+          "kind": "theorem",
+          "source_sha256": "f08161bb37f3cca5be0bcbec14a0958f568003904a0dafd4663207fb93c065fd",
+          "role": "Literal absolute sum at one at most C_tail/(1-exp(-1))"
+        },
+        {
+          "module": "DepthAspect.CoefficientHalfPlane",
+          "declaration": "DepthAspect.CoefficientHalfPlane.displayed_absolute_bound",
+          "source": "DepthAspect/CoefficientHalfPlane.lean",
+          "line": 159,
+          "kind": "theorem",
+          "source_sha256": "c1ef2a7f37d3f37bbbaebe75d766b2dc2876188c6cb5c6ac7c2203457b221019",
+          "role": "Explicit zeta and prime-product absolute majorant"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Lemma 5.4",
+      "paper_text_line": 1023,
+      "endpoints": [
+        {
+          "module": "DepthAspect.DyadicFourClassBridge",
+          "declaration": "DepthAspect.DyadicFourClassBridge.dyadic_generating_functions",
+          "source": "DepthAspect/DyadicFourClassBridge.lean",
+          "line": 143,
+          "kind": "theorem",
+          "source_sha256": "95a79ca3fed51a5dc7fb42c6ef92ac3916971f74f777886b2b211655c34c77a1",
+          "role": "Four actual dyadic generating functions after identification with the global means"
+        },
+        {
+          "module": "DepthAspect.DyadicWeightedMean",
+          "declaration": "DepthAspect.DyadicWeightedMean.four_values",
+          "source": "DepthAspect/DyadicWeightedMean.lean",
+          "line": 28,
+          "kind": "theorem",
+          "source_sha256": "62cb50ee5da03b56a08eee592ca4eddba0bd433a4f174e0b1dfdde6f01b07558",
+          "role": "Four actual mean values at one"
+        },
+        {
+          "module": "DepthAspect.DyadicWeightedMean",
+          "declaration": "DepthAspect.DyadicWeightedMean.weighted_mean",
+          "source": "DepthAspect/DyadicWeightedMean.lean",
+          "line": 44,
+          "kind": "theorem",
+          "source_sha256": "62cb50ee5da03b56a08eee592ca4eddba0bd433a4f174e0b1dfdde6f01b07558",
+          "role": "Weighted mean equals G_t/2"
+        },
+        {
+          "module": "DepthAspect.FourTwistCombination",
+          "declaration": "DepthAspect.FourTwistCombination.primeWeight_character_expansion",
+          "source": "DepthAspect/FourTwistCombination.lean",
+          "line": 47,
+          "kind": "theorem",
+          "source_sha256": "8c1935d77cd8a45a1c707ba6364454bbd9bc65d1712fea4bac753d872781047e",
+          "role": "Literal prime-weight expansion in the four Dirichlet twists"
+        },
+        {
+          "module": "DepthAspect.DyadicLocalMeans",
+          "declaration": "DepthAspect.DyadicLocalMeans.average_zero",
+          "source": "DepthAspect/DyadicLocalMeans.lean",
+          "line": 98,
+          "kind": "theorem",
+          "source_sha256": "240d24db23b130ccbe708990a774fc4e25809c3b06d29cedf63784e0e5f98296",
+          "role": "Degree-zero four-class mean"
+        },
+        {
+          "module": "DepthAspect.DyadicLocalMeans",
+          "declaration": "DepthAspect.DyadicLocalMeans.average_succ",
+          "source": "DepthAspect/DyadicLocalMeans.lean",
+          "line": 108,
+          "kind": "theorem",
+          "source_sha256": "240d24db23b130ccbe708990a774fc4e25809c3b06d29cedf63784e0e5f98296",
+          "role": "Positive-degree four-class mean"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Theorem 5.5",
+      "paper_text_line": 1178,
+      "endpoints": [
+        {
+          "module": "DepthAspect.TheoremFiveFive",
+          "declaration": "DepthAspect.TheoremFiveFive.prime_average_bound",
+          "source": "DepthAspect/TheoremFiveFive.lean",
+          "line": 25,
+          "kind": "theorem",
+          "source_sha256": "df00320cb67a383a65128fb11b0a9fd7f198d8f62158fc37b6b600fc16e31829",
+          "role": "Uniform weighted odd-prime average for t^2-4p"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Theorem 5.6",
+      "paper_text_line": 1197,
+      "endpoints": [
+        {
+          "module": "DepthAspect.TheoremFiveSix",
+          "declaration": "DepthAspect.TheoremFiveSix.odd_weighted_prime_average_bound",
+          "source": "DepthAspect/TheoremFiveSix.lean",
+          "line": 123,
+          "kind": "theorem",
+          "source_sha256": "3ec2e6806ca08e13d50c8929c857c66044535b4597824a8a9554a39c82d49145",
+          "role": "Uniform weighted odd-prime average for t^2-8p with literal G_t"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Proposition 5.7",
+      "paper_text_line": 1233,
+      "endpoints": [
+        {
+          "module": "DepthAspect.MurmurationStepPrimitive",
+          "declaration": "DepthAspect.MurmurationStepPrimitive.proposition_5_7",
+          "source": "DepthAspect/MurmurationStepPrimitive.lean",
+          "line": 80,
+          "kind": "theorem",
+          "source_sha256": "f5b4d5d12be83f0cb48e003ee0e1e1afb5345760cff76ef8f575d5ff85836597",
+          "role": "actual density small bound and bounded step-subtracted logarithmic primitive"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Theorem 5.8",
+      "paper_text_line": 1374,
+      "endpoints": [
+        {
+          "module": "DepthAspect.SignedDensityTheorem",
+          "declaration": "DepthAspect.SignedDensity.signed_density_theorem_5_8",
+          "source": "DepthAspect/SignedDensityTheorem.lean",
+          "line": 175,
+          "kind": "theorem",
+          "source_sha256": "56c46f9fae8f42639a0f8f19fc612e2f58127171ac1c2f43dbff5705dec30d6c",
+          "role": "final_endpoint_equation_118",
+          "note": "Literal five-term bound: inverse-log plus the four printed depth powers."
+        },
+        {
+          "module": "DepthAspect.SignedDensityTheorem",
+          "declaration": "DepthAspect.SignedDensity.signed_density_uniform",
+          "source": "DepthAspect/SignedDensityTheorem.lean",
+          "line": 144,
+          "kind": "theorem",
+          "source_sha256": "56c46f9fae8f42639a0f8f19fc612e2f58127171ac1c2f43dbff5705dec30d6c",
+          "role": "final_inverse_log_endpoint"
+        },
+        {
+          "module": "DepthAspect.SignedDensityRates",
+          "declaration": "DepthAspect.SignedDensity.signed_prime_inverse_log",
+          "source": "DepthAspect/SignedDensityRates.lean",
+          "line": 39,
+          "kind": "theorem",
+          "source_sha256": "ef2a1661e7a1d40bb9cb05a383ca5272346b18dc308dc5e2a6d0bb59b12bbf02",
+          "role": "prime_rate_component"
+        },
+        {
+          "module": "DepthAspect.SignedDensityRates",
+          "declaration": "DepthAspect.SignedDensity.signed_square_inverse_log",
+          "source": "DepthAspect/SignedDensityRates.lean",
+          "line": 83,
+          "kind": "theorem",
+          "source_sha256": "ef2a1661e7a1d40bb9cb05a383ca5272346b18dc308dc5e2a6d0bb59b12bbf02",
+          "role": "square_rate_component"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Theorem 6.1",
+      "paper_text_line": 1424,
+      "endpoints": [
+        {
+          "module": "DepthAspect.MurmurationTheorem",
+          "declaration": "DepthAspect.MurmurationTheorem.theorem_6_1",
+          "source": "DepthAspect/MurmurationTheorem.lean",
+          "line": 117,
+          "kind": "theorem",
+          "source_sha256": "af8eb22bcba030492a6e91175e839f50b2f66a414b5675d557b053d8554de6fd",
+          "role": "literal logarithmic mean, leading series expansion and opposite-sign sequences"
+        },
+        {
+          "module": "DepthAspect.MurmurationTheorem",
+          "declaration": "DepthAspect.MurmurationTheorem.theorem_6_1_shape",
+          "source": "DepthAspect/MurmurationTheorem.lean",
+          "line": 134,
+          "kind": "theorem",
+          "source_sha256": "af8eb22bcba030492a6e91175e839f50b2f66a414b5675d557b053d8554de6fd",
+          "role": "pointwise growth, unboundedness, failure of pointwise convergence"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Lemma 6.2",
+      "paper_text_line": 1459,
+      "endpoints": [
+        {
+          "module": "DepthAspect.ArithmeticDirichletSeries",
+          "declaration": "DepthAspect.ArithmeticWeights.dirichlet_series_factorization",
+          "source": "DepthAspect/ArithmeticDirichletSeries.lean",
+          "line": 74,
+          "kind": "theorem",
+          "source_sha256": "21f45264d18823eeaf5f6698dcbd4795cc7e11423ef481d999d05eabf7082384",
+          "role": "final_endpoint_equation_122_factorization"
+        },
+        {
+          "module": "DepthAspect.ArithmeticDirichletSeries",
+          "declaration": "DepthAspect.ArithmeticWeights.H_euler_product",
+          "source": "DepthAspect/ArithmeticDirichletSeries.lean",
+          "line": 123,
+          "kind": "theorem",
+          "source_sha256": "21f45264d18823eeaf5f6698dcbd4795cc7e11423ef481d999d05eabf7082384",
+          "role": "final_endpoint_equation_122_euler_product"
+        },
+        {
+          "module": "DepthAspect.ArithmeticDirichletSeries",
+          "declaration": "DepthAspect.ArithmeticWeights.h_LSeries_summable",
+          "source": "DepthAspect/ArithmeticDirichletSeries.lean",
+          "line": 22,
+          "kind": "theorem",
+          "source_sha256": "21f45264d18823eeaf5f6698dcbd4795cc7e11423ef481d999d05eabf7082384",
+          "role": "final_half_plane_convergence_endpoint"
+        },
+        {
+          "module": "DepthAspect.ArithmeticWeightSummability",
+          "declaration": "DepthAspect.ArithmeticWeights.coefficient_three_eighth_moment",
+          "source": "DepthAspect/ArithmeticWeightSummability.lean",
+          "line": 136,
+          "kind": "theorem",
+          "source_sha256": "fc0fc026d325d0869cee43cc6f695cfdc4922e93a3b03d163c1c6711febede77",
+          "role": "final_moment_endpoint"
+        },
+        {
+          "module": "DepthAspect.ArithmeticWeights",
+          "declaration": "DepthAspect.ArithmeticWeights.h_convolution_reciprocal",
+          "source": "DepthAspect/ArithmeticWeights.lean",
+          "line": 233,
+          "kind": "theorem",
+          "source_sha256": "1270299aea55235991607aaab30cce8954baccf9eed0ca1b36396a92b75fef93",
+          "role": "coefficient_identity_component"
+        },
+        {
+          "module": "DepthAspect.ArithmeticDirichletSeries",
+          "declaration": "DepthAspect.ArithmeticWeights.Hlocal_omitted",
+          "source": "DepthAspect/ArithmeticDirichletSeries.lean",
+          "line": 132,
+          "kind": "theorem",
+          "source_sha256": "21f45264d18823eeaf5f6698dcbd4795cc7e11423ef481d999d05eabf7082384",
+          "role": "exceptional_prime_component"
+        },
+        {
+          "module": "DepthAspect.ArithmeticDirichletSeries",
+          "declaration": "DepthAspect.ArithmeticWeights.Hlocal_other",
+          "source": "DepthAspect/ArithmeticDirichletSeries.lean",
+          "line": 136,
+          "kind": "theorem",
+          "source_sha256": "21f45264d18823eeaf5f6698dcbd4795cc7e11423ef481d999d05eabf7082384",
+          "role": "ordinary_prime_component"
+        },
+        {
+          "module": "DepthAspect.ArithmeticWeightSummability",
+          "declaration": "DepthAspect.ArithmeticWeights.weightedAbs_summable",
+          "source": "DepthAspect/ArithmeticWeightSummability.lean",
+          "line": 122,
+          "kind": "theorem",
+          "source_sha256": "fc0fc026d325d0869cee43cc6f695cfdc4922e93a3b03d163c1c6711febede77",
+          "role": "summability_component"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Lemma 6.3",
+      "paper_text_line": 1478,
+      "endpoints": [
+        {
+          "module": "DepthAspect.ArithmeticSummatoryLimit",
+          "declaration": "DepthAspect.ArithmeticWeights.summatory_asymptotic",
+          "source": "DepthAspect/ArithmeticSummatoryLimit.lean",
+          "line": 189,
+          "kind": "theorem",
+          "source_sha256": "e04ef76efef9481d22a97fcf02768403d7555c0b7005a426d52414513aa40bd2",
+          "role": "final_endpoint_equation_123_asymptotic"
+        },
+        {
+          "module": "DepthAspect.ArithmeticDirichletSeries",
+          "declaration": "DepthAspect.ArithmeticWeights.H_zero",
+          "source": "DepthAspect/ArithmeticDirichletSeries.lean",
+          "line": 16,
+          "kind": "theorem",
+          "source_sha256": "21f45264d18823eeaf5f6698dcbd4795cc7e11423ef481d999d05eabf7082384",
+          "role": "final_endpoint_equation_123_H_zero"
+        },
+        {
+          "module": "DepthAspect.ArithmeticResidue",
+          "declaration": "DepthAspect.ArithmeticWeights.B_mul_R_zeta",
+          "source": "DepthAspect/ArithmeticResidue.lean",
+          "line": 113,
+          "kind": "theorem",
+          "source_sha256": "c02c92af034c1fb20f12775d78277efef11845d5dbeabf7ff18b60cd16bd8273",
+          "role": "final_endpoint_equation_123_residue"
+        },
+        {
+          "module": "DepthAspect.ArithmeticSummatoryLimit",
+          "declaration": "DepthAspect.ArithmeticWeights.summatory_asymptotic_strong",
+          "source": "DepthAspect/ArithmeticSummatoryLimit.lean",
+          "line": 161,
+          "kind": "theorem",
+          "source_sha256": "e04ef76efef9481d22a97fcf02768403d7555c0b7005a426d52414513aa40bd2",
+          "role": "stronger_asymptotic_component"
+        },
+        {
+          "module": "DepthAspect.ArithmeticSummatory",
+          "declaration": "DepthAspect.ArithmeticWeights.partialC_eq_harmonic_sum",
+          "source": "DepthAspect/ArithmeticSummatory.lean",
+          "line": 28,
+          "kind": "theorem",
+          "source_sha256": "126b52c6e9ab5fe8ff27505996743ffcdfee5250c7ed4bce7bcc29cfb00960cd",
+          "role": "component_equation_124_reindex"
+        },
+        {
+          "module": "DepthAspect.ArithmeticSummatoryLimit",
+          "declaration": "DepthAspect.ArithmeticWeights.mainCoefficient_tsum",
+          "source": "DepthAspect/ArithmeticSummatoryLimit.lean",
+          "line": 65,
+          "kind": "theorem",
+          "source_sha256": "e04ef76efef9481d22a97fcf02768403d7555c0b7005a426d52414513aa40bd2",
+          "role": "constant_term_component"
+        },
+        {
+          "module": "DepthAspect.ArithmeticResidue",
+          "declaration": "DepthAspect.ArithmeticWeights.B_mul_R",
+          "source": "DepthAspect/ArithmeticResidue.lean",
+          "line": 104,
+          "kind": "theorem",
+          "source_sha256": "c02c92af034c1fb20f12775d78277efef11845d5dbeabf7ff18b60cd16bd8273",
+          "role": "residue_product_component"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Lemma 6.4",
+      "paper_text_line": 1546,
+      "endpoints": [
+        {
+          "module": "DepthAspect.MurmurationTheorem",
+          "declaration": "DepthAspect.MurmurationTheorem.lemma_6_4",
+          "source": "DepthAspect/MurmurationTheorem.lean",
+          "line": 67,
+          "kind": "theorem",
+          "source_sha256": "af8eb22bcba030492a6e91175e839f50b2f66a414b5675d557b053d8554de6fd",
+          "role": "bundled Bessel/divisor identities, absolute convergence and two pointwise regimes"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Lemma 6.5",
+      "paper_text_line": 1568,
+      "endpoints": [
+        {
+          "module": "DepthAspect.MurmurationTheorem",
+          "declaration": "DepthAspect.MurmurationTheorem.lemma_6_5",
+          "source": "DepthAspect/MurmurationTheorem.lean",
+          "line": 93,
+          "kind": "theorem",
+          "source_sha256": "af8eb22bcba030492a6e91175e839f50b2f66a414b5675d557b053d8554de6fd",
+          "role": "bundled integrated series, exact zeta limit and two remainders"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Introduction and Section 1.3 orthogonal symmetry comparison",
+      "paper_text_line": null,
+      "endpoints": [
+        {
+          "module": "DepthAspect.RandomMatrixSupport",
+          "declaration": "DepthAspect.RandomMatrixMainTerms.specialOrthogonal_difference",
+          "source": "DepthAspect/RandomMatrixSupport.lean",
+          "line": 11,
+          "kind": "theorem",
+          "source_sha256": "74c1d679d495e5d0a7a1e054e8a8bfe4d34211e6561d944187e6d3e4e79c92af",
+          "role": "literal unnumbered introductory assertion"
+        },
+        {
+          "module": "DepthAspect.RandomMatrixSupport",
+          "declaration": "DepthAspect.RandomMatrixMainTerms.outside_integral_zero_of_unit_support",
+          "source": "DepthAspect/RandomMatrixSupport.lean",
+          "line": 17,
+          "kind": "theorem",
+          "source_sha256": "74c1d679d495e5d0a7a1e054e8a8bfe4d34211e6561d944187e6d3e4e79c92af",
+          "role": "literal unnumbered introductory assertion"
+        },
+        {
+          "module": "DepthAspect.RandomMatrixSupport",
+          "declaration": "DepthAspect.RandomMatrixMainTerms.specialOrthogonal_agree_of_unit_support",
+          "source": "DepthAspect/RandomMatrixSupport.lean",
+          "line": 27,
+          "kind": "theorem",
+          "source_sha256": "74c1d679d495e5d0a7a1e054e8a8bfe4d34211e6561d944187e6d3e4e79c92af",
+          "role": "literal unnumbered introductory assertion"
+        }
+      ]
+    },
+    {
+      "paper_claim": "Section 5 root-number sums and sign-class boundary assertions (68)-(71)",
+      "paper_text_line": null,
+      "endpoints": [
+        {
+          "module": "DepthAspect.SignedArithmeticData",
+          "declaration": "DepthAspect.SignedSieve.SignedArithmeticData.rootNumber_sum_even",
+          "source": "DepthAspect/SignedArithmeticData.lean",
+          "line": 97,
+          "kind": "theorem",
+          "source_sha256": "ceaa55cf0e83c897e03830fc39c9ec7775b59a6433dd5ecdd07e623ea41ac90c",
+          "role": "full_conditional_endpoint"
+        },
+        {
+          "module": "DepthAspect.SignedArithmeticData",
+          "declaration": "DepthAspect.SignedSieve.SignedArithmeticData.rootNumber_sum_odd",
+          "source": "DepthAspect/SignedArithmeticData.lean",
+          "line": 108,
+          "kind": "theorem",
+          "source_sha256": "ceaa55cf0e83c897e03830fc39c9ec7775b59a6433dd5ecdd07e623ea41ac90c",
+          "role": "full_conditional_endpoint"
+        },
+        {
+          "module": "DepthAspect.SignedArithmeticData",
+          "declaration": "DepthAspect.SignedSieve.SignedArithmeticData.signClass_card",
+          "source": "DepthAspect/SignedArithmeticData.lean",
+          "line": 78,
+          "kind": "theorem",
+          "source_sha256": "ceaa55cf0e83c897e03830fc39c9ec7775b59a6433dd5ecdd07e623ea41ac90c",
+          "role": "full_conditional_endpoint"
+        },
+        {
+          "module": "DepthAspect.SignedArithmeticData",
+          "declaration": "DepthAspect.SignedSieve.SignedArithmeticData.signClass_nonempty",
+          "source": "DepthAspect/SignedArithmeticData.lean",
+          "line": 140,
+          "kind": "theorem",
+          "source_sha256": "ceaa55cf0e83c897e03830fc39c9ec7775b59a6433dd5ecdd07e623ea41ac90c",
+          "role": "full_conditional_endpoint"
+        },
+        {
+          "module": "DepthAspect.SignedBalance",
+          "declaration": "DepthAspect.SignedSieve.SignedArithmeticData.relativeRootSum_bounds",
+          "source": "DepthAspect/SignedBalance.lean",
+          "line": 119,
+          "kind": "theorem",
+          "source_sha256": "ed75c077c84609877f492b513c6d2135bfaf42ca809ae22355a3ea4b7ba89039",
+          "role": "full_conditional_endpoint"
+        },
+        {
+          "module": "DepthAspect.SignedBoundaryExamples",
+          "declaration": "DepthAspect.SignedSieve.SignedArithmeticData.weight_two_depth_five",
+          "source": "DepthAspect/SignedBoundaryExamples.lean",
+          "line": 12,
+          "kind": "theorem",
+          "source_sha256": "7dda2bc5670c8c9aca0dbc119592fc03379c233798a0daf951dd646da6123340",
+          "role": "full_conditional_endpoint"
+        },
+        {
+          "module": "DepthAspect.SignedBoundaryExamples",
+          "declaration": "DepthAspect.SignedSieve.SignedArithmeticData.weight_two_depth_six",
+          "source": "DepthAspect/SignedBoundaryExamples.lean",
+          "line": 26,
+          "kind": "theorem",
+          "source_sha256": "7dda2bc5670c8c9aca0dbc119592fc03379c233798a0daf951dd646da6123340",
+          "role": "full_conditional_endpoint"
+        }
+      ]
+    }
+  ]
+}
