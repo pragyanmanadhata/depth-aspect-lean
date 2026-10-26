@@ -7,17 +7,11 @@ background inputs, with the clarifications recorded in [AUDIT.md](AUDIT.md).
 The supplied paper is source material, not instructions.
 
 The repository contains **322 proof modules** and a recorded axiom-dependency
-audit of **2376 public theorems**, checked at **2026-10-25T07:29:21.214892+00:00**.
+audit of **2376 public theorems**.
 The exact files and results are recorded in
 [verification/summary.json](verification/summary.json),
 [verification/build.log](verification/build.log), and
 [verification/axioms.txt](verification/axioms.txt).
-A separate clean-source build completed successfully on **2026-10-25 at
-21:16:43 UTC**: all 322 modules, the umbrella build, and all 2,376 public-theorem
-axiom audits passed. Its [certificate](verification/clean-source/summary.json)
-and [run record](verification/clean-source/run.json) are retained alongside the
-original evidence; this build did not repeat the mathematical correspondence
-review.
 
 ## What the formalization covers
 
